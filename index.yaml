@@ -107,6 +107,60 @@ entries:
     version: 0.1.0
   system:
   - apiVersion: v2
+    created: "2020-09-28T22:05:30.141806977+03:00"
+    dependencies:
+    - name: identity-srv
+      repository: https://restorecommerce.github.io/helm/
+      version: 0.1.0
+    - name: notification-srv
+      repository: https://restorecommerce.github.io/helm/
+      version: 0.1.0
+    - name: access-control-srv
+      repository: https://restorecommerce.github.io/helm/
+      version: 0.1.0
+    - name: ostorage-srv
+      repository: https://restorecommerce.github.io/helm/
+      version: 0.1.0
+    - name: scheduling-srv
+      repository: https://restorecommerce.github.io/helm/
+      version: 0.1.0
+    - name: rendering-srv
+      repository: https://restorecommerce.github.io/helm/
+      version: 0.1.0
+    - name: pdf-rendering-srv
+      repository: https://restorecommerce.github.io/helm/
+      version: 0.1.0
+    - name: minio
+      repository: https://helm.min.io
+      version: 7.0.1
+    - name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.21.9
+    - name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.8.5
+    - name: kafka-manager
+      repository: https://kubernetes-charts.storage.googleapis.com
+      version: 2.3.2
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.4
+    - name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.9.1
+    - name: kibana
+      repository: https://helm.elastic.co
+      version: 7.9.1
+    description: A Helm chart for the restorecommerce system
+    digest: 5993002bec68c1fc5ca15fd7f147dec8588e9dbfb66feedd348a0aa53612f000
+    home: https://github.com/restorecommerce/system
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    name: system
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/system-0.1.1/system-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     created: "2020-09-28T21:33:59.203670679+03:00"
     dependencies:
     - name: identity-srv
