@@ -1,0 +1,381 @@
+helmDefaults:
+  wait: true
+  createNamespace: true
+
+environments:
+  default:
+    values:
+      - minio:
+          accessKey: REPLACE_ME_ACCESS
+          secretKey: REPLACE_ME_SECRET
+
+repositories:
+  - name: restorecommerce
+    url: https://restorecommerce.github.io/helm/
+  - name: minio
+    url: https://helm.min.io
+  - name: bitnami
+    url: https://charts.bitnami.com/bitnami
+  - name: elastic
+    url: https://helm.elastic.co
+  - name: stable
+    url: https://kubernetes-charts.storage.googleapis.com
+
+# Deploy after initial to wait for CRD's to deploy
+helmfiles:
+  - path: arangodb-crd-helmfile.yaml
+
+releases:
+  - name: identity-srv
+    namespace: restorecommerce
+    chart: restorecommerce/identity-srv
+    installed: true
+    atomic: false
+    wait: false
+    cleanupOnFail: true
+    values:
+      - env:
+          extras:
+            - name: authorization__cache__host
+              value: redis-master
+            - name: redis__host
+              value: redis-master
+            - name: logger__elasticsearch__clientOpts__node
+              value: http://elasticsearch-master:9200
+        config:
+          literal: |
+            {
+              "server": {
+                "transports": [
+                  {
+                    "name": "grpcIdentity",
+                    "provider": "grpc",
+                    "services": {
+                      "io-restorecommerce-user-srv": "io.restorecommerce.user.Service",
+                      "io-restorecommerce-role-srv": "io.restorecommerce.role.Service",
+                      "io-restorecommerce-identity-reflection": "grpc.reflection.v1alpha.ServerReflection",
+                      "io-restorecommerce-identity-cis": "io.restorecommerce.commandinterface.Service"
+                    },
+                    "protos": [
+                      "io/restorecommerce/user.proto",
+                      "io/restorecommerce/role.proto",
+                      "grpc/reflection/v1alpha/reflection.proto",
+                      "io/restorecommerce/commandinterface.proto"
+                    ],
+                    "protoRoot": "node_modules/@restorecommerce/protos/",
+                    "addr": "0.0.0.0:50051"
+                  }
+                ]
+              }
+            }
+
+  - name: notification-srv
+    namespace: restorecommerce
+    chart: restorecommerce/notification-srv
+    installed: true
+    atomic: false
+    wait: false
+    cleanupOnFail: true
+    values:
+      - env:
+          extras:
+            - name: redis__host
+              value: redis-master
+            - name: logger__elasticsearch__clientOpts__node
+              value: http://elasticsearch-master:9200
+        config:
+          literal: |
+            {
+              "server": {
+                "transports": [
+                  {
+                    "name": "notificationGRPC",
+                    "provider": "grpc",
+                    "services": {
+                      "io-restorecommerce-notification-srv": "io.restorecommerce.notification.Service",
+                      "io-restorecommerce-notification-cis": "io.restorecommerce.commandinterface.Service",
+                      "io-restorecommerce-notification-reflection": "grpc.reflection.v1alpha.ServerReflection"
+                    },
+                    "protos": [
+                      "io/restorecommerce/notification.proto",
+                      "io/restorecommerce/commandinterface.proto",
+                      "grpc/reflection/v1alpha/reflection.proto"
+                    ],
+                    "protoRoot": "node_modules/@restorecommerce/protos/",
+                    "addr": "0.0.0.0:50051"
+                  }
+                ]
+              }
+            }
+
+  - name: access-control-srv
+    namespace: restorecommerce
+    chart: restorecommerce/access-control-srv
+    installed: true
+    atomic: false
+    wait: false
+    cleanupOnFail: true
+    values:
+      - env:
+          extras:
+            - name: authorization__cache__host
+              value: redis-master
+            - name: redis__host
+              value: redis-master
+            - name: logger__elasticsearch__clientOpts__node
+              value: http://elasticsearch-master:9200
+
+  - name: ostorage-srv
+    namespace: restorecommerce
+    chart: restorecommerce/ostorage-srv
+    installed: true
+    atomic: false
+    wait: false
+    cleanupOnFail: true
+    values:
+      - env:
+          extras:
+            - name: authorization__cache__host
+              value: redis-master
+            - name: redis__host
+              value: redis-master
+            - name: logger__elasticsearch__clientOpts__node
+              value: http://elasticsearch-master:9200
+            - name: s3__client__accessKeyId
+              value: {{ .Values.minio.accessKey }}
+            - name: s3__client__secretAccessKey
+              value: {{ .Values.minio.secretKey }}
+        config:
+          literal: |
+            {
+              "server": {
+                "transports": [
+                  {
+                    "name": "grpcOstorage",
+                    "provider": "grpc",
+                    "services": {
+                      "io-restorecommerce-ostorage-srv": "io.restorecommerce.ostorage.Service",
+                      "io-restorecommerce-ostorage-reflection": "grpc.reflection.v1alpha.ServerReflection",
+                      "io-restorecommerce-ostorage-cis": "io.restorecommerce.commandinterface.Service"
+                    },
+                    "protos": [
+                      "io/restorecommerce/ostorage.proto",
+                      "grpc/reflection/v1alpha/reflection.proto",
+                      "io/restorecommerce/commandinterface.proto"
+                    ],
+                    "protoRoot": "node_modules/@restorecommerce/protos/",
+                    "addr": "0.0.0.0:50051"
+                  }
+                ]
+              },
+              "client": {
+                "acs-srv": {
+                  "publisher": {
+                    "name": "static",
+                    "instances": [
+                      "grpc://access-control-srv:50051"
+                    ]
+                  }
+                }
+              }
+            }
+
+  - name: scheduling-srv
+    namespace: restorecommerce
+    chart: restorecommerce/scheduling-srv
+    installed: true
+    atomic: false
+    wait: false
+    cleanupOnFail: true
+    values:
+      - env:
+          extras:
+            - name: authorization__cache__host
+              value: redis-master
+            - name: redis__host
+              value: redis-master
+            - name: logger__elasticsearch__clientOpts__node
+              value: http://elasticsearch-master:9200
+        config:
+          literal: |
+            {
+              "server": {
+                "transports": [
+                  {
+                    "name": "schedulingGRPC",
+                    "provider": "grpc",
+                    "services": {
+                      "io-restorecommerce-scheduling-srv": "io.restorecommerce.job.Service",
+                      "io-restorecommerce-scheduling-cis": "io.restorecommerce.commandinterface.Service",
+                      "io-restorecommerce-scheduling-reflection": "grpc.reflection.v1alpha.ServerReflection"
+                    },
+                    "protos": [
+                      "io/restorecommerce/job.proto",
+                      "io/restorecommerce/commandinterface.proto",
+                      "grpc/reflection/v1alpha/reflection.proto",
+                      "google/protobuf/descriptor.proto"
+                    ],
+                    "protoRoot": "node_modules/@restorecommerce/protos/",
+                    "addr": "0.0.0.0:50051"
+                  }
+                ]
+              },
+              "client": {
+                "acs-srv": {
+                  "publisher": {
+                    "name": "static",
+                    "instances": [
+                      "grpc://access-control-srv:50051"
+                    ]
+                  }
+                }
+              }
+            }
+
+  - name: rendering-srv
+    namespace: restorecommerce
+    chart: restorecommerce/rendering-srv
+    installed: true
+    atomic: false
+    wait: false
+    cleanupOnFail: true
+    values:
+      - env:
+          extras:
+            - name: redis__host
+              value: redis-master
+            - name: logger__elasticsearch__clientOpts__node
+              value: http://elasticsearch-master:9200
+        config:
+          literal: |
+            {
+              "server": {
+                "transports": [
+                  {
+                    "name": "grpcRendering",
+                    "provider": "grpc",
+                    "services": {
+                      "io-restorecommerce-rendering-cis": "io.restorecommerce.commandinterface.Service",
+                      "io-restorecommerce-rendering-reflection": "grpc.reflection.v1alpha.ServerReflection"
+                    },
+                    "protos": [
+                      "io/restorecommerce/commandinterface.proto",
+                      "grpc/reflection/v1alpha/reflection.proto"
+                    ],
+                    "protoRoot": "node_modules/@restorecommerce/protos/",
+                    "addr": "0.0.0.0:50051"
+                  }
+                ]
+              }
+            }
+
+  - name: pdf-rendering-srv
+    namespace: restorecommerce
+    chart: restorecommerce/pdf-rendering-srv
+    installed: true
+    atomic: false
+    wait: false
+    cleanupOnFail: true
+
+  - name: minio
+    namespace: restorecommerce
+    chart: minio/minio
+    version: 7.0.1
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - accessKey: {{ .Values.minio.accessKey }}
+        secretKey: {{ .Values.minio.secretKey }}
+        persistence:
+          size: 10Gi
+
+  - name: zookeeper
+    namespace: restorecommerce
+    chart: bitnami/zookeeper
+    version: 5.21.9
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+
+  - name: kafka
+    namespace: restorecommerce
+    chart: bitnami/kafka
+    version: 11.8.5
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - zookeeper:
+          enabled: false
+        externalZookeeper:
+          servers:
+            - "zookeeper:2181"
+        deleteTopicEnable: true
+        autoCreateTopicsEnable: true
+
+  - name: kafka-manager
+    namespace: restorecommerce
+    chart: stable/kafka-manager
+    version: 2.3.2
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - zkHosts: "zookeeper:2181"
+        applicationSecret: "REPLACE_ME"
+        basicAuth:
+          password: "REPLACE_ME"
+          ldap:
+            password: "REPLACE_ME"
+
+  - name: redis
+    namespace: restorecommerce
+    chart: bitnami/redis
+    version: 11.0.4
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - usePassword: false
+
+  - name: elasticsearch
+    namespace: restorecommerce
+    chart: elastic/elasticsearch
+    version: 7.9.1
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - antiAffinity: "soft"
+        volumeClaimTemplate:
+          accessModes: [ "ReadWriteOnce" ]
+          resources:
+            requests:
+              storage: 10Gi
+        replicas: 1
+
+  - name: kibana
+    namespace: restorecommerce
+    chart: elastic/kibana
+    version: 7.9.1
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - fullnameOverride: kibana
+        elasticsearchHosts: "http://elasticsearch-master:9200"
+
+  - name: arangodb
+    namespace: restorecommerce
+    chart: https://github.com/arangodb/kube-arangodb/releases/download/1.0.7/kube-arangodb-1.0.7.tgz
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+
+  - name: arangodb-deployments
+    namespace: restorecommerce
+    chart: ./arangodb
+    installed: true
+    atomic: true
+    cleanupOnFail: true

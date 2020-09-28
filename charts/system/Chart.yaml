@@ -1,0 +1,50 @@
+apiVersion: v2
+name: system
+description: A Helm chart for the restorecommerce system
+type: application
+version: 0.1.0
+icon: https://avatars0.githubusercontent.com/u/8339525
+home: https://github.com/restorecommerce/system
+dependencies:
+  - name: identity-srv
+    version: 0.1.0
+    repository: https://restorecommerce.github.io/helm/
+  - name: notification-srv
+    version: 0.1.0
+    repository: https://restorecommerce.github.io/helm/
+  - name: access-control-srv
+    version: 0.1.0
+    repository: https://restorecommerce.github.io/helm/
+  - name: ostorage-srv
+    version: 0.1.0
+    repository: https://restorecommerce.github.io/helm/
+  - name: scheduling-srv
+    version: 0.1.0
+    repository: https://restorecommerce.github.io/helm/
+  - name: rendering-srv
+    version: 0.1.0
+    repository: https://restorecommerce.github.io/helm/
+  - name: pdf-rendering-srv
+    version: 0.1.0
+    repository: https://restorecommerce.github.io/helm/
+  - name: minio
+    version: 7.0.1
+    repository: https://helm.min.io
+  - name: zookeeper
+    version: 5.21.9
+    repository: https://charts.bitnami.com/bitnami
+  - name: kafka
+    version: 11.8.5
+    repository: https://charts.bitnami.com/bitnami
+  - name: kafka-manager
+    version: 2.3.2
+    repository: https://kubernetes-charts.storage.googleapis.com
+  - name: redis
+    version: 11.0.4
+    repository: https://charts.bitnami.com/bitnami
+  - name: elasticsearch
+    version: 7.9.1
+    repository: https://helm.elastic.co
+  - name: kibana
+    version: 7.9.1
+    repository: https://helm.elastic.co

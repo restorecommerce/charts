@@ -1,0 +1,239 @@
+identity-srv:
+  env:
+    extras:
+      - name: authorization__cache__host
+        value: redis-master
+      - name: redis__host
+        value: redis-master
+      - name: logger__elasticsearch__clientOpts__node
+        value: http://elasticsearch-master:9200
+  config:
+    literal: |
+      {
+        "server": {
+          "transports": [
+            {
+              "name": "grpcIdentity",
+              "provider": "grpc",
+              "services": {
+                "io-restorecommerce-user-srv": "io.restorecommerce.user.Service",
+                "io-restorecommerce-role-srv": "io.restorecommerce.role.Service",
+                "io-restorecommerce-identity-reflection": "grpc.reflection.v1alpha.ServerReflection",
+                "io-restorecommerce-identity-cis": "io.restorecommerce.commandinterface.Service"
+              },
+              "protos": [
+                "io/restorecommerce/user.proto",
+                "io/restorecommerce/role.proto",
+                "grpc/reflection/v1alpha/reflection.proto",
+                "io/restorecommerce/commandinterface.proto"
+              ],
+              "protoRoot": "node_modules/@restorecommerce/protos/",
+              "addr": "0.0.0.0:50051"
+            }
+          ]
+        }
+      }
+
+notification-srv:
+  env:
+    extras:
+      - name: redis__host
+        value: redis-master
+      - name: logger__elasticsearch__clientOpts__node
+        value: http://elasticsearch-master:9200
+  config:
+    literal: |
+      {
+        "server": {
+          "transports": [
+            {
+              "name": "notificationGRPC",
+              "provider": "grpc",
+              "services": {
+                "io-restorecommerce-notification-srv": "io.restorecommerce.notification.Service",
+                "io-restorecommerce-notification-cis": "io.restorecommerce.commandinterface.Service",
+                "io-restorecommerce-notification-reflection": "grpc.reflection.v1alpha.ServerReflection"
+              },
+              "protos": [
+                "io/restorecommerce/notification.proto",
+                "io/restorecommerce/commandinterface.proto",
+                "grpc/reflection/v1alpha/reflection.proto"
+              ],
+              "protoRoot": "node_modules/@restorecommerce/protos/",
+              "addr": "0.0.0.0:50051"
+            }
+          ]
+        }
+      }
+
+access-control-srv:
+  env:
+    extras:
+      - name: authorization__cache__host
+        value: redis-master
+      - name: redis__host
+        value: redis-master
+      - name: logger__elasticsearch__clientOpts__node
+        value: http://elasticsearch-master:9200
+
+ostorage-srv:
+  env:
+    extras:
+      - name: authorization__cache__host
+        value: redis-master
+      - name: redis__host
+        value: redis-master
+      - name: logger__elasticsearch__clientOpts__node
+        value: http://elasticsearch-master:9200
+      - name: s3__client__accessKeyId
+        value: REPLACE_ME_ACCESS
+      - name: s3__client__secretAccessKey
+        value: REPLACE_ME_SECRET
+  config:
+    literal: |
+      {
+        "server": {
+          "transports": [
+            {
+              "name": "grpcOstorage",
+              "provider": "grpc",
+              "services": {
+                "io-restorecommerce-ostorage-srv": "io.restorecommerce.ostorage.Service",
+                "io-restorecommerce-ostorage-reflection": "grpc.reflection.v1alpha.ServerReflection",
+                "io-restorecommerce-ostorage-cis": "io.restorecommerce.commandinterface.Service"
+              },
+              "protos": [
+                "io/restorecommerce/ostorage.proto",
+                "grpc/reflection/v1alpha/reflection.proto",
+                "io/restorecommerce/commandinterface.proto"
+              ],
+              "protoRoot": "node_modules/@restorecommerce/protos/",
+              "addr": "0.0.0.0:50051"
+            }
+          ]
+        },
+        "client": {
+          "acs-srv": {
+            "publisher": {
+              "name": "static",
+              "instances": [
+                "grpc://access-control-srv:50051"
+              ]
+            }
+          }
+        }
+      }
+
+scheduling-srv:
+  env:
+    extras:
+      - name: authorization__cache__host
+        value: redis-master
+      - name: redis__host
+        value: redis-master
+      - name: logger__elasticsearch__clientOpts__node
+        value: http://elasticsearch-master:9200
+  config:
+    literal: |
+      {
+        "server": {
+          "transports": [
+            {
+              "name": "schedulingGRPC",
+              "provider": "grpc",
+              "services": {
+                "io-restorecommerce-scheduling-srv": "io.restorecommerce.job.Service",
+                "io-restorecommerce-scheduling-cis": "io.restorecommerce.commandinterface.Service",
+                "io-restorecommerce-scheduling-reflection": "grpc.reflection.v1alpha.ServerReflection"
+              },
+              "protos": [
+                "io/restorecommerce/job.proto",
+                "io/restorecommerce/commandinterface.proto",
+                "grpc/reflection/v1alpha/reflection.proto",
+                "google/protobuf/descriptor.proto"
+              ],
+              "protoRoot": "node_modules/@restorecommerce/protos/",
+              "addr": "0.0.0.0:50051"
+            }
+          ]
+        },
+        "client": {
+          "acs-srv": {
+            "publisher": {
+              "name": "static",
+              "instances": [
+                "grpc://access-control-srv:50051"
+              ]
+            }
+          }
+        }
+      }
+
+rendering-srv:
+  env:
+    extras:
+      - name: redis__host
+        value: redis-master
+      - name: logger__elasticsearch__clientOpts__node
+        value: http://elasticsearch-master:9200
+  config:
+    literal: |
+      {
+        "server": {
+          "transports": [
+            {
+              "name": "grpcRendering",
+              "provider": "grpc",
+              "services": {
+                "io-restorecommerce-rendering-cis": "io.restorecommerce.commandinterface.Service",
+                "io-restorecommerce-rendering-reflection": "grpc.reflection.v1alpha.ServerReflection"
+              },
+              "protos": [
+                "io/restorecommerce/commandinterface.proto",
+                "grpc/reflection/v1alpha/reflection.proto"
+              ],
+              "protoRoot": "node_modules/@restorecommerce/protos/",
+              "addr": "0.0.0.0:50051"
+            }
+          ]
+        }
+      }
+
+minio:
+  accessKey: REPLACE_ME_ACCESS
+  secretKey: REPLACE_ME_SECRET
+  persistence:
+    size: 10Gi
+
+kafka:
+  zookeeper:
+    enabled: false
+  externalZookeeper:
+    servers:
+      - "zookeeper:2181"
+  deleteTopicEnable: true
+  autoCreateTopicsEnable: true
+
+kafka-manager:
+  zkHosts: "zookeeper:2181"
+  applicationSecret: "REPLACE_ME"
+  basicAuth:
+    password: "REPLACE_ME"
+    ldap:
+      password: "REPLACE_ME"
+
+redis:
+  usePassword: false
+
+elasticsearch:
+  antiAffinity: "soft"
+  volumeClaimTemplate:
+    accessModes: [ "ReadWriteOnce" ]
+    resources:
+      requests:
+        storage: 10Gi
+  replicas: 1
+
+kibana:
+  fullnameOverride: kibana
+  elasticsearchHosts: "http://elasticsearch-master:9200"

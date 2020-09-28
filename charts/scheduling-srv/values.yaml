@@ -1,0 +1,111 @@
+# Default values for scheduling-srv.
+
+# replicaCount -- Replica count of the deployment
+replicaCount: 1
+
+image:
+  # image.repository -- Image to be used for deployment
+  repository: restorecommerce/scheduling-srv
+
+  # image.pullPolicy -- Pull policy of the deployment
+  pullPolicy: IfNotPresent
+
+  # image.tag -- Image tag
+  tag: 0.1.4
+
+# imagePullSecrets -- List of secrets for images
+imagePullSecrets: []
+
+# nameOverride -- Name override for all resources
+nameOverride: ""
+
+# fullnameOverride -- Full name override for all resources
+fullnameOverride: ""
+
+serviceAccount:
+  # serviceAccount.create -- Specifies whether a service account should be created
+  create: true
+
+  # serviceAccount.annotations -- Annotations to add to the service account
+  annotations: {}
+
+  # serviceAccount.name -- The name of the service account to use.
+  # If not set and serviceAccount.create is true, a name is generated using the fullname template
+  name: ""
+
+# podAnnotations -- Any extra annotations for all pods
+podAnnotations: {}
+
+# podSecurityContext -- Security context override for all pods
+podSecurityContext: {}
+  # fsGroup: 2000
+
+# securityContext -- Security context override for all containers
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  # service.type -- Service type to be used
+  type: ClusterIP
+
+  # service.port -- Port to be exposed on the service
+  port: 50051
+
+# resources -- Any resource configuration applied to all pods
+resources: {}
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  # autoscaling.enabled -- Enable HPA
+  enabled: false
+
+  # autoscaling.minReplicas -- Min amount of replicas for HPA
+  minReplicas: 1
+
+  # autoscaling.maxReplicas -- Max amount of replicas for HPA
+  maxReplicas: 100
+
+  # autoscaling.targetCPUUtilizationPercentage -- Target CPU usage for HPA
+  targetCPUUtilizationPercentage: 80
+
+  # autoscaling.targetMemoryUtilizationPercentage -- Target memory usage for HPA
+  targetMemoryUtilizationPercentage: 80
+
+# nodeSelector -- Specify the nodeSelector for all pods
+nodeSelector: {}
+
+# tolerations -- Specify the tolerations for all pods
+tolerations: []
+
+# affinity -- Specify the affinity for all pods
+affinity: {}
+
+env:
+  # env.nodeEnv -- The selected node environment and config
+  nodeEnv: production
+
+  # env.extras -- Any extra environment variables appended to all pods
+  extras: []
+
+# Override the config of the container
+config:
+  # config.name -- Name of the config map to be mounted.
+  # If specified, config will be appended to the node environment automatically
+  name: ""
+
+  # config.file -- Name of the file in the config map
+  file: "config_production_override.json"
+
+  # config.literal -- Provide the literal config through this string.
+  # Has to be in a JSON format
+  literal: ""

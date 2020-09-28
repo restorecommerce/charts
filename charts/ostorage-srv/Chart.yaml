@@ -1,0 +1,10 @@
+apiVersion: v2
+name: ostorage-srv
+description: A Helm chart for restorecommerce ostorage-srv
+type: application
+version: 0.1.0
+appVersion: 0.1.3
+icon: https://avatars0.githubusercontent.com/u/8339525
+home: https://docs.restorecommerce.io/ostorage-srv/index.html
+sources:
+  - https://github.com/restorecommerce/ostorage-srv
