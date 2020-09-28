@@ -53,6 +53,16 @@ for CHART_DIR in ./charts/*; do
 done
 ```
 
+### Packaging
+
+Packaging uses the [helm](https://helm.sh/) tool
+
+```bash
+for CHART_DIR in ./charts/*; do
+  helm package "${CHART_DIR}" --destination .cr-release-packages --dependency-update
+done
+```
+
 ### Releasing
 
 Releasing uses the [chart-releaser](https://github.com/helm/chart-releaser) tool
