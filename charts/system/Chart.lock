@@ -1,0 +1,45 @@
+dependencies:
+- name: identity-srv
+  repository: https://restorecommerce.github.io/helm/
+  version: 0.1.0
+- name: notification-srv
+  repository: https://restorecommerce.github.io/helm/
+  version: 0.1.0
+- name: access-control-srv
+  repository: https://restorecommerce.github.io/helm/
+  version: 0.1.0
+- name: ostorage-srv
+  repository: https://restorecommerce.github.io/helm/
+  version: 0.1.0
+- name: scheduling-srv
+  repository: https://restorecommerce.github.io/helm/
+  version: 0.1.0
+- name: rendering-srv
+  repository: https://restorecommerce.github.io/helm/
+  version: 0.1.0
+- name: pdf-rendering-srv
+  repository: https://restorecommerce.github.io/helm/
+  version: 0.1.0
+- name: minio
+  repository: https://helm.min.io
+  version: 7.0.1
+- name: zookeeper
+  repository: https://charts.bitnami.com/bitnami
+  version: 5.21.9
+- name: kafka
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.8.5
+- name: kafka-manager
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 2.3.2
+- name: redis
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.0.4
+- name: elasticsearch
+  repository: https://helm.elastic.co
+  version: 7.9.1
+- name: kibana
+  repository: https://helm.elastic.co
+  version: 7.9.1
+digest: sha256:ddc4d590d9467bf872eaaa8b6ed21b0193302add9a78fc92484bb5ef40b78c0a
+generated: "2020-09-28T21:53:31.607501641+03:00"

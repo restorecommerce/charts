@@ -9,6 +9,7 @@ This repository contains helm charts for the following services:
 * [pdf-rendering-srv](./charts/pdf-rendering-srv)
 * [rendering-srv](./charts/rendering-srv)
 * [scheduling-srv](./charts/scheduling-srv)
+* [system](./charts/system)
 
 ## Installation
 

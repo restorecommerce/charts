@@ -1,2 +1,3 @@
 owner: restorecommerce
 git-repo: helm
+charts-repo: https://restorecommerce.github.io/helm
