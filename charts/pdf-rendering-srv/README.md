@@ -1,10 +1,16 @@
 # pdf-rendering-srv
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.0](https://img.shields.io/badge/AppVersion-0.1.0-informational?style=flat-square)
 
 A Helm chart for restorecommerce pdf-rendering-srv
 
 **Homepage:** <https://docs.restorecommerce.io/pdf-rendering-srv/index.html>
+
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| restorecommerce | info@restorecommerce.io | https://restorecommerce.io/ |
 
 ## Source Code
 
@@ -20,9 +26,6 @@ A Helm chart for restorecommerce pdf-rendering-srv
 | autoscaling.minReplicas | int | `1` | Min amount of replicas for HPA |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` | Target CPU usage for HPA |
 | autoscaling.targetMemoryUtilizationPercentage | int | `80` | Target memory usage for HPA |
-| config.file | string | `"config_production_override.json"` | Name of the file in the config map |
-| config.literal | string | `""` | Provide the literal config through this string. Has to be in a JSON format |
-| config.name | string | `""` | Name of the config map to be mounted. If specified, config will be appended to the node environment automatically |
 | env.extras | list | `[]` | Any extra environment variables appended to all pods |
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |

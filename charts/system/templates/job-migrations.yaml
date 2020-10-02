@@ -1,0 +1,40 @@
+{{- if .Values.jobs.migrations.enabled }}
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "system.fullname" . }}-migrations
+  labels:
+    {{- include "system.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook-delete-policy": before-hook-creation
+spec:
+  activeDeadlineSeconds: {{ .Values.jobs.migrations.activeDeadlineSeconds }}
+  backoffLimit: {{ .Values.jobs.migrations.backoffLimit }}
+
+  template:
+    metadata:
+      labels:
+        {{- include "system.labels" . | nindent 8 }}
+    spec:
+      {{- if .Values.jobs.migrations.tolerations }}
+      tolerations:
+        {{- toYaml .Values.jobs.migrations.tolerations | nindent 8 }}
+      {{- end }}
+      securityContext:
+        runAsUser: {{ .Values.jobs.migrations.securityContext.runAsUser }}
+        fsGroup: {{ .Values.jobs.migrations.securityContext.fsGroup }}
+      restartPolicy: OnFailure
+      containers:
+        - name: migrations
+          image: "{{ .Values.jobs.migrations.image.repository }}:{{ .Values.jobs.migrations.image.tag }}"
+          args:
+            - echo
+            - hello
+          resources:
+            {{- toYaml .Values.jobs.migrations.resources | nindent 12 }}
+    {{- if .Values.jobs.migrations.nodeSelector }}
+      nodeSelector:
+        {{- toYaml .Values.jobs.migrations.nodeSelector | nindent 8 }}
+    {{- end }}
+{{- end }}

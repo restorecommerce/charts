@@ -1,10 +1,16 @@
 # rendering-srv
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.2](https://img.shields.io/badge/AppVersion-0.1.2-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.2](https://img.shields.io/badge/AppVersion-0.1.2-informational?style=flat-square)
 
 A Helm chart for restorecommerce rendering-srv
 
 **Homepage:** <https://docs.restorecommerce.io/rendering-srv/index.html>
+
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| restorecommerce | info@restorecommerce.io | https://restorecommerce.io/ |
 
 ## Source Code
 
@@ -26,7 +32,7 @@ A Helm chart for restorecommerce rendering-srv
 | env.extras | list | `[]` | Any extra environment variables appended to all pods |
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |
-| handlebars | object | `{"helper-list.js":"module.exports = function listHandlebarsExtensions(hbs, opts) {\n  hbs.registerHelper(\"list\", function(items, options) {\n    const itemsAsHtml = items.map(item => \"<li>\" + options.fn(item) + \"</li>\");\n    return \"<ul>\\n\" + itemsAsHtml.join(\"\\n\") + \"\\n</ul>\";\n  });\n};"}` | Handlebar helpers to be injected in the container More information: https://github.com/restorecommerce/handlebars-helperized |
+| handlebars | object | `{"helper-list.js":"module.exports = function listHandlebarsExtensions(hbs, opts) {\n  hbs.registerHelper(\"list\", function(items, options) {\n    const itemsAsHtml = items.map(item => \"<li>\" + options.fn(item) + \"</li>\");\n    return \"<ul>\\n\" + itemsAsHtml.join(\"\\n\") + \"\\n</ul>\";\n  });\n};\n"}` | Handlebar helpers to be injected in the container More information: https://github.com/restorecommerce/handlebars-helperized |
 | image.pullPolicy | string | `"IfNotPresent"` | Pull policy of the deployment |
 | image.repository | string | `"restorecommerce/rendering-srv"` | Image to be used for deployment |
 | image.tag | string | `"0.1.2"` | Image tag |

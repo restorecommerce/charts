@@ -1,7 +1,0 @@
-helm-extra-args: --timeout 600
-check-version-increment: true
-debug: true
-lint-conf: ./chart-testing/lintconf.yaml
-chart-yaml-schema: ./chart-testing/chart_schema.yaml
-chart-dirs:
-  - charts/*
