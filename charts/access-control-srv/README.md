@@ -6,6 +6,12 @@ A Helm chart for restorecommerce access-control-srv
 
 **Homepage:** <https://docs.restorecommerce.io/access-control-srv/index.html>
 
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| restorecommerce | info@restorecommerce.io | https://restorecommerce.io/ |
+
 ## Source Code
 
 * <https://github.com/restorecommerce/access-control-srv>

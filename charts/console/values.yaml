@@ -1,11 +1,11 @@
-# Default values for pdf-rendering-srv.
+# Default values for console.
 
 # replicaCount -- Replica count of the deployment
 replicaCount: 1
 
 image:
   # image.repository -- Image to be used for deployment
-  repository: restorecommerce/pdf-rendering-srv
+  repository: restorecommerce/console
 
   # image.pullPolicy -- Pull policy of the deployment
   pullPolicy: IfNotPresent
@@ -54,7 +54,7 @@ service:
   type: ClusterIP
 
   # service.port -- Port to be exposed on the service
-  port: 9000
+  port: 80
 
 # resources -- Any resource configuration applied to all pods
 resources: {}

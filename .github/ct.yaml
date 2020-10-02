@@ -4,4 +4,4 @@ debug: true
 lint-conf: ./chart-testing/lintconf.yaml
 chart-yaml-schema: ./chart-testing/chart_schema.yaml
 chart-dirs:
-  - charts/*
+  - charts

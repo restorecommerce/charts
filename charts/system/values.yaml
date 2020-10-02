@@ -1,4 +1,23 @@
+jobs:
+  migrations:
+    enabled: true
+    activeDeadlineSeconds: 3600
+    backoffLimit: 6
+    image:
+      pullSecrets: []
+      pullPolicy: IfNotPresent
+      repository: busybox
+      tag: latest
+    resources:
+      requests:
+        cpu: 250m
+        memory: 200Mi
+    securityContext:
+      runAsUser: 1000
+      fsGroup: 1000
+
 identity-srv:
+  fullnameOverride: identity-srv
   env:
     extras:
       - name: authorization__cache__host
@@ -35,6 +54,7 @@ identity-srv:
       }
 
 notification-srv:
+  fullnameOverride: notification-srv
   env:
     extras:
       - name: redis__host
@@ -67,6 +87,7 @@ notification-srv:
       }
 
 access-control-srv:
+  fullnameOverride: access-control-srv
   env:
     extras:
       - name: authorization__cache__host
@@ -77,6 +98,7 @@ access-control-srv:
         value: http://elasticsearch-master:9200
 
 ostorage-srv:
+  fullnameOverride: ostorage-srv
   env:
     extras:
       - name: authorization__cache__host
@@ -125,6 +147,7 @@ ostorage-srv:
       }
 
 scheduling-srv:
+  fullnameOverride: scheduling-srv
   env:
     extras:
       - name: authorization__cache__host
@@ -170,6 +193,7 @@ scheduling-srv:
       }
 
 rendering-srv:
+  fullnameOverride: rendering-srv
   env:
     extras:
       - name: redis__host
@@ -199,13 +223,21 @@ rendering-srv:
         }
       }
 
+pdf-rendering-srv:
+  fullnameOverride: pdf-rendering-srv
+
+zookeeper:
+  fullnameOverride: zookeeper
+
 minio:
+  fullnameOverride: minio
   accessKey: REPLACE_ME_ACCESS
   secretKey: REPLACE_ME_SECRET
   persistence:
     size: 10Gi
 
 kafka:
+  fullnameOverride: kafka
   zookeeper:
     enabled: false
   externalZookeeper:
@@ -215,6 +247,7 @@ kafka:
   autoCreateTopicsEnable: true
 
 kafka-manager:
+  fullnameOverride: kafka-manager
   zkHosts: "zookeeper:2181"
   applicationSecret: "REPLACE_ME"
   basicAuth:
@@ -223,12 +256,13 @@ kafka-manager:
       password: "REPLACE_ME"
 
 redis:
+  fullnameOverride: redis
   usePassword: false
 
 elasticsearch:
   antiAffinity: "soft"
   volumeClaimTemplate:
-    accessModes: [ "ReadWriteOnce" ]
+    accessModes: ["ReadWriteOnce"]
     resources:
       requests:
         storage: 10Gi

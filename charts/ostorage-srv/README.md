@@ -6,6 +6,12 @@ A Helm chart for restorecommerce ostorage-srv
 
 **Homepage:** <https://docs.restorecommerce.io/ostorage-srv/index.html>
 
+## Maintainers
+
+| Name | Email | Url |
+| ---- | ------ | --- |
+| restorecommerce | info@restorecommerce.io | https://restorecommerce.io/ |
+
 ## Source Code
 
 * <https://github.com/restorecommerce/ostorage-srv>
