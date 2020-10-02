@@ -14,8 +14,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Add restorecommerce helm repo
-        run: helm repo add restorecommerce https://restorecommerce.github.io/helm/
+      - name: Add helm repos
+        run: .github/add-repos.sh
       - name: Run chart-testing (lint)
         uses: helm/chart-testing-action@master
         with:
