@@ -5,3 +5,9 @@ lint-conf: ./chart-testing/lintconf.yaml
 chart-yaml-schema: ./chart-testing/chart_schema.yaml
 chart-dirs:
   - charts
+chart-repos:
+  - restorecommerce=https://restorecommerce.github.io/helm/
+  - minio=https://helm.min.io
+  - bitnami=https://charts.bitnami.com/bitnami
+  - elastic=https://helm.elastic.co
+  - stable=https://kubernetes-charts.storage.googleapis.com
