@@ -15,6 +15,25 @@ jobs:
     securityContext:
       runAsUser: 1000
       fsGroup: 1000
+  dataImport:
+    enabled: true
+    activeDeadlineSeconds: 3600
+    backoffLimit: 6
+    image:
+      pullSecrets: []
+      pullPolicy: IfNotPresent
+      repository: busybox
+      tag: latest
+    resources:
+      requests:
+        cpu: 250m
+        memory: 200Mi
+    securityContext:
+      runAsUser: 1000
+      fsGroup: 1000
+    env:
+      API_KEY: FACADE_API_KEY
+      ENDPOINT: http://facade-srv:5000/graphql
 
 identity-srv:
   fullnameOverride: identity-srv

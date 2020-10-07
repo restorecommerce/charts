@@ -1,25 +1,25 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/helm/
-  version: 0.1.0
+  version: 0.1.1
 - name: notification-srv
   repository: https://restorecommerce.github.io/helm/
-  version: 0.1.0
+  version: 0.1.1
 - name: access-control-srv
   repository: https://restorecommerce.github.io/helm/
-  version: 0.1.0
+  version: 0.1.1
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/helm/
-  version: 0.1.0
+  version: 0.1.1
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/helm/
-  version: 0.1.0
+  version: 0.1.1
 - name: rendering-srv
   repository: https://restorecommerce.github.io/helm/
-  version: 0.1.0
+  version: 0.1.1
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/helm/
-  version: 0.1.0
+  version: 0.1.1
 - name: minio
   repository: https://helm.min.io
   version: 7.0.1
@@ -41,5 +41,5 @@ dependencies:
 - name: kibana
   repository: https://helm.elastic.co
   version: 7.9.1
-digest: sha256:ddc4d590d9467bf872eaaa8b6ed21b0193302add9a78fc92484bb5ef40b78c0a
-generated: "2020-09-28T21:53:31.607501641+03:00"
+digest: sha256:4c97a3efa7a7e33dee59d9960a4d8783214b2a76a55a7fe7795da4e1cca289fd
+generated: "2020-10-07T22:58:06.310449593+03:00"

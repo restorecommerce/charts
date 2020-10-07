@@ -28,12 +28,22 @@ It uses the [helmfile](https://github.com/roboll/helmfile) tool to specify all r
 
 ## Development
 
+### Pre-Commit
+
+There is a convenience script to execute all dev scripts in order:
+
+```bash
+./pre-commit.sh
+```
+
+If you wish to execute each step manually, they are described below:
+
 ### Linting
 
 Linting uses the [chart-testing](https://github.com/helm/chart-testing) tool
 
 ```bash
-ct lint
+ct lint --all --config .github/ct.yaml 
 ```
 
 ### Documentation Generation
@@ -49,25 +59,21 @@ helm-docs
 Validation uses the [kubeval](https://github.com/instrumenta/kubeval) tool
 
 ```bash
+KUBERNETES_VERSION=1.19.2 ./.github/kubeval.sh
+```
+
+### Update Dependencies and Lockfiles
+
+```bash
 for CHART_DIR in ./charts/*; do
-  helm template "${CHART_DIR}" | kubeval --strict --ignore-missing-schemas
+  helm dependency update "${CHART_DIR}"
 done
 ```
 
-### Packaging
+## Packaging and Releasing
 
 Packaging uses the [helm](https://helm.sh/) tool
 
-```bash
-for CHART_DIR in ./charts/*; do
-  helm package "${CHART_DIR}" --destination .cr-release-packages --dependency-update
-done
-```
-
-### Releasing
-
 Releasing uses the [chart-releaser](https://github.com/helm/chart-releaser) tool
 
-```bash
-cr upload --config chart-releaser.yaml --token <GITHUB_TOKEN>
-```
+Both tasks are executed by CI/CD when a branch is merged into master
