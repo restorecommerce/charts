@@ -1,0 +1,42 @@
+{{- if .Values.jobs.dataImport.enabled }}
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "system.fullname" . }}-migrations
+  labels:
+    {{- include "system.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": post-install
+    "helm.sh/hook-delete-policy": before-hook-creation
+spec:
+  activeDeadlineSeconds: {{ .Values.jobs.dataImport.activeDeadlineSeconds }}
+  backoffLimit: {{ .Values.jobs.dataImport.backoffLimit }}
+
+  template:
+    metadata:
+      labels:
+        {{- include "system.labels" . | nindent 8 }}
+    spec:
+      {{- if .Values.jobs.dataImport.tolerations }}
+      tolerations:
+        {{- toYaml .Values.jobs.dataImport.tolerations | nindent 8 }}
+      {{- end }}
+      securityContext:
+        runAsUser: {{ .Values.jobs.dataImport.securityContext.runAsUser }}
+        fsGroup: {{ .Values.jobs.dataImport.securityContext.fsGroup }}
+      restartPolicy: OnFailure
+      containers:
+        - name: dataImport
+          image: "{{ .Values.jobs.dataImport.image.repository }}:{{ .Values.jobs.dataImport.image.tag }}"
+          env:
+            - name: API_KEY
+              value: {{ .Values.jobs.dataImport.env.API_KEY }}
+            - name: ENDPOINT
+              value: {{ .Values.jobs.dataImport.env.ENDPOINT }}
+          resources:
+            {{- toYaml .Values.jobs.dataImport.resources | nindent 12 }}
+    {{- if .Values.jobs.dataImport.nodeSelector }}
+      nodeSelector:
+        {{- toYaml .Values.jobs.migrations.nodeSelector | nindent 8 }}
+    {{- end }}
+{{- end }}
