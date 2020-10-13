@@ -11,7 +11,7 @@ image:
   pullPolicy: IfNotPresent
 
   # image.tag -- Image tag
-  tag: 0.1.5
+  tag: 0.1.9
 
 # imagePullSecrets -- List of secrets for images
 imagePullSecrets: []
