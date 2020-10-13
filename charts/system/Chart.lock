@@ -1,7 +1,7 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/helm/
-  version: 0.1.1
+  version: 0.1.2
 - name: notification-srv
   repository: https://restorecommerce.github.io/helm/
   version: 0.1.1
@@ -41,5 +41,5 @@ dependencies:
 - name: kibana
   repository: https://helm.elastic.co
   version: 7.9.1
-digest: sha256:4c97a3efa7a7e33dee59d9960a4d8783214b2a76a55a7fe7795da4e1cca289fd
-generated: "2020-10-07T22:58:06.310449593+03:00"
+digest: sha256:c4bf78cb4a146d70bfb274602b8e8dcf0f1fc701be91b598cd2af4112f83c51e
+generated: "2020-10-13T15:04:20.630755579+03:00"
