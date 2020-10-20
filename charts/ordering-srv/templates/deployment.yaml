@@ -1,0 +1,92 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "ordering-srv.fullname" . }}
+  labels:
+    {{- include "ordering-srv.labels" . | nindent 4 }}
+spec:
+{{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+{{- end }}
+  selector:
+    matchLabels:
+      {{- include "ordering-srv.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+        {{- with .Values.podAnnotations }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
+      labels:
+        {{- include "ordering-srv.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "ordering-srv.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: grpc
+              containerPort: 50051
+              protocol: TCP
+          env:
+            - name: NODE_ENV
+              value: {{ include "ordering-srv.nodeEnv" . }}
+            {{- if .Values.env.extras }}
+            {{- toYaml .Values.env.extras | nindent 12 }}
+            {{- end }}
+          livenessProbe:
+            initialDelaySeconds: 10
+            periodSeconds: 30
+            exec:
+              command:
+                - /bin/grpc_health_probe
+                - -addr=:50051
+          readinessProbe:
+            initialDelaySeconds: 10
+            periodSeconds: 15
+            exec:
+              command:
+                - /bin/grpc_health_probe
+                - -addr=:50051
+                - -service=readiness
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          {{- if or .Values.config.name .Values.config.literal }}
+          volumeMounts:
+            - name: config
+              mountPath: "/home/node/ordering-srv/cfg/config_{{ .Values.env.nodeEnv }}_override.json"
+              subPath: {{ .Values.config.file | quote }}
+          {{- end }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- if or .Values.config.name .Values.config.literal }}
+      volumes:
+        - name: config
+          configMap:
+            {{- with .Values.config.name }}
+            name: {{ . | quote }}
+            {{- end }}
+            {{- if .Values.config.literal }}
+            name: "{{ include "ordering-srv.fullname" . }}-config"
+            {{- end }}
+      {{- end }}

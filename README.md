@@ -3,12 +3,20 @@
 This repository contains helm charts for the following services:
 
 * [access-control-srv](./charts/access-control-srv)
+* [catalog-srv](./charts/catalog-srv)
+* [console](./charts/console)
+* [fulfillment-srv](./charts/fulfillment-srv)
 * [identity-srv](./charts/identity-srv)
+* [indexing-srv](./charts/indexing-srv)
+* [invoicing-srv](./charts/invoicing-srv)
 * [notification-srv](./charts/notification-srv)
+* [ordering-srv](./charts/ordering-srv)
 * [ostorage-srv](./charts/ostorage-srv)
+* [payment-srv](./charts/payment-srv)
 * [pdf-rendering-srv](./charts/pdf-rendering-srv)
 * [rendering-srv](./charts/rendering-srv)
 * [scheduling-srv](./charts/scheduling-srv)
+* [store-front](./charts/store-front)
 * [system](./charts/system)
 
 ## Installation

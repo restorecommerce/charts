@@ -8,7 +8,7 @@ image:
   repository: restorecommerce/pdf-rendering-srv
 
   # image.pullPolicy -- Pull policy of the deployment
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
   # image.tag -- Image tag
   tag: 0.1.0
