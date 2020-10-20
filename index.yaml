@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   access-control-srv:
   - apiVersion: v2
+    appVersion: 0.1.6
+    created: "2020-10-20T08:43:45.33785746Z"
+    description: A Helm chart for restorecommerce access-control-srv
+    digest: 88a8c060c8efddbff106279f191c3bd45b464e87a86dc893f72bb9515f7ce679
+    home: https://docs.restorecommerce.io/access-control-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: access-control-srv
+    sources:
+    - https://github.com/restorecommerce/access-control-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/access-control-srv-0.1.2/access-control-srv-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 0.1.3
     created: "2020-10-02T14:47:08.478152785Z"
     description: A Helm chart for restorecommerce access-control-srv
@@ -33,7 +51,43 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/access-control-srv-0.1.0/access-control-srv-0.1.0.tgz
     version: 0.1.0
+  catalog-srv:
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-10-20T08:43:45.624617523Z"
+    description: A Helm chart for restorecommerce catalog-srv
+    digest: f321af6e108751acfc3436e1cf459e02b1943d1c5706ba0d4fa116ad87838442
+    home: https://docs.restorecommerce.io/catalog-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: catalog-srv
+    sources:
+    - https://github.com/restorecommerce/catalog-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/catalog-srv-0.1.0/catalog-srv-0.1.0.tgz
+    version: 0.1.0
   console:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2020-10-20T08:43:45.902344587Z"
+    description: A Helm chart for restorecommerce console
+    digest: 08041fef3b746d51fc35a3ef0ee8d166c642bec26dcae94f31f521d8745075cd
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: console
+    sources:
+    - https://github.com/restorecommerce/console
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/console-0.1.1/console-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2020-10-02T14:47:08.619653402Z"
@@ -51,7 +105,44 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/console-0.1.0/console-0.1.0.tgz
     version: 0.1.0
+  fulfillment-srv:
+  - apiVersion: v2
+    appVersion: 0.0.17
+    created: "2020-10-20T08:43:46.167260253Z"
+    description: A Helm chart for restorecommerce fulfillment-srv
+    digest: dd907c38e789a7349c99b81bfc47d3d7e6b563e0f2787f73b438e445d8a4429e
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/fulfillment-srv-0.1.0/fulfillment-srv-0.1.0.tgz
+    version: 0.1.0
   identity-srv:
+  - apiVersion: v2
+    appVersion: 0.1.12
+    created: "2020-10-20T08:43:46.433389921Z"
+    description: A Helm chart for restorecommerce identity-srv
+    digest: 911bd166127ddf96a3299d02b2069ed4f671c8f4951ff1ab1d94b96bc96b91a9
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/identity-srv-0.1.3/identity-srv-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.9
     created: "2020-10-13T12:03:16.148929866Z"
@@ -102,7 +193,63 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/identity-srv-0.1.0/identity-srv-0.1.0.tgz
     version: 0.1.0
+  indexing-srv:
+  - apiVersion: v2
+    appVersion: 0.0.13
+    created: "2020-10-20T08:43:46.733238784Z"
+    description: A Helm chart for restorecommerce indexing-srv
+    digest: 27b636b36eafd463f2f75a57b3accbd3fa95e50c949f90b10e00e7f7c8c1d78f
+    home: https://docs.restorecommerce.io/indexing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: indexing-srv
+    sources:
+    - https://github.com/restorecommerce/indexing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/indexing-srv-0.1.0/indexing-srv-0.1.0.tgz
+    version: 0.1.0
+  invoicing-srv:
+  - apiVersion: v2
+    appVersion: 0.0.8
+    created: "2020-10-20T08:43:47.003265153Z"
+    description: A Helm chart for restorecommerce invoicing-srv
+    digest: ffbe917d009f20ec5b840fceae52edb4e807c47ac3015e498d1cb1a4036ecfbf
+    home: https://docs.restorecommerce.io/invoicing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: invoicing-srv
+    sources:
+    - https://github.com/restorecommerce/invoicing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/invoicing-srv-0.1.0/invoicing-srv-0.1.0.tgz
+    version: 0.1.0
   notification-srv:
+  - apiVersion: v2
+    appVersion: 0.1.5
+    created: "2020-10-20T08:43:47.280788103Z"
+    description: A Helm chart for restorecommerce notification-srv
+    digest: c5ff9559ad7bd60a856fb3325eda2a194300069f5c5417de980eb302aaea71a2
+    home: https://docs.restorecommerce.io/notification-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: notification-srv
+    sources:
+    - https://github.com/restorecommerce/notification-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/notification-srv-0.1.2/notification-srv-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.2
     created: "2020-10-02T14:47:08.933226614Z"
@@ -135,7 +282,44 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/notification-srv-0.1.0/notification-srv-0.1.0.tgz
     version: 0.1.0
+  ordering-srv:
+  - apiVersion: v2
+    appVersion: 0.0.3
+    created: "2020-10-20T08:43:47.580528709Z"
+    description: A Helm chart for restorecommerce ordering-srv
+    digest: c9c25dad9a45ecaf18729186f99248abc35f3a917798a2e0162c1d5086f2a3e1
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/ordering-srv-0.1.0/ordering-srv-0.1.0.tgz
+    version: 0.1.0
   ostorage-srv:
+  - apiVersion: v2
+    appVersion: 0.1.6
+    created: "2020-10-20T08:43:47.856637362Z"
+    description: A Helm chart for restorecommerce ostorage-srv
+    digest: dab6457a4d555ae4a934d09c14f88241a1fd4d38fdf043c1c9a0eec64a7b5cc3
+    home: https://docs.restorecommerce.io/ostorage-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ostorage-srv
+    sources:
+    - https://github.com/restorecommerce/ostorage-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/ostorage-srv-0.1.2/ostorage-srv-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.3
     created: "2020-10-02T14:47:09.06108511Z"
@@ -168,7 +352,44 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/ostorage-srv-0.1.0/ostorage-srv-0.1.0.tgz
     version: 0.1.0
+  payment-srv:
+  - apiVersion: v2
+    appVersion: 0.0.2
+    created: "2020-10-20T08:43:48.125302702Z"
+    description: A Helm chart for restorecommerce payment-srv
+    digest: 12c36064e1686d6bdd72a39d4d65da9c97d6cb5fa33e7738a3db03c9f7642712
+    home: https://docs.restorecommerce.io/payment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: payment-srv
+    sources:
+    - https://github.com/restorecommerce/payment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/payment-srv-0.1.0/payment-srv-0.1.0.tgz
+    version: 0.1.0
   pdf-rendering-srv:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2020-10-20T08:43:48.389903754Z"
+    description: A Helm chart for restorecommerce pdf-rendering-srv
+    digest: 40f67573fc3bbebb3c60c42d68a6a8a92b4d6df836b0e618d330c884cfc5bba7
+    home: https://docs.restorecommerce.io/pdf-rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: pdf-rendering-srv
+    sources:
+    - https://github.com/restorecommerce/pdf-rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/pdf-rendering-srv-0.1.2/pdf-rendering-srv-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2020-10-02T14:47:09.195627001Z"
@@ -203,6 +424,24 @@ entries:
     version: 0.1.0
   rendering-srv:
   - apiVersion: v2
+    appVersion: 0.1.5
+    created: "2020-10-20T08:43:48.664813312Z"
+    description: A Helm chart for restorecommerce rendering-srv
+    digest: 9ec7ea301647157ff37c9020d28b9261d1336e5992bc5e91c9b2bdeb5f343519
+    home: https://docs.restorecommerce.io/rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: rendering-srv
+    sources:
+    - https://github.com/restorecommerce/rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/rendering-srv-0.1.2/rendering-srv-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 0.1.2
     created: "2020-10-02T14:47:09.379611562Z"
     description: A Helm chart for restorecommerce rendering-srv
@@ -236,6 +475,24 @@ entries:
     version: 0.1.0
   scheduling-srv:
   - apiVersion: v2
+    appVersion: 0.1.7
+    created: "2020-10-20T08:43:49.187062294Z"
+    description: A Helm chart for restorecommerce scheduling-srv
+    digest: 4b9e7fd4513f5ed6a1d78341f414b20bd1c575241b09d1d3e61857402febb690
+    home: https://docs.restorecommerce.io/scheduling-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: scheduling-srv
+    sources:
+    - https://github.com/restorecommerce/scheduling-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/scheduling-srv-0.1.2/scheduling-srv-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 0.1.4
     created: "2020-10-02T14:47:09.515317272Z"
     description: A Helm chart for restorecommerce scheduling-srv
@@ -268,6 +525,23 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/scheduling-srv-0.1.0/scheduling-srv-0.1.0.tgz
     version: 0.1.0
   store-front:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2020-10-20T08:43:49.457915232Z"
+    description: A Helm chart for restorecommerce store-front
+    digest: 281c29127be09c1781ca156f95e1bd426afe668dbd970bfee07af16392d762b9
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: store-front
+    sources:
+    - https://github.com/restorecommerce/store-front
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/store-front-0.1.1/store-front-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2020-10-02T14:47:09.653274717Z"
