@@ -50,17 +50,16 @@ spec:
             periodSeconds: 30
             exec:
               command:
-                - sh
-                - -c
-                - NODE_OPTIONS=--no-deprecation npm run --silent healthcheck
+                - /bin/grpc_health_probe
+                - -addr=:50051
           readinessProbe:
             initialDelaySeconds: 10
-            periodSeconds: 30
+            periodSeconds: 15
             exec:
               command:
-                - sh
-                - -c
-                - NODE_OPTIONS=--no-deprecation npm run --silent healthcheck
+                - /bin/grpc_health_probe
+                - -addr=:50051
+                - -service=readiness
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:

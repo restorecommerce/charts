@@ -8,10 +8,10 @@ image:
   repository: restorecommerce/rendering-srv
 
   # image.pullPolicy -- Pull policy of the deployment
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
   # image.tag -- Image tag
-  tag: 0.1.2
+  tag: 0.1.5
 
 # imagePullSecrets -- List of secrets for images
 imagePullSecrets: []

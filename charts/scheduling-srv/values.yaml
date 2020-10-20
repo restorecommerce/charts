@@ -8,10 +8,10 @@ image:
   repository: restorecommerce/scheduling-srv
 
   # image.pullPolicy -- Pull policy of the deployment
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
   # image.tag -- Image tag
-  tag: 0.1.4
+  tag: 0.1.7
 
 # imagePullSecrets -- List of secrets for images
 imagePullSecrets: []

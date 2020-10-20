@@ -8,10 +8,10 @@ image:
   repository: restorecommerce/access-control-srv
 
   # image.pullPolicy -- Pull policy of the deployment
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
   # image.tag -- Image tag
-  tag: 0.1.3
+  tag: 0.1.6
 
 # imagePullSecrets -- List of secrets for images
 imagePullSecrets: []

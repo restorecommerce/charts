@@ -1,7 +1,7 @@
 releases:
   - name: arangodb-crd
     namespace: restorecommerce
-    chart: https://github.com/arangodb/kube-arangodb/releases/download/1.0.7/kube-arangodb-crd-1.0.7.tgz
+    chart: https://github.com/arangodb/kube-arangodb/releases/download/1.1.0/kube-arangodb-crd-1.1.0.tgz
     installed: true
     atomic: true
     cleanupOnFail: true

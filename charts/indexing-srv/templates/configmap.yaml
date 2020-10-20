@@ -1,0 +1,10 @@
+{{- if .Values.config.literal }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "{{ include "indexing-srv.fullname" . }}-config"
+  labels:
+    {{- include "indexing-srv.labels" . | nindent 4 }}
+data:
+  config_production_override.json: {{ .Values.config.literal | quote }}
+{{- end }}
