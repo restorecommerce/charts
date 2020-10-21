@@ -5,7 +5,7 @@ jobs:
     backoffLimit: 6
     image:
       pullSecrets: []
-      pullPolicy: IfNotPresent
+      pullPolicy: Always
       repository: busybox
       tag: latest
     resources:
@@ -21,9 +21,9 @@ jobs:
     backoffLimit: 6
     image:
       pullSecrets: []
-      pullPolicy: IfNotPresent
-      repository: busybox
-      tag: latest
+      pullPolicy: Always
+      repository: restorecommerce/data
+      tag: demo-shop-0.1.0
     resources:
       requests:
         cpu: 250m
@@ -200,7 +200,7 @@ elasticsearch:
     resources:
       requests:
         storage: 10Gi
-  replicas: 1
+  replicas: 2
 
 kibana:
   fullnameOverride: kibana
