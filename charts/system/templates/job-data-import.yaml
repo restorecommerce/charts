@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ include "system.fullname" . }}-migrations
+  name: {{ include "system.fullname" . }}-data-import
   labels:
     {{- include "system.labels" . | nindent 4 }}
   annotations:
@@ -25,8 +25,15 @@ spec:
         runAsUser: {{ .Values.jobs.dataImport.securityContext.runAsUser }}
         fsGroup: {{ .Values.jobs.dataImport.securityContext.fsGroup }}
       restartPolicy: OnFailure
+      initContainers:
+        - name: wait-for-facade
+          image: groundnuty/k8s-wait-for:v1.3
+          imagePullPolicy: Always
+          args:
+            - "service"
+            - "facade-srv"
       containers:
-        - name: dataImport
+        - name: data-import
           image: "{{ .Values.jobs.dataImport.image.repository }}:{{ .Values.jobs.dataImport.image.tag }}"
           env:
             - name: API_KEY

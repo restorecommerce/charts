@@ -1,8 +1,19 @@
 # system
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the restorecommerce system
+
+## WARNING: ArangoDB
+
+Due to how the ArangoDB operator CRD's get deployed, you must manually install the ArangoDB Operator charts.
+
+Replace the `restorecommerce` namespace with your own.
+
+```yaml
+helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.1.0/kube-arangodb-crd-1.1.0.tgz
+helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.1.0/kube-arangodb-1.1.0.tgz
+```
 
 **Homepage:** <https://github.com/restorecommerce/system>
 
