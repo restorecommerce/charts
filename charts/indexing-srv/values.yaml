@@ -5,13 +5,13 @@ replicaCount: 1
 
 image:
   # image.repository -- Image to be used for deployment
-  repository: restorecommerce/indexing-srv
+  repository: ghcr.io/restorecommerce/indexing-srv
 
   # image.pullPolicy -- Pull policy of the deployment
   pullPolicy: Always
 
   # image.tag -- Image tag
-  tag: 0.0.13
+  tag: ""
 
 # imagePullSecrets -- List of secrets for images
 imagePullSecrets: []

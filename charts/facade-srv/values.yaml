@@ -1,11 +1,11 @@
-# Default values for scheduling-srv.
+# Default values for facade-srv.
 
 # replicaCount -- Replica count of the deployment
 replicaCount: 1
 
 image:
   # image.repository -- Image to be used for deployment
-  repository: ghcr.io/restorecommerce/scheduling-srv
+  repository: ghcr.io/restorecommerce/facade-srv
 
   # image.pullPolicy -- Pull policy of the deployment
   pullPolicy: Always
@@ -54,7 +54,7 @@ service:
   type: ClusterIP
 
   # service.port -- Port to be exposed on the service
-  port: 50051
+  port: 5000
 
 # resources -- Any resource configuration applied to all pods
 resources: {}

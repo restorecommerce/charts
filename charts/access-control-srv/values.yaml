@@ -5,13 +5,13 @@ replicaCount: 1
 
 image:
   # image.repository -- Image to be used for deployment
-  repository: restorecommerce/access-control-srv
+  repository: ghcr.io/restorecommerce/access-control-srv
 
   # image.pullPolicy -- Pull policy of the deployment
   pullPolicy: Always
 
   # image.tag -- Image tag
-  tag: 0.1.6
+  tag: ""
 
 # imagePullSecrets -- List of secrets for images
 imagePullSecrets: []

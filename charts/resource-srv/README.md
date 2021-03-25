@@ -1,10 +1,10 @@
-# payment-srv
+# resource-srv
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.3](https://img.shields.io/badge/AppVersion-0.0.3-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.12](https://img.shields.io/badge/AppVersion-0.0.12-informational?style=flat-square)
 
-A Helm chart for restorecommerce payment-srv
+A Helm chart for restorecommerce resource-srv
 
-**Homepage:** <https://docs.restorecommerce.io/payment-srv/index.html>
+**Homepage:** <https://docs.restorecommerce.io/resource-srv/index.html>
 
 ## Maintainers
 
@@ -14,7 +14,7 @@ A Helm chart for restorecommerce payment-srv
 
 ## Source Code
 
-* <https://github.com/restorecommerce/payment-srv>
+* <https://github.com/restorecommerce/resource-srv>
 
 ## Values
 
@@ -33,7 +33,7 @@ A Helm chart for restorecommerce payment-srv
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |
 | image.pullPolicy | string | `"Always"` | Pull policy of the deployment |
-| image.repository | string | `"ghcr.io/restorecommerce/payment-srv"` | Image to be used for deployment |
+| image.repository | string | `"ghcr.io/restorecommerce/resource-srv"` | Image to be used for deployment |
 | image.tag | string | `""` | Image tag |
 | imagePullSecrets | list | `[]` | List of secrets for images |
 | nameOverride | string | `""` | Name override for all resources |
