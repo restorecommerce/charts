@@ -2,8 +2,8 @@ apiVersion: v2
 name: rendering-srv
 description: A Helm chart for restorecommerce rendering-srv
 type: application
-version: 0.1.2
-appVersion: 0.1.5
+version: 0.1.3
+appVersion: 0.1.14
 icon: https://avatars0.githubusercontent.com/u/8339525
 home: https://docs.restorecommerce.io/rendering-srv/index.html
 sources:

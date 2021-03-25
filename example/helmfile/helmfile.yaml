@@ -1,6 +1,7 @@
 helmDefaults:
   wait: true
   createNamespace: true
+  timeout: 1200
 
 environments:
   default:
@@ -19,7 +20,7 @@ repositories:
   - name: elastic
     url: https://helm.elastic.co
   - name: stable
-    url: https://kubernetes-charts.storage.googleapis.com
+    url: https://charts.helm.sh/stable
 
 # Deploy after initial to wait for CRD's to deploy
 helmfiles:
@@ -30,8 +31,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/identity-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -47,8 +47,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/notification-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -62,8 +61,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/access-control-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -79,8 +77,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/ostorage-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -100,8 +97,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/scheduling-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -117,8 +113,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/rendering-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -132,16 +127,14 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/pdf-rendering-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
 
   - name: fulfillment-srv
     namespace: restorecommerce
     chart: ../../charts/fulfillment-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -155,8 +148,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/indexing-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -172,8 +164,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/catalog-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -187,8 +178,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/invoicing-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -202,8 +192,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/ordering-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -217,8 +206,7 @@ releases:
     namespace: restorecommerce
     chart: ../../charts/payment-srv
     installed: true
-    atomic: false
-    wait: false
+    atomic: true
     cleanupOnFail: true
     values:
       - env:
@@ -227,6 +215,29 @@ releases:
               value: redis-master
             - name: logger__elasticsearch__clientOpts__node
               value: http://elasticsearch-master:9200
+
+  - name: resource-srv
+    namespace: restorecommerce
+    chart: ../../charts/resource-srv
+    installed: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - env:
+          extras:
+            - name: redis__host
+              value: redis-master
+            - name: authorization__cache__host
+              value: redis-master
+            - name: logger__elasticsearch__clientOpts__node
+              value: http://elasticsearch-master:9200
+
+  - name: facade-srv
+    namespace: restorecommerce
+    chart: ../../charts/facade-srv
+    installed: true
+    atomic: true
+    cleanupOnFail: true
 
   - name: minio
     namespace: restorecommerce
@@ -319,7 +330,7 @@ releases:
 
   - name: arangodb
     namespace: restorecommerce
-    chart: https://github.com/arangodb/kube-arangodb/releases/download/1.1.0/kube-arangodb-1.1.0.tgz
+    chart: https://github.com/arangodb/kube-arangodb/releases/download/1.1.5/kube-arangodb-1.1.5.tgz
     installed: true
     atomic: true
     cleanupOnFail: true

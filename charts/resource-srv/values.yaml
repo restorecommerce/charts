@@ -1,11 +1,11 @@
-# Default values for scheduling-srv.
+# Default values for resource-srv.
 
 # replicaCount -- Replica count of the deployment
 replicaCount: 1
 
 image:
   # image.repository -- Image to be used for deployment
-  repository: ghcr.io/restorecommerce/scheduling-srv
+  repository: ghcr.io/restorecommerce/resource-srv
 
   # image.pullPolicy -- Pull policy of the deployment
   pullPolicy: Always

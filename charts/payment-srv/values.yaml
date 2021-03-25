@@ -5,13 +5,13 @@ replicaCount: 1
 
 image:
   # image.repository -- Image to be used for deployment
-  repository: restorecommerce/payment-srv
+  repository: ghcr.io/restorecommerce/payment-srv
 
   # image.pullPolicy -- Pull policy of the deployment
   pullPolicy: Always
 
   # image.tag -- Image tag
-  tag: 0.0.2
+  tag: ""
 
 # imagePullSecrets -- List of secrets for images
 imagePullSecrets: []

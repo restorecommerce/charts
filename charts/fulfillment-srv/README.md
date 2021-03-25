@@ -1,6 +1,6 @@
 # fulfillment-srv
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.17](https://img.shields.io/badge/AppVersion-0.0.17-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.19](https://img.shields.io/badge/AppVersion-0.0.19-informational?style=flat-square)
 
 A Helm chart for restorecommerce fulfillment-srv
 
@@ -33,8 +33,8 @@ A Helm chart for restorecommerce fulfillment-srv
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |
 | image.pullPolicy | string | `"Always"` | Pull policy of the deployment |
-| image.repository | string | `"restorecommerce/fulfillment-srv"` | Image to be used for deployment |
-| image.tag | string | `"0.0.17"` | Image tag |
+| image.repository | string | `"ghcr.io/restorecommerce/fulfillment-srv"` | Image to be used for deployment |
+| image.tag | string | `""` | Image tag |
 | imagePullSecrets | list | `[]` | List of secrets for images |
 | nameOverride | string | `""` | Name override for all resources |
 | nodeSelector | object | `{}` | Specify the nodeSelector for all pods |
