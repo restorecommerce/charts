@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ include "system.fullname" . }}-migrations
+  name: {{ include "system.fullname" . }}-1-migrations
   labels:
     {{- include "system.labels" . | nindent 4 }}
   annotations:
@@ -25,6 +25,32 @@ spec:
         runAsUser: {{ .Values.jobs.migrations.securityContext.runAsUser }}
         fsGroup: {{ .Values.jobs.migrations.securityContext.fsGroup }}
       restartPolicy: OnFailure
+      initContainers:
+        # TODO Wait for all services
+        - name: wait-for-facade
+          image: groundnuty/k8s-wait-for:v1.3
+          imagePullPolicy: Always
+          args:
+            - "service"
+            - "facade-srv"
+        - name: wait-for-identity
+          image: groundnuty/k8s-wait-for:v1.3
+          imagePullPolicy: Always
+          args:
+            - "service"
+            - "identity-srv"
+        - name: wait-for-resource
+          image: groundnuty/k8s-wait-for:v1.3
+          imagePullPolicy: Always
+          args:
+            - "service"
+            - "resource-srv"
+        - name: wait-for-access-control
+          image: groundnuty/k8s-wait-for:v1.3
+          imagePullPolicy: Always
+          args:
+            - "service"
+            - "access-control-srv"
       containers:
         - name: migrations
           image: "{{ .Values.jobs.migrations.image.repository }}:{{ .Values.jobs.migrations.image.tag }}"
