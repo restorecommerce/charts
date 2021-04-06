@@ -12,8 +12,8 @@ Due to how the ArangoDB operator CRD's get deployed, you must manually install t
 Replace the `restorecommerce` namespace with your own.
 
 ```yaml
-helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.1.0/kube-arangodb-crd-1.1.0.tgz
-helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.1.0/kube-arangodb-1.1.0.tgz
+helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.1.5/kube-arangodb-crd-1.1.5.tgz
+helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.1.5/kube-arangodb-1.1.5.tgz
 ```
 
 {{ template "chart.homepageLine" . }}

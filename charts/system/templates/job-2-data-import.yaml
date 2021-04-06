@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ include "system.fullname" . }}-data-import
+  name: {{ include "system.fullname" . }}-2-data-import
   labels:
     {{- include "system.labels" . | nindent 4 }}
   annotations:
@@ -26,20 +26,48 @@ spec:
         fsGroup: {{ .Values.jobs.dataImport.securityContext.fsGroup }}
       restartPolicy: OnFailure
       initContainers:
+        # TODO Wait for all services
         - name: wait-for-facade
           image: groundnuty/k8s-wait-for:v1.3
           imagePullPolicy: Always
           args:
             - "service"
             - "facade-srv"
+        - name: wait-for-identity
+          image: groundnuty/k8s-wait-for:v1.3
+          imagePullPolicy: Always
+          args:
+            - "service"
+            - "identity-srv"
+        - name: wait-for-resource
+          image: groundnuty/k8s-wait-for:v1.3
+          imagePullPolicy: Always
+          args:
+            - "service"
+            - "resource-srv"
+        - name: wait-for-access-control
+          image: groundnuty/k8s-wait-for:v1.3
+          imagePullPolicy: Always
+          args:
+            - "service"
+            - "access-control-srv"
       containers:
         - name: data-import
           image: "{{ .Values.jobs.dataImport.image.repository }}:{{ .Values.jobs.dataImport.image.tag }}"
-          env:
-            - name: API_KEY
-              value: {{ .Values.jobs.dataImport.env.API_KEY }}
-            - name: ENDPOINT
-              value: {{ .Values.jobs.dataImport.env.ENDPOINT }}
+          args:
+            - "import"
+            - "-t"
+            - {{ .Values.jobs.dataImport.apiKey }}
+            - "-h"
+            - {{ .Values.jobs.dataImport.endpoint.host }}
+            - "-p"
+            - {{ .Values.jobs.dataImport.endpoint.port | quote }}
+            - "-j"
+            - "master"
+            - "-j"
+            - "identity"
+            - "-j"
+            - "extra"
           resources:
             {{- toYaml .Values.jobs.dataImport.resources | nindent 12 }}
     {{- if .Values.jobs.dataImport.nodeSelector }}

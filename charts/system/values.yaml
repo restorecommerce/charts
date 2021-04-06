@@ -23,7 +23,7 @@ jobs:
       pullSecrets: []
       pullPolicy: Always
       repository: restorecommerce/data
-      tag: demo-shop-0.1.0
+      tag: demo-shop-v0.0.4
     resources:
       requests:
         cpu: 250m
@@ -31,9 +31,10 @@ jobs:
     securityContext:
       runAsUser: 1000
       fsGroup: 1000
-    env:
-      API_KEY: FACADE_API_KEY
-      ENDPOINT: http://facade-srv:5000/graphql
+    apiKey: FACADE_API_KEY
+    endpoint:
+      host: facade-srv
+      port: 5000
 
 identity-srv:
   fullnameOverride: identity-srv
@@ -45,6 +46,8 @@ identity-srv:
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
         value: http://elasticsearch-master:9200
+      - name: authorization__enabled
+        value: "false"
 
 notification-srv:
   fullnameOverride: notification-srv
@@ -65,6 +68,8 @@ access-control-srv:
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
         value: http://elasticsearch-master:9200
+      - name: authorization__enabled
+        value: "false"
 
 ostorage-srv:
   fullnameOverride: ostorage-srv
@@ -159,6 +164,22 @@ payment-srv:
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
         value: http://elasticsearch-master:9200
+
+resource-srv:
+  fullnameOverride: resource-srv
+  env:
+    extras:
+      - name: redis__host
+        value: redis-master
+      - name: authorization__cache__host
+        value: redis-master
+      - name: logger__elasticsearch__clientOpts__node
+        value: http://elasticsearch-master:9200
+      - name: authorization__enabled
+        value: "false"
+
+facade-srv:
+  fullnameOverride: facade-srv
 
 zookeeper:
   fullnameOverride: zookeeper
