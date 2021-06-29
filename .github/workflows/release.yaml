@@ -17,7 +17,7 @@ jobs:
       - name: Add helm repos
         run: .github/add-repos.sh
       - name: Run chart-testing (lint)
-        uses: helm/chart-testing-action@master
+        uses: helm/chart-testing-action@main
         with:
           command: lint
           config: .github/ct.yaml
