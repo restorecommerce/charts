@@ -4,9 +4,11 @@ on:
   push:
     paths:
       - 'charts/**'
+      - '.github/**'
   pull_request:
     paths:
       - 'charts/**'
+      - '.github/**'
 
 jobs:
   lint-chart:
