@@ -1,14 +1,14 @@
 apiVersion: v2
-name: scheduling-srv
-description: A Helm chart for restorecommerce scheduling-srv
-type: application
-version: 0.1.3
 appVersion: 0.1.18
-icon: https://avatars0.githubusercontent.com/u/8339525
+description: A Helm chart for restorecommerce scheduling-srv
 home: https://docs.restorecommerce.io/scheduling-srv/index.html
-sources:
-  - https://github.com/restorecommerce/scheduling-srv
+icon: https://avatars0.githubusercontent.com/u/8339525
 maintainers:
-  - name: restorecommerce
-    url: https://restorecommerce.io/
-    email: info@restorecommerce.io
+- email: info@restorecommerce.io
+  name: restorecommerce
+  url: https://restorecommerce.io/
+name: scheduling-srv
+sources:
+- https://github.com/restorecommerce/scheduling-srv
+type: application
+version: 0.1.4

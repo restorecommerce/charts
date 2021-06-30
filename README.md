@@ -87,3 +87,9 @@ Packaging uses the [helm](https://helm.sh/) tool
 Releasing uses the [chart-releaser](https://github.com/helm/chart-releaser) tool
 
 Both tasks are executed by CI/CD when a branch is merged into master
+
+## Version upgrading
+
+Automatic upgrade script is available in `upgrade.py`
+
+First install all necessary packages via `pip3 install -r requirements.txt`
