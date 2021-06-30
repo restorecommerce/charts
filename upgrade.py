@@ -59,7 +59,7 @@ for dir in glob.glob(CHART_DIRECTORIES):
             
             print(appVersion, "<", highestSemver, "upgrading")
 
-            chart["appVersion"] = appVersion
+            chart["appVersion"] = highestSemver
             chart["version"] = str(semver.VersionInfo.parse(chartVersion).bump_patch())
 
             with open(path.join(dir, "Chart.yaml"), "w") as f:
