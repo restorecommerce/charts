@@ -109,3 +109,10 @@ config:
   # config.literal -- Provide the literal config through this string.
   # Has to be in a JSON format
   literal: ""
+
+extraPorts:
+  # extraPorts.deployment -- Any extra ports to be added to the deployment
+  deployment: []
+
+  # extraPorts.service -- Any extra ports to be added to the service
+  service: []

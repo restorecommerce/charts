@@ -1,6 +1,6 @@
 # scheduling-srv
 
-![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.20](https://img.shields.io/badge/AppVersion-0.1.20-informational?style=flat-square)
+![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.1.20](https://img.shields.io/badge/AppVersion-0.1.20-informational?style=flat-square)
 
 A Helm chart for restorecommerce scheduling-srv
 
@@ -31,6 +31,8 @@ A Helm chart for restorecommerce scheduling-srv
 | config.name | string | `""` | Name of the config map to be mounted. If specified, config will be appended to the node environment automatically |
 | env.extras | list | `[]` | Any extra environment variables appended to all pods |
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
+| extraPorts.deployment | list | `[]` | Any extra ports to be added to the deployment |
+| extraPorts.service | list | `[]` | Any extra ports to be added to the service |
 | fullnameOverride | string | `""` | Full name override for all resources |
 | image.pullPolicy | string | `"Always"` | Pull policy of the deployment |
 | image.repository | string | `"ghcr.io/restorecommerce/scheduling-srv"` | Image to be used for deployment |

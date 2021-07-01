@@ -38,6 +38,9 @@ spec:
             - name: grpc
               containerPort: 50051
               protocol: TCP
+            {{- if .Values.extraPorts.deployment }}
+            {{- toYaml .Values.extraPorts.deployment | nindent 12 }}
+            {{- end }}
           env:
             - name: NODE_ENV
               value: {{ include "scheduling-srv.nodeEnv" . }}

@@ -11,5 +11,8 @@ spec:
       targetPort: grpc
       protocol: TCP
       name: grpc
+    {{- if .Values.extraPorts.service }}
+    {{- toYaml .Values.extraPorts.service | nindent 4 }}
+    {{- end }}
   selector:
     {{- include "scheduling-srv.selectorLabels" . | nindent 4 }}
