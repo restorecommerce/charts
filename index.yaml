@@ -1143,6 +1143,24 @@ entries:
   scheduling-srv:
   - apiVersion: v2
     appVersion: 0.1.20
+    created: "2021-07-01T14:00:31.066075741Z"
+    description: A Helm chart for restorecommerce scheduling-srv
+    digest: 73280a8cf065f00bb14a864150c23ca92a18e01cd757b91f974329b10a0cbe38
+    home: https://docs.restorecommerce.io/scheduling-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: scheduling-srv
+    sources:
+    - https://github.com/restorecommerce/scheduling-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/scheduling-srv-0.1.7/scheduling-srv-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 0.1.20
     created: "2021-06-30T13:38:32.695593713Z"
     description: A Helm chart for restorecommerce scheduling-srv
     digest: deca17eb9787209a27e57041e124564986f25e8fcad9ae5171c887c10f9c1146
@@ -1814,4 +1832,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-30T13:38:32.695941017Z"
+generated: "2021-07-01T14:00:31.066472344Z"
