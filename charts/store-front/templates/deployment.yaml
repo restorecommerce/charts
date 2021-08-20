@@ -35,7 +35,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 4000
               protocol: TCP
           {{- if .Values.env.extras }}
           env:
@@ -46,17 +46,17 @@ spec:
             periodSeconds: 30
             exec:
               command:
-                - curl
-                - -I
-                - http://localhost:80/
+                - wget
+                - --spider
+                - http://localhost:4000/
           readinessProbe:
             initialDelaySeconds: 10
             periodSeconds: 30
             exec:
               command:
-                - curl
-                - -I
-                - http://localhost:80/
+                - wget
+                - --spider
+                - http://localhost:4000/
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
