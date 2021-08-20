@@ -1410,6 +1410,23 @@ entries:
   store-front:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2021-08-20T18:56:02.250959565Z"
+    description: A Helm chart for restorecommerce store-front
+    digest: a06a7fbef762948ac11799561fb09754ff4e2bde087cde184c7450a4663ccd45
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: store-front
+    sources:
+    - https://github.com/restorecommerce/store-front
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/store-front-0.1.4/store-front-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2021-06-30T13:04:16.829511744Z"
     description: A Helm chart for restorecommerce store-front
     digest: fd0bed77d8224f5b0854a5fff3222bdf348a7f9b71925bae3b143a7bafbed341
@@ -1976,4 +1993,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-20T18:04:55.679525661Z"
+generated: "2021-08-20T18:56:02.251151364Z"
