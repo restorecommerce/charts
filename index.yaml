@@ -180,6 +180,23 @@ entries:
     version: 0.1.0
   console:
   - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2021-08-23T16:42:39.478680185Z"
+    description: A Helm chart for restorecommerce console
+    digest: 72170f59897b9dd36096b79aecb08702675ea8e06beac9b25d4e7fb1a1094e29
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: console
+    sources:
+    - https://github.com/restorecommerce/console
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/console-0.1.3/console-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2021-06-30T13:04:14.719951872Z"
     description: A Helm chart for restorecommerce console
@@ -824,6 +841,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/ordering-srv-0.1.0/ordering-srv-0.1.0.tgz
     version: 0.1.0
   ostorage-srv:
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2021-08-23T16:42:39.608439707Z"
+    description: A Helm chart for restorecommerce ostorage-srv
+    digest: 222059b00fd7d21e9a9cb53f3a4d8a2a394958ae296223bbb3d9827f8addc647
+    home: https://docs.restorecommerce.io/ostorage-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ostorage-srv
+    sources:
+    - https://github.com/restorecommerce/ostorage-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/ostorage-srv-0.1.7/ostorage-srv-0.1.7.tgz
+    version: 0.1.7
   - apiVersion: v2
     appVersion: 0.1.29
     created: "2021-08-20T18:04:55.265464487Z"
@@ -1993,4 +2028,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-20T18:56:02.251151364Z"
+generated: "2021-08-23T16:42:39.608789807Z"
