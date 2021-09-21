@@ -1,6 +1,6 @@
 # access-control-srv
 
-![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.0](https://img.shields.io/badge/AppVersion-0.2.0-informational?style=flat-square)
+![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.2](https://img.shields.io/badge/AppVersion-0.2.2-informational?style=flat-square)
 
 A Helm chart for restorecommerce access-control-srv
 
@@ -42,7 +42,7 @@ A Helm chart for restorecommerce access-control-srv
 | podSecurityContext | object | `{}` | Security context override for all pods |
 | replicaCount | int | `1` | Replica count of the deployment |
 | resources | object | `{}` | Any resource configuration applied to all pods |
-| securityContext | object | `{}` | Security context override for all containers |
+| securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |
 | service.port | int | `50051` | Port to be exposed on the service |
 | service.type | string | `"ClusterIP"` | Service type to be used |
 | serviceAccount.annotations | object | `{}` | Annotations to add to the service account |

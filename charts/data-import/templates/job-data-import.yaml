@@ -1,29 +1,27 @@
-{{- if .Values.jobs.dataImport.enabled }}
+{{- if .Values.enabled }}
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ include "system.fullname" . }}-2-data-import
+  name: {{ include "data-import.fullname" . }}
   labels:
-    {{- include "system.labels" . | nindent 4 }}
+    {{- include "data-import.labels" . | nindent 4 }}
   annotations:
-    "helm.sh/hook": post-install
     "helm.sh/hook-delete-policy": before-hook-creation
 spec:
-  activeDeadlineSeconds: {{ .Values.jobs.dataImport.activeDeadlineSeconds }}
-  backoffLimit: {{ .Values.jobs.dataImport.backoffLimit }}
-
+  activeDeadlineSeconds: {{ .Values.activeDeadlineSeconds }}
+  backoffLimit: {{ .Values.backoffLimit }}
   template:
     metadata:
       labels:
-        {{- include "system.labels" . | nindent 8 }}
+        {{- include "data-import.labels" . | nindent 8 }}
     spec:
-      {{- if .Values.jobs.dataImport.tolerations }}
+      {{- if .Values.tolerations }}
       tolerations:
-        {{- toYaml .Values.jobs.dataImport.tolerations | nindent 8 }}
+        {{- toYaml .Values.tolerations | nindent 8 }}
       {{- end }}
       securityContext:
-        runAsUser: {{ .Values.jobs.dataImport.securityContext.runAsUser }}
-        fsGroup: {{ .Values.jobs.dataImport.securityContext.fsGroup }}
+        runAsUser: {{ .Values.securityContext.runAsUser }}
+        fsGroup: {{ .Values.securityContext.fsGroup }}
       restartPolicy: OnFailure
       initContainers:
         # TODO Wait for all services
@@ -53,15 +51,15 @@ spec:
             - "access-control-srv"
       containers:
         - name: data-import
-          image: "{{ .Values.jobs.dataImport.image.repository }}:{{ .Values.jobs.dataImport.image.tag }}"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           args:
             - "import"
             - "-t"
-            - {{ .Values.jobs.dataImport.apiKey }}
+            - {{ .Values.apiKey }}
             - "-h"
-            - {{ .Values.jobs.dataImport.endpoint.host }}
+            - {{ .Values.endpoint.host }}
             - "-p"
-            - {{ .Values.jobs.dataImport.endpoint.port | quote }}
+            - {{ .Values.endpoint.port | quote }}
             - "-j"
             - "master"
             - "-j"
@@ -69,9 +67,9 @@ spec:
             - "-j"
             - "extra"
           resources:
-            {{- toYaml .Values.jobs.dataImport.resources | nindent 12 }}
-    {{- if .Values.jobs.dataImport.nodeSelector }}
+            {{- toYaml .Values.resources | nindent 12 }}
+    {{- if .Values.nodeSelector }}
       nodeSelector:
-        {{- toYaml .Values.jobs.migrations.nodeSelector | nindent 8 }}
+        {{- toYaml .Values.nodeSelector | nindent 8 }}
     {{- end }}
 {{- end }}

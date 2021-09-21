@@ -41,13 +41,13 @@ podSecurityContext: {}
   # fsGroup: 2000
 
 # securityContext -- Security context override for all containers
-securityContext: {}
-  # capabilities:
-  #   drop:
-  #   - ALL
-  # readOnlyRootFilesystem: true
-  # runAsNonRoot: true
-  # runAsUser: 1000
+securityContext:
+  capabilities:
+    drop:
+    - ALL
+  readOnlyRootFilesystem: true
+  runAsNonRoot: true
+  runAsUser: 1000
 
 service:
   # service.type -- Service type to be used

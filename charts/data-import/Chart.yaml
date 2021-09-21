@@ -1,14 +1,14 @@
 apiVersion: v2
-appVersion: 0.2.1
-description: A Helm chart for restorecommerce rendering-srv
-home: https://docs.restorecommerce.io/rendering-srv/index.html
+appVersion: demo-shop-v0.0.4
+description: A Helm chart for restorecommerce data importer
+home: https://github.com/restorecommerce/data
 icon: https://avatars0.githubusercontent.com/u/8339525
 maintainers:
 - email: info@restorecommerce.io
   name: restorecommerce
   url: https://restorecommerce.io/
-name: rendering-srv
+name: data-import
 sources:
-- https://github.com/restorecommerce/rendering-srv
+- https://github.com/restorecommerce/data
 type: application
 version: 0.1.8

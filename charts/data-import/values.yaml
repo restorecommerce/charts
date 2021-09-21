@@ -1,0 +1,26 @@
+enabled: true
+
+activeDeadlineSeconds: 3600
+
+backoffLimit: 6
+
+image:
+  pullSecrets: []
+  pullPolicy: Always
+  repository: ghcr.io/restorecommerce/data
+  tag: ""
+
+resources:
+  requests:
+    cpu: 250m
+    memory: 200Mi
+
+securityContext:
+  runAsUser: 1000
+  fsGroup: 1000
+
+apiKey: FACADE_API_KEY
+
+endpoint:
+  host: facade-srv
+  port: 5000
