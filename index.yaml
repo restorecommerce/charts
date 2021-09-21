@@ -372,6 +372,24 @@ entries:
   data-import:
   - apiVersion: v2
     appVersion: demo-shop-v0.0.5
+    created: "2021-09-21T21:28:33.528135013Z"
+    description: A Helm chart for restorecommerce data importer
+    digest: 7afbd83ed9ea656c6ecf1a5084931435d87fd6b99f144f6bee5c1fbad32e4357
+    home: https://github.com/restorecommerce/data
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: data-import
+    sources:
+    - https://github.com/restorecommerce/data
+    type: application
+    urls:
+    - https://github.com/restorecommerce/helm/releases/download/data-import-0.1.11/data-import-0.1.11.tgz
+    version: 0.1.11
+  - apiVersion: v2
+    appVersion: demo-shop-v0.0.5
     created: "2021-09-21T14:41:21.232997725Z"
     description: A Helm chart for restorecommerce data importer
     digest: dce87a782f46448a9ef450fc135e040ac9e0441c11bfb0b7796919af6b7fcc2d
@@ -2564,4 +2582,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-21T20:34:01.231849123Z"
+generated: "2021-09-21T21:28:33.528766025Z"
