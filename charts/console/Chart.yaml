@@ -1,13 +1,13 @@
 apiVersion: v2
-name: console
+appVersion: 0.0.2
 description: A Helm chart for restorecommerce console
-type: application
-version: 0.1.6
-appVersion: 0.0.1
 icon: https://avatars0.githubusercontent.com/u/8339525
-sources:
-  - https://github.com/restorecommerce/console
 maintainers:
-  - name: restorecommerce
-    url: https://restorecommerce.io/
-    email: info@restorecommerce.io
+- email: info@restorecommerce.io
+  name: restorecommerce
+  url: https://restorecommerce.io/
+name: console
+sources:
+- https://github.com/restorecommerce/console
+type: application
+version: 0.1.7
