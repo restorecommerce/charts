@@ -10,4 +10,4 @@ ct lint --all --config .github/ct.yaml
 
 helm-docs
 
-KUBERNETES_VERSION=1.19.2 ./.github/kubeval.sh
+KUBERNETES_VERSION=1.26.0 ./.github/kubeval.sh
