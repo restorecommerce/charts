@@ -12,49 +12,49 @@ maintainers:
 dependencies:
   - name: identity-srv
     version: 0.1.4
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: notification-srv
     version: 0.1.3
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: access-control-srv
     version: 0.1.3
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: ostorage-srv
     version: 0.1.3
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: scheduling-srv
     version: 0.1.3
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: rendering-srv
     version: 0.1.3
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: pdf-rendering-srv
     version: 0.1.2
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: fulfillment-srv
     version: 0.1.1
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: indexing-srv
     version: 0.1.1
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: catalog-srv
     version: 0.1.1
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: invoicing-srv
     version: 0.1.1
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: ordering-srv
     version: 0.1.1
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: payment-srv
     version: 0.1.2
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: resource-srv
     version: 0.1.0
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: facade-srv
     version: 0.1.5
-    repository: https://restorecommerce.github.io/helm/
+    repository: https://restorecommerce.github.io/charts/
   - name: minio
     version: 7.0.1
     repository: https://helm.min.io
