@@ -1,6 +1,6 @@
 apiVersion: v2
 name: store-front
-description: A Helm chart for restorecommerce store-front
+description: Restorecommerce store-front
 type: application
 version: 0.1.5
 appVersion: 0.0.1

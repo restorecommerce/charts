@@ -1,6 +1,6 @@
 apiVersion: v2
-appVersion: 0.2.2
-description: A Helm chart for restorecommerce ostorage-srv
+appVersion: 0.3.6
+description: Restorecommerce ostorage-srv
 home: https://docs.restorecommerce.io/ostorage-srv/index.html
 icon: https://avatars0.githubusercontent.com/u/8339525
 maintainers:
@@ -11,4 +11,4 @@ name: ostorage-srv
 sources:
 - https://github.com/restorecommerce/ostorage-srv
 type: application
-version: 0.1.9
+version: 0.1.10

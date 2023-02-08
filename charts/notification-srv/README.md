@@ -2,7 +2,7 @@
 
 ![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.2](https://img.shields.io/badge/AppVersion-0.2.2-informational?style=flat-square)
 
-A Helm chart for restorecommerce notification-srv
+Restorecommerce notification-srv
 
 **Homepage:** <https://docs.restorecommerce.io/notification-srv/index.html>
 

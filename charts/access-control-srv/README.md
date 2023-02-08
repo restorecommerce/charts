@@ -2,7 +2,7 @@
 
 ![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.2.3](https://img.shields.io/badge/AppVersion-0.2.3-informational?style=flat-square)
 
-A Helm chart for restorecommerce access-control-srv
+Restorecommerce access-control-srv
 
 **Homepage:** <https://docs.restorecommerce.io/access-control-srv/index.html>
 

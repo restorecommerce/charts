@@ -6,7 +6,7 @@ backoffLimit: 6
 
 image:
   pullSecrets: []
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
   repository: ghcr.io/restorecommerce/data
   tag: ""
 

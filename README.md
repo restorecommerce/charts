@@ -1,6 +1,6 @@
 # Restorecommerce Helm Charts
 
-This repository contains helm charts for the following services:
+Helm chart index:
 
 * [access-control-srv](./charts/access-control-srv)
 * [catalog-srv](./charts/catalog-srv)
@@ -23,10 +23,10 @@ This repository contains helm charts for the following services:
 
 ## Installation
 
-You can install this helm repository via
+You can install this helm repository via:
 
 ```bash
-helm repo add restorecommerce https://restorecommerce.github.io/helm/
+helm repo add restorecommerce https://restorecommerce.github.io/charts/
 helm repo update
 ```
 
@@ -53,7 +53,7 @@ If you wish to execute each step manually, they are described below:
 Linting uses the [chart-testing](https://github.com/helm/chart-testing) tool
 
 ```bash
-ct lint --all --config .github/ct.yaml 
+ct lint --all --config .github/ct.yaml
 ```
 
 ### Documentation Generation
@@ -69,7 +69,7 @@ helm-docs
 Validation uses the [kubeval](https://github.com/instrumenta/kubeval) tool
 
 ```bash
-KUBERNETES_VERSION=1.19.2 ./.github/kubeval.sh
+KUBERNETES_VERSION=1.26.0 ./.github/kubeval.sh
 ```
 
 ### Update Dependencies and Lockfiles
@@ -82,14 +82,14 @@ done
 
 ## Packaging and Releasing
 
-Packaging uses the [helm](https://helm.sh/) tool
+Packaging uses the [helm](https://helm.sh/) tool.
 
-Releasing uses the [chart-releaser](https://github.com/helm/chart-releaser) tool
+Releasing uses the [chart-releaser](https://github.com/helm/chart-releaser) tool.
 
-Both tasks are executed by CI/CD when a branch is merged into master
+Both tasks are executed by CI/CD when a branch is merged into `master` branch.
 
 ## Version upgrading
 
-Automatic upgrade script is available in `upgrade.py`
+Automatic upgrade script is available in `python3 upgrade.py`.
 
-First install all necessary packages via `pip3 install -r requirements.txt`
+First install all necessary packages via `pip3 install -r requirements.txt`.

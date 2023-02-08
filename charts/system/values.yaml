@@ -5,7 +5,7 @@ jobs:
     backoffLimit: 6
     image:
       pullSecrets: []
-      pullPolicy: Always
+      pullPolicy: IfNotPresent
       repository: busybox
       tag: latest
     resources:
@@ -21,7 +21,7 @@ jobs:
     backoffLimit: 6
     image:
       pullSecrets: []
-      pullPolicy: Always
+      pullPolicy: IfNotPresent
       repository: restorecommerce/data
       tag: demo-shop-v0.0.4
     resources:

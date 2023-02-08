@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/restorecommerce/facade-srv
 
   # image.pullPolicy -- Pull policy of the deployment
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
   # image.tag -- Image tag
   tag: ""

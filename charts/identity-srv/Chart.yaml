@@ -1,6 +1,6 @@
 apiVersion: v2
-appVersion: 0.2.2
-description: A Helm chart for restorecommerce identity-srv
+appVersion: 1.0.2
+description: Restorecommerce identity-srv
 home: https://docs.restorecommerce.io/identity-srv/index.html
 icon: https://avatars0.githubusercontent.com/u/8339525
 maintainers:
@@ -11,4 +11,4 @@ name: identity-srv
 sources:
 - https://github.com/restorecommerce/identity-srv
 type: application
-version: 0.1.10
+version: 0.1.11
