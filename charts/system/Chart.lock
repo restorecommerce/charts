@@ -45,8 +45,8 @@ dependencies:
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.5
 - name: minio
-  repository: https://helm.min.io
-  version: 7.0.1
+  repository: https://charts.min.io/
+  version: 4.0.2
 - name: kafka
   repository: https://charts.bitnami.com/bitnami
   version: 20.0.6
@@ -59,5 +59,5 @@ dependencies:
 - name: kibana
   repository: https://helm.elastic.co
   version: 7.9.2
-digest: sha256:4c8adc0de025668440c29eb27a8ec5c6638dfed4b41fb1c9e79661975f23534b
-generated: "2023-02-09T09:22:45.385971153+01:00"
+digest: sha256:0a282204816fc37b37dac0e538434b405fd1b710ac75e37112f1bbe2cb13221b
+generated: "2023-02-09T13:52:17.066267364-08:00"

@@ -56,8 +56,8 @@ dependencies:
     version: 0.1.5
     repository: https://restorecommerce.github.io/charts/
   - name: minio
-    version: 7.0.1
-    repository: https://helm.min.io
+    version: 4.0.2
+    repository: https://charts.min.io/
   - name: kafka
     version: 20.0.6
     repository: https://charts.bitnami.com/bitnami

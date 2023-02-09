@@ -27,7 +27,7 @@ Restorecommerce store-front
 | env.extras | list | `[]` | Any extra environment variables appended to all pods |
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |
-| image.pullPolicy | string | `"Always"` | Pull policy of the deployment |
+| image.pullPolicy | string | `"IfNotPresent"` | Pull policy of the deployment |
 | image.repository | string | `"ghcr.io/restorecommerce/store-front"` | Image to be used for deployment |
 | image.tag | string | `""` | Image tag |
 | imagePullSecrets | list | `[]` | List of secrets for images |

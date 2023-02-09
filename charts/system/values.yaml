@@ -183,8 +183,8 @@ facade-srv:
 
 minio:
   fullnameOverride: minio
-  accessKey: REPLACE_ME_ACCESS
-  secretKey: REPLACE_ME_SECRET
+  rootUser: REPLACE_ME_ACCESS
+  rootPassword: REPLACE_ME_SECRET
   persistence:
     size: 10Gi
 

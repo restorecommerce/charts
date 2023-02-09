@@ -26,7 +26,7 @@ Restorecommerce data importer
 | enabled | bool | `true` |  |
 | endpoint.host | string | `"facade-srv"` |  |
 | endpoint.port | int | `5000` |  |
-| image.pullPolicy | string | `"Always"` |  |
+| image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.pullSecrets | list | `[]` |  |
 | image.repository | string | `"ghcr.io/restorecommerce/data"` |  |
 | image.tag | string | `""` |  |

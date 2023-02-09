@@ -6,8 +6,8 @@ chart-yaml-schema: ./chart-testing/chart_schema.yaml
 chart-dirs:
   - charts
 chart-repos:
-  - restorecommerce=https://restorecommerce.github.io/helm/
-  - minio=https://helm.min.io
+  - restorecommerce=https://restorecommerce.github.io/charts/
+  - minio=https://charts.min.io/
   - bitnami=https://charts.bitnami.com/bitnami
   - elastic=https://helm.elastic.co
   - stable=https://charts.helm.sh/stable
