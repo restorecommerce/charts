@@ -252,14 +252,6 @@ releases:
         persistence:
           size: 10Gi
 
-  - name: zookeeper
-    namespace: restorecommerce
-    chart: bitnami/zookeeper
-    version: 5.22.1
-    installed: true
-    atomic: true
-    cleanupOnFail: true
-
   - name: kafka
     namespace: restorecommerce
     chart: bitnami/kafka
@@ -275,21 +267,6 @@ releases:
             - "zookeeper:2181"
         deleteTopicEnable: true
         autoCreateTopicsEnable: true
-
-  - name: kafka-manager
-    namespace: restorecommerce
-    chart: stable/kafka-manager
-    version: 2.3.2
-    installed: true
-    atomic: true
-    cleanupOnFail: true
-    values:
-      - zkHosts: "zookeeper:2181"
-        applicationSecret: "REPLACE_ME"
-        basicAuth:
-          password: "REPLACE_ME"
-          ldap:
-            password: "REPLACE_ME"
 
   - name: redis
     namespace: restorecommerce

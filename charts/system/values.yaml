@@ -181,9 +181,6 @@ resource-srv:
 facade-srv:
   fullnameOverride: facade-srv
 
-zookeeper:
-  fullnameOverride: zookeeper
-
 minio:
   fullnameOverride: minio
   accessKey: REPLACE_ME_ACCESS
@@ -200,15 +197,6 @@ kafka:
       - "zookeeper:2181"
   deleteTopicEnable: true
   autoCreateTopicsEnable: true
-
-kafka-manager:
-  fullnameOverride: kafka-manager
-  zkHosts: "zookeeper:2181"
-  applicationSecret: "REPLACE_ME"
-  basicAuth:
-    password: "REPLACE_ME"
-    ldap:
-      password: "REPLACE_ME"
 
 redis:
   fullnameOverride: redis

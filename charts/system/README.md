@@ -29,8 +29,6 @@ helm install --create-namespace -n restorecommerce arangodb-operator https://git
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | kafka | 11.8.7 |
 | https://charts.bitnami.com/bitnami | redis | 11.2.1 |
-| https://charts.bitnami.com/bitnami | zookeeper | 5.22.1 |
-| https://charts.helm.sh/stable | kafka-manager | 2.3.2 |
 | https://helm.elastic.co | elasticsearch | 7.9.2 |
 | https://helm.elastic.co | kibana | 7.9.2 |
 | https://helm.min.io | minio | 7.0.1 |
