@@ -40,7 +40,7 @@ It uses the [helmfile](https://github.com/roboll/helmfile) tool to specify all r
 
 ### Pre-Commit
 
-There is a convenience script to execute all dev scripts in order:
+There is a convenience script to execute all pre-commit scripts in order:
 
 ```bash
 ./pre-commit.sh
