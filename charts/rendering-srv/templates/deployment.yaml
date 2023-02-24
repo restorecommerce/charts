@@ -63,8 +63,11 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
+            {{- range $k, $v := .Values.handlebars }}
             - name: handlebars
-              mountPath: "/home/node/rendering-srv/handlebars"
+              mountPath: "/home/node/rendering-srv/handlebars/{{ $k }}"
+              subPath: {{ $k }}
+            {{- end }}
             {{- if or .Values.config.name .Values.config.literal }}
             - name: config
               mountPath: "/home/node/rendering-srv/cfg/config_{{ .Values.env.nodeEnv }}_override.json"
