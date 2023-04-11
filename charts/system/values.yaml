@@ -181,12 +181,27 @@ resource-srv:
 facade-srv:
   fullnameOverride: facade-srv
 
-minio:
-  fullnameOverride: minio
-  rootUser: REPLACE_ME_ACCESS
-  rootPassword: REPLACE_ME_SECRET
+cloudserver:
+  fullnameOverride: cloudserver
+  image:
+    repository: zenko/cloudserver
+    tag: latest-7.70.10
+    pullPolicy: IfNotPresent
+  api:
+    replicaCount: 1
+    credentials:
+      accessKey: ZFKQGYD2P6DJO4U7N33U
+      secretKey: fO09epo9zT6tslwhh192l0UHbtpCjCYTnE3TYtec
+    logLevel: info
+    endpoint: cloudserver
   persistence:
     size: 10Gi
+    accessMode: ReadWriteMany
+  resources:
+    requests:
+      memory: 250Mi
+    limits:
+      memory: 512Mi
 
 kafka:
   fullnameOverride: kafka

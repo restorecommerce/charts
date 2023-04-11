@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudserver
+  labels:
+    app: cloudserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloudserver
+  template:
+    metadata:
+      labels:
+        app: cloudserver
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+          - name: s3
+            containerPort: 8000
+            protocol: TCP
+          - name: localdata
+            containerPort: 9991
+            protocol: TCP
+          - name: localmetadata
+            containerPort: 9990
+            protocol: TCP
+          volumeMounts:
+            - mountPath: /usr/src/app/localData
+              name: cloudserver
+              subPath: localData
+            - mountPath: /usr/src/app/localMetadata
+              name: cloudserver
+              subPath: localMetadata
+          env:
+            - name: SCALITY_ACCESS_KEY_ID
+              value: ZFKQGYD2P6DJO4U7N33U
+            - name: SCALITY_SECRET_ACCESS_KEY
+              value: fO09epo9zT6tslwhh192l0UHbtpCjCYTnE3TYtec
+            - name: ENDPOINT
+              value: cloudserver
+      volumes:
+        - name: cloudserver
+          persistentVolumeClaim:
+            claimName: cloudserver
