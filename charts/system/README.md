@@ -29,7 +29,6 @@ helm install --create-namespace -n restorecommerce arangodb-operator https://git
 |------------|------|---------|
 | https://charts.bitnami.com/bitnami | kafka | 20.0.6 |
 | https://charts.bitnami.com/bitnami | redis | 17.7.2 |
-| https://github.com/scality/cloudserver | cloudserver | 1.0.4 |
 | https://helm.elastic.co | elasticsearch | 7.9.2 |
 | https://helm.elastic.co | kibana | 7.9.2 |
 | https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.3 |
