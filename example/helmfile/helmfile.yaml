@@ -6,15 +6,13 @@ helmDefaults:
 environments:
   default:
     values:
-      - minio:
+      - cloudserver:
           accessKey: REPLACE_ME_ACCESS
           secretKey: REPLACE_ME_SECRET
 
 repositories:
   - name: restorecommerce
     url: https://restorecommerce.github.io/helm/
-  - name: minio
-    url: https://helm.min.io
   - name: bitnami
     url: https://charts.bitnami.com/bitnami
   - name: elastic
@@ -89,9 +87,9 @@ releases:
             - name: logger__elasticsearch__clientOpts__node
               value: http://elasticsearch-master:9200
             - name: s3__client__accessKeyId
-              value: {{ .Values.minio.accessKey }}
+              value: {{ .Values.cloudserver.accessKey }}
             - name: s3__client__secretAccessKey
-              value: {{ .Values.minio.secretKey }}
+              value: {{ .Values.cloudserver.secretKey }}
 
   - name: scheduling-srv
     namespace: restorecommerce
@@ -239,16 +237,16 @@ releases:
     atomic: true
     cleanupOnFail: true
 
-  - name: minio
+  - name: cloudserver
     namespace: restorecommerce
-    chart: minio/minio
-    version: 7.0.1
+    chart: ../../charts/system/charts/cloudserver
+    version: 1.0.4
     installed: true
     atomic: true
     cleanupOnFail: true
     values:
-      - accessKey: {{ .Values.minio.accessKey }}
-        secretKey: {{ .Values.minio.secretKey }}
+      - accessKey: {{ .Values.cloudserver.accessKey }}
+        secretKey: {{ .Values.cloudserver.secretKey }}
         persistence:
           size: 10Gi
 
