@@ -2425,6 +2425,82 @@ entries:
     version: 0.1.0
   system:
   - apiVersion: v2
+    created: "2023-04-17T18:25:18.676188146Z"
+    dependencies:
+    - name: identity-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.4
+    - name: notification-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.3
+    - name: access-control-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.3
+    - name: ostorage-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.3
+    - name: scheduling-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.3
+    - name: rendering-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.3
+    - name: pdf-rendering-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.2
+    - name: fulfillment-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.1
+    - name: indexing-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.1
+    - name: catalog-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.1
+    - name: invoicing-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.1
+    - name: ordering-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.1
+    - name: payment-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.2
+    - name: resource-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.0
+    - name: facade-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.5
+    - name: cloudserver
+      repository: ""
+      version: 1.0.4
+    - name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.0.6
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.7.2
+    - name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.9.2
+    - name: kibana
+      repository: https://helm.elastic.co
+      version: 7.9.2
+    description: A Helm chart for the Restorecommerce system
+    digest: beb58130642710b0d2a6f95bc2de10abba475049590f95338e69f43988ad2601
+    home: https://github.com/restorecommerce/system
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: system
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/system-0.1.10/system-0.1.10.tgz
+    version: 0.1.10
+  - apiVersion: v2
     created: "2023-02-10T04:59:25.377020946Z"
     dependencies:
     - name: identity-srv
@@ -3016,4 +3092,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-25T00:13:08.819781075Z"
+generated: "2023-04-17T18:25:18.677301024Z"
