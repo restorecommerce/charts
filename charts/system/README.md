@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.10](https://img.shields.io/badge/Version-0.1.10-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -27,6 +27,7 @@ helm install --create-namespace -n restorecommerce arangodb-operator https://git
 
 | Repository | Name | Version |
 |------------|------|---------|
+|  | cloudserver | 1.0.4 |
 | https://charts.bitnami.com/bitnami | kafka | 20.0.6 |
 | https://charts.bitnami.com/bitnami | redis | 17.7.2 |
 | https://helm.elastic.co | elasticsearch | 7.9.2 |

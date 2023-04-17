@@ -2,7 +2,7 @@ apiVersion: v2
 name: system
 description: A Helm chart for the Restorecommerce system
 type: application
-version: 0.1.9
+version: 0.1.10
 icon: https://avatars0.githubusercontent.com/u/8339525
 home: https://github.com/restorecommerce/system
 maintainers:

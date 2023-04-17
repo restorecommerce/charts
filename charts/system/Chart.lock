@@ -45,6 +45,7 @@ dependencies:
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.5
 - name: cloudserver
+  repository: ""
   version: 1.0.4
 - name: kafka
   repository: https://charts.bitnami.com/bitnami
@@ -58,5 +59,5 @@ dependencies:
 - name: kibana
   repository: https://helm.elastic.co
   version: 7.9.2
-digest: sha256:0a282204816fc37b37dac0e538434b405fd1b710ac75e37112f1bbe2cb13221b
-generated: "2023-02-09T13:52:17.066267364-08:00"
+digest: sha256:94cedf26bfbcd5ec6e46f63f7567d3e300c2ecf280e31b6e1ca0ec84786e8fa7
+generated: "2023-04-17T21:12:05.906427464+03:00"
