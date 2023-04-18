@@ -45,7 +45,7 @@ identity-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
 
@@ -56,7 +56,7 @@ notification-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 access-control-srv:
   fullnameOverride: access-control-srv
@@ -67,7 +67,7 @@ access-control-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
 
@@ -80,11 +80,13 @@ ostorage-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
       - name: s3__client__accessKeyId
-        value: REPLACE_ME_ACCESS
+        value: ZFKQGYD2P6DJO4U7N33U
       - name: s3__client__secretAccessKey
-        value: REPLACE_ME_SECRET
+        value: fO09epo9zT6tslwhh192l0UHbtpCjCYTnE3TYtec
+      - name: s3__client__endpoint
+        value: http://cloudserver:8000
 
 scheduling-srv:
   fullnameOverride: scheduling-srv
@@ -95,7 +97,7 @@ scheduling-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 rendering-srv:
   fullnameOverride: rendering-srv
@@ -104,7 +106,7 @@ rendering-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 pdf-rendering-srv:
   fullnameOverride: pdf-rendering-srv
@@ -116,7 +118,7 @@ fulfillment-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 indexing-srv:
   fullnameOverride: indexing-srv
@@ -125,9 +127,9 @@ indexing-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
       - name: elasticsearch__client__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 catalog-srv:
   fullnameOverride: catalog-srv
@@ -136,7 +138,7 @@ catalog-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 invoicing-srv:
   fullnameOverride: invoicing-srv
@@ -145,7 +147,7 @@ invoicing-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 ordering-srv:
   fullnameOverride: ordering-srv
@@ -154,7 +156,7 @@ ordering-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 payment-srv:
   fullnameOverride: payment-srv
@@ -163,7 +165,7 @@ payment-srv:
       - name: redis__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
 
 resource-srv:
   fullnameOverride: resource-srv
@@ -174,7 +176,7 @@ resource-srv:
       - name: authorization__cache__host
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
-        value: http://elasticsearch-master:9200
+        value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
 
@@ -207,25 +209,13 @@ kafka:
   fullnameOverride: kafka
   zookeeper:
     enabled: false
-  externalZookeeper:
-    servers:
-      - "zookeeper:2181"
   deleteTopicEnable: true
   autoCreateTopicsEnable: true
+  kraft:
+    enabled: true
 
 redis:
   fullnameOverride: redis
-  usePassword: false
-
-elasticsearch:
-  antiAffinity: "soft"
-  volumeClaimTemplate:
-    accessModes: ["ReadWriteOnce"]
-    resources:
-      requests:
-        storage: 10Gi
-  replicas: 2
-
-kibana:
-  fullnameOverride: kibana
-  elasticsearchHosts: "http://elasticsearch-master:9200"
+  auth:
+    enabled: false
+  architecture: standalone

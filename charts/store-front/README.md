@@ -1,6 +1,6 @@
 # store-front
 
-![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
+![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
 
 Restorecommerce store-front
 
@@ -19,11 +19,13 @@ Restorecommerce store-front
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | affinity | object | `{}` | Specify the affinity for all pods |
+| args | list | `[]` | Override arguments for all pods |
 | autoscaling.enabled | bool | `false` | Enable HPA |
 | autoscaling.maxReplicas | int | `100` | Max amount of replicas for HPA |
 | autoscaling.minReplicas | int | `1` | Min amount of replicas for HPA |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` | Target CPU usage for HPA |
 | autoscaling.targetMemoryUtilizationPercentage | int | `80` | Target memory usage for HPA |
+| command | list | `[]` | Override command for all pods |
 | env.extras | list | `[]` | Any extra environment variables appended to all pods |
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |

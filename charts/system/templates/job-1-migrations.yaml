@@ -25,29 +25,30 @@ spec:
         runAsUser: {{ .Values.jobs.migrations.securityContext.runAsUser }}
         fsGroup: {{ .Values.jobs.migrations.securityContext.fsGroup }}
       restartPolicy: OnFailure
+      serviceAccountName: {{ include "system.fullname" . }}-1-migrations
       initContainers:
         # TODO Wait for all services
         - name: wait-for-facade
-          image: groundnuty/k8s-wait-for:v1.3
-          imagepullPolicy: IfNotPresent
+          image: groundnuty/k8s-wait-for:v1.7
+          imagePullPolicy: IfNotPresent
           args:
             - "service"
             - "facade-srv"
         - name: wait-for-identity
-          image: groundnuty/k8s-wait-for:v1.3
-          imagepullPolicy: IfNotPresent
+          image: groundnuty/k8s-wait-for:v1.7
+          imagePullPolicy: IfNotPresent
           args:
             - "service"
             - "identity-srv"
         - name: wait-for-resource
-          image: groundnuty/k8s-wait-for:v1.3
-          imagepullPolicy: IfNotPresent
+          image: groundnuty/k8s-wait-for:v1.7
+          imagePullPolicy: IfNotPresent
           args:
             - "service"
             - "resource-srv"
         - name: wait-for-access-control
-          image: groundnuty/k8s-wait-for:v1.3
-          imagepullPolicy: IfNotPresent
+          image: groundnuty/k8s-wait-for:v1.7
+          imagePullPolicy: IfNotPresent
           args:
             - "service"
             - "access-control-srv"
@@ -63,4 +64,43 @@ spec:
       nodeSelector:
         {{- toYaml .Values.jobs.migrations.nodeSelector | nindent 8 }}
     {{- end }}
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: {{ include "system.fullname" . }}-1-migrations
+  labels:
+    {{- include "system.labels" . | nindent 4 }}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ include "system.fullname" . }}-1-migrations
+  labels:
+    {{- include "system.labels" . | nindent 4 }}
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - services
+  - pods
+  verbs:
+  - get
+  - list
+  - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: {{ include "system.fullname" . }}-1-migrations
+  labels:
+    {{- include "system.labels" . | nindent 4 }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ include "system.fullname" . }}-1-migrations
+subjects:
+- kind: ServiceAccount
+  namespace: {{ .Release.Namespace }}
+  name: {{ include "system.fullname" . }}-1-migrations
 {{- end }}

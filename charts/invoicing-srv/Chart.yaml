@@ -11,4 +11,4 @@ name: invoicing-srv
 sources:
 - https://github.com/restorecommerce/invoicing-srv
 type: application
-version: 0.1.6
+version: 0.1.7

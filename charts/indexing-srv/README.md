@@ -1,6 +1,6 @@
 # indexing-srv
 
-![Version: 0.1.4](https://img.shields.io/badge/Version-0.1.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.15](https://img.shields.io/badge/AppVersion-0.0.15-informational?style=flat-square)
+![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.15](https://img.shields.io/badge/AppVersion-0.0.15-informational?style=flat-square)
 
 Restorecommerce indexing-srv
 
@@ -21,11 +21,13 @@ Restorecommerce indexing-srv
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | affinity | object | `{}` | Specify the affinity for all pods |
+| args | list | `[]` | Override arguments for all pods |
 | autoscaling.enabled | bool | `false` | Enable HPA |
 | autoscaling.maxReplicas | int | `100` | Max amount of replicas for HPA |
 | autoscaling.minReplicas | int | `1` | Min amount of replicas for HPA |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` | Target CPU usage for HPA |
 | autoscaling.targetMemoryUtilizationPercentage | int | `80` | Target memory usage for HPA |
+| command | list | `[]` | Override command for all pods |
 | config.file | string | `"config_production_override.json"` | Name of the file in the config map |
 | config.literal | string | `""` | Provide the literal config through this string. Has to be in a JSON format |
 | config.name | string | `""` | Name of the config map to be mounted. If specified, config will be appended to the node environment automatically |

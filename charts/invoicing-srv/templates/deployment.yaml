@@ -67,6 +67,14 @@ spec:
               mountPath: "/home/node/invoicing-srv/cfg/config_{{ .Values.env.nodeEnv }}_override.json"
               subPath: {{ .Values.config.file | quote }}
           {{- end }}
+          {{- if .Values.command }}
+          command:
+            {{- toYaml .Values.command | nindent 12 }}
+          {{- end }}
+          {{- if .Values.args }}
+          args:
+            {{- toYaml .Values.args | nindent 12 }}
+          {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

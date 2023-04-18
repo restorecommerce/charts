@@ -49,15 +49,9 @@ dependencies:
   version: 1.0.4
 - name: kafka
   repository: https://charts.bitnami.com/bitnami
-  version: 20.0.6
+  version: 21.4.0
 - name: redis
   repository: https://charts.bitnami.com/bitnami
-  version: 17.7.2
-- name: elasticsearch
-  repository: https://helm.elastic.co
-  version: 7.9.2
-- name: kibana
-  repository: https://helm.elastic.co
-  version: 7.9.2
-digest: sha256:94cedf26bfbcd5ec6e46f63f7567d3e300c2ecf280e31b6e1ca0ec84786e8fa7
-generated: "2023-04-17T21:12:05.906427464+03:00"
+  version: 17.8.4
+digest: sha256:c0e12180856463a1d7a6b86c9f5694835454566d04e6900d976dc0f58b9e5d2a
+generated: "2023-04-18T19:35:50.281766855+03:00"

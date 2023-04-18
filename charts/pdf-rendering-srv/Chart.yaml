@@ -11,4 +11,4 @@ name: pdf-rendering-srv
 sources:
 - https://github.com/restorecommerce/pdf-rendering-srv
 type: application
-version: 0.1.8
+version: 0.1.9
