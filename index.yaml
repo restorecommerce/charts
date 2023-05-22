@@ -307,6 +307,23 @@ entries:
   console:
   - apiVersion: v2
     appVersion: 0.0.2
+    created: "2023-05-22T21:37:42.700206699Z"
+    description: Restorecommerce console
+    digest: 8c4d629fedc3fb35723549ad19dcbbb41ef27a08f5ca7a08113e5cf000727fda
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: console
+    sources:
+    - https://github.com/restorecommerce/console
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/console-0.1.10/console-0.1.10.tgz
+    version: 0.1.10
+  - apiVersion: v2
+    appVersion: 0.0.2
     created: "2023-04-18T17:21:42.63620269Z"
     description: Restorecommerce console
     digest: fa2d4645d99390717a68e3f555704343f3d9244011ac2ab89b1ae542464290c8
@@ -2396,6 +2413,24 @@ entries:
     version: 0.1.0
   scheduling-srv:
   - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-05-22T21:37:42.91271067Z"
+    description: Restorecommerce scheduling-srv
+    digest: 8f75535e6a08d5c5a6d8da2312205a776388fd7ced8f860fe91f6f3f137f10d7
+    home: https://docs.restorecommerce.io/scheduling-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: scheduling-srv
+    sources:
+    - https://github.com/restorecommerce/scheduling-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/scheduling-srv-0.1.14/scheduling-srv-0.1.14.tgz
+    version: 0.1.14
+  - apiVersion: v2
     appVersion: 0.3.2
     created: "2023-04-18T17:21:44.978659257Z"
     description: Restorecommerce scheduling-srv
@@ -3466,4 +3501,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-18T17:21:45.381688126Z"
+generated: "2023-05-22T21:37:42.913358875Z"
