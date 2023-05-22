@@ -40,6 +40,8 @@ spec:
               containerPort: 50051
               protocol: TCP
           env:
+            - name: npm_config_cache
+              value: /tmp/npm/
             - name: NODE_ENV
               value: {{ include "rendering-srv.nodeEnv" . }}
             {{- if .Values.env.extras }}
@@ -63,6 +65,8 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
+            - name: tmp
+              mountPath: /tmp
             {{- range $k, $v := .Values.handlebars }}
             - name: handlebars
               mountPath: "/home/node/rendering-srv/handlebars/{{ $k }}"
@@ -94,6 +98,8 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       volumes:
+        - name: tmp
+          emptyDir: {}
         - name: handlebars
           configMap:
             name: "{{ include "rendering-srv.fullname" . }}-handlebars"

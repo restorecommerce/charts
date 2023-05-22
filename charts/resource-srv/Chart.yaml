@@ -11,4 +11,4 @@ name: resource-srv
 sources:
 - https://github.com/restorecommerce/resource-srv
 type: application
-version: 0.1.6
+version: 0.1.7

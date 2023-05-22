@@ -37,8 +37,10 @@ spec:
             - name: http
               containerPort: 9000
               protocol: TCP
-          {{- if .Values.env.extras }}
           env:
+            - name: npm_config_cache
+              value: /tmp/npm/
+          {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
           {{- end }}
           livenessProbe:
@@ -59,6 +61,9 @@ spec:
                 - http://localhost:9000/
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
           {{- if .Values.command }}
           command:
             {{- toYaml .Values.command | nindent 12 }}
@@ -79,3 +84,6 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      volumes:
+        - name: tmp
+          emptyDir: {}

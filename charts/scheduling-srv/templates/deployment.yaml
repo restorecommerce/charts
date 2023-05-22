@@ -42,6 +42,8 @@ spec:
             {{- toYaml .Values.extraPorts.deployment | nindent 12 }}
             {{- end }}
           env:
+            - name: npm_config_cache
+              value: /tmp/npm/
             - name: NODE_ENV
               value: {{ include "scheduling-srv.nodeEnv" . }}
             {{- if .Values.env.extras }}
@@ -64,8 +66,10 @@ spec:
                 - -service=readiness
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          {{- if or .Values.config.name .Values.config.literal }}
           volumeMounts:
+            - name: tmp
+              mountPath: /tmp
+          {{- if or .Values.config.name .Values.config.literal }}
             - name: config
               mountPath: "/home/node/scheduling-srv/cfg/config_{{ .Values.env.nodeEnv }}_override.json"
               subPath: {{ .Values.config.file | quote }}
@@ -90,8 +94,10 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      {{- if or .Values.config.name .Values.config.literal }}
       volumes:
+        - name: tmp
+          emptyDir: {}
+      {{- if or .Values.config.name .Values.config.literal }}
         - name: config
           configMap:
             {{- with .Values.config.name }}

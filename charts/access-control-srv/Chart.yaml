@@ -11,4 +11,4 @@ name: access-control-srv
 sources:
 - https://github.com/restorecommerce/access-control-srv
 type: application
-version: 0.1.11
+version: 0.1.12
