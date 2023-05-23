@@ -40,10 +40,10 @@ identity-srv:
   fullnameOverride: identity-srv
   env:
     extras:
-      - name: authorization__cache__host
-        value: redis-master
-      - name: redis__host
-        value: redis-master
+      - name: authorization__cache__url
+        value: redis://redis-master:6379
+      - name: redis__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
@@ -53,8 +53,8 @@ notification-srv:
   fullnameOverride: notification-srv
   env:
     extras:
-      - name: redis__host
-        value: redis-master
+      - name: redis__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
 
@@ -62,10 +62,10 @@ access-control-srv:
   fullnameOverride: access-control-srv
   env:
     extras:
-      - name: authorization__cache__host
-        value: redis-master
-      - name: redis__host
-        value: redis-master
+      - name: authorization__cache__url
+        value: redis://redis-master:6379
+      - name: redis__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
@@ -75,10 +75,10 @@ ostorage-srv:
   fullnameOverride: ostorage-srv
   env:
     extras:
-      - name: authorization__cache__host
-        value: redis-master
-      - name: redis__host
-        value: redis-master
+      - name: authorization__cache__url
+        value: redis://redis-master:6379
+      - name: redis__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: s3__client__accessKeyId
@@ -92,10 +92,10 @@ scheduling-srv:
   fullnameOverride: scheduling-srv
   env:
     extras:
-      - name: authorization__cache__host
-        value: redis-master
-      - name: redis__host
-        value: redis-master
+      - name: authorization__cache__url
+        value: redis://redis-master:6379
+      - name: redis__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
 
@@ -103,8 +103,8 @@ rendering-srv:
   fullnameOverride: rendering-srv
   env:
     extras:
-      - name: redis__host
-        value: redis-master
+      - name: redis__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
 
@@ -135,8 +135,8 @@ catalog-srv:
   fullnameOverride: catalog-srv
   env:
     extras:
-      - name: redis__host
-        value: redis-master
+      - name: redis__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
 
@@ -144,8 +144,8 @@ invoicing-srv:
   fullnameOverride: invoicing-srv
   env:
     extras:
-      - name: redis__host
-        value: redis-master
+      - name: redis__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
 
@@ -171,10 +171,10 @@ resource-srv:
   fullnameOverride: resource-srv
   env:
     extras:
-      - name: redis__host
-        value: redis-master
-      - name: authorization__cache__host
-        value: redis-master
+      - name: redis__url
+        value: redis://redis-master:6379
+      - name: authorization__cache__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled

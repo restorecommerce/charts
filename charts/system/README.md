@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.11](https://img.shields.io/badge/Version-0.1.11-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.12](https://img.shields.io/badge/Version-0.1.12-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -42,18 +42,18 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 |  | cloudserver | 1.0.4 |
 | https://charts.bitnami.com/bitnami | kafka | 21.4.0 |
 | https://charts.bitnami.com/bitnami | redis | 17.8.4 |
-| https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.3 |
-| https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.1 |
-| https://restorecommerce.github.io/charts/ | facade-srv | 0.1.5 |
-| https://restorecommerce.github.io/charts/ | fulfillment-srv | 0.1.1 |
-| https://restorecommerce.github.io/charts/ | identity-srv | 0.1.4 |
-| https://restorecommerce.github.io/charts/ | indexing-srv | 0.1.1 |
-| https://restorecommerce.github.io/charts/ | invoicing-srv | 0.1.1 |
-| https://restorecommerce.github.io/charts/ | notification-srv | 0.1.3 |
-| https://restorecommerce.github.io/charts/ | ordering-srv | 0.1.1 |
-| https://restorecommerce.github.io/charts/ | ostorage-srv | 0.1.3 |
-| https://restorecommerce.github.io/charts/ | payment-srv | 0.1.2 |
-| https://restorecommerce.github.io/charts/ | pdf-rendering-srv | 0.1.2 |
-| https://restorecommerce.github.io/charts/ | rendering-srv | 0.1.3 |
-| https://restorecommerce.github.io/charts/ | resource-srv | 0.1.0 |
-| https://restorecommerce.github.io/charts/ | scheduling-srv | 0.1.3 |
+| https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.12 |
+| https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.7 |
+| https://restorecommerce.github.io/charts/ | facade-srv | 0.1.13 |
+| https://restorecommerce.github.io/charts/ | fulfillment-srv | 0.1.6 |
+| https://restorecommerce.github.io/charts/ | identity-srv | 0.1.14 |
+| https://restorecommerce.github.io/charts/ | indexing-srv | 0.1.6 |
+| https://restorecommerce.github.io/charts/ | invoicing-srv | 0.1.8 |
+| https://restorecommerce.github.io/charts/ | notification-srv | 0.1.13 |
+| https://restorecommerce.github.io/charts/ | ordering-srv | 0.1.6 |
+| https://restorecommerce.github.io/charts/ | ostorage-srv | 0.1.13 |
+| https://restorecommerce.github.io/charts/ | payment-srv | 0.1.7 |
+| https://restorecommerce.github.io/charts/ | pdf-rendering-srv | 0.1.10 |
+| https://restorecommerce.github.io/charts/ | rendering-srv | 0.1.14 |
+| https://restorecommerce.github.io/charts/ | resource-srv | 0.1.7 |
+| https://restorecommerce.github.io/charts/ | scheduling-srv | 0.1.15 |

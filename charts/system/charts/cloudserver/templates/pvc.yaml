@@ -4,7 +4,7 @@ metadata:
   name: cloudserver
 spec:
   accessModes:
-    - ReadWriteMany
+    - {{ .Values.pvcAccessMode }}
   resources:
     requests:
       storage: {{ .Values.persistence.size }}

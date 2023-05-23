@@ -2,7 +2,7 @@ apiVersion: v2
 name: system
 description: A Helm chart for the Restorecommerce system
 type: application
-version: 0.1.11
+version: 0.1.12
 icon: https://avatars0.githubusercontent.com/u/8339525
 home: https://github.com/restorecommerce/system
 maintainers:
@@ -11,49 +11,49 @@ maintainers:
     email: info@restorecommerce.io
 dependencies:
   - name: identity-srv
-    version: 0.1.4
+    version: 0.1.14
     repository: https://restorecommerce.github.io/charts/
   - name: notification-srv
-    version: 0.1.3
+    version: 0.1.13
     repository: https://restorecommerce.github.io/charts/
   - name: access-control-srv
-    version: 0.1.3
+    version: 0.1.12
     repository: https://restorecommerce.github.io/charts/
   - name: ostorage-srv
-    version: 0.1.3
+    version: 0.1.13
     repository: https://restorecommerce.github.io/charts/
   - name: scheduling-srv
-    version: 0.1.3
+    version: 0.1.15
     repository: https://restorecommerce.github.io/charts/
   - name: rendering-srv
-    version: 0.1.3
+    version: 0.1.14
     repository: https://restorecommerce.github.io/charts/
   - name: pdf-rendering-srv
-    version: 0.1.2
+    version: 0.1.10
     repository: https://restorecommerce.github.io/charts/
   - name: fulfillment-srv
-    version: 0.1.1
+    version: 0.1.6
     repository: https://restorecommerce.github.io/charts/
   - name: indexing-srv
-    version: 0.1.1
+    version: 0.1.6
     repository: https://restorecommerce.github.io/charts/
   - name: catalog-srv
-    version: 0.1.1
+    version: 0.1.7
     repository: https://restorecommerce.github.io/charts/
   - name: invoicing-srv
-    version: 0.1.1
+    version: 0.1.8
     repository: https://restorecommerce.github.io/charts/
   - name: ordering-srv
-    version: 0.1.1
+    version: 0.1.6
     repository: https://restorecommerce.github.io/charts/
   - name: payment-srv
-    version: 0.1.2
+    version: 0.1.7
     repository: https://restorecommerce.github.io/charts/
   - name: resource-srv
-    version: 0.1.0
+    version: 0.1.7
     repository: https://restorecommerce.github.io/charts/
   - name: facade-srv
-    version: 0.1.5
+    version: 0.1.13
     repository: https://restorecommerce.github.io/charts/
   - name: cloudserver
     version: 1.0.4
