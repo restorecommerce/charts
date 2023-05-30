@@ -42,21 +42,9 @@ spec:
             {{- toYaml .Values.env.extras | nindent 12 }}
           {{- end }}
           livenessProbe:
-            initialDelaySeconds: 10
-            periodSeconds: 30
-            exec:
-              command:
-                - wget
-                - --spider
-                - http://localhost:4000/
+            {{- toYaml .Values.probes | nindent 12 }}
           readinessProbe:
-            initialDelaySeconds: 10
-            periodSeconds: 30
-            exec:
-              command:
-                - wget
-                - --spider
-                - http://localhost:4000/
+            {{- toYaml .Values.probes | nindent 12 }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           {{- if .Values.command }}

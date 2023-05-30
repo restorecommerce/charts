@@ -102,3 +102,13 @@ env:
 
   # env.extras -- Any extra environment variables appended to all pods
   extras: []
+
+# probes -- The liveness and readiness probes
+probes:
+  initialDelaySeconds: 10
+  periodSeconds: 30
+  exec:
+    command:
+      - wget
+      - --spider
+      - http://localhost:4000/

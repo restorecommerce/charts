@@ -1,6 +1,6 @@
 # store-front
 
-![Version: 0.1.7](https://img.shields.io/badge/Version-0.1.7-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
+![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.0.1](https://img.shields.io/badge/AppVersion-0.0.1-informational?style=flat-square)
 
 Restorecommerce store-front
 
@@ -37,6 +37,7 @@ Restorecommerce store-front
 | nodeSelector | object | `{}` | Specify the nodeSelector for all pods |
 | podAnnotations | object | `{}` | Any extra annotations for all pods |
 | podSecurityContext | object | `{}` | Security context override for all pods |
+| probes | object | `{"exec":{"command":["wget","--spider","http://localhost:4000/"]},"initialDelaySeconds":10,"periodSeconds":30}` | The liveness and readiness probes |
 | replicaCount | int | `1` | Replica count of the deployment |
 | resources | object | `{}` | Any resource configuration applied to all pods |
 | securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |
