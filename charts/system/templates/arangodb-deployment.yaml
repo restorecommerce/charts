@@ -4,9 +4,34 @@ metadata:
   name: arangodb
 spec:
   mode: Single
+  image: 'arangodb/arangodb:3.10.3'
   auth:
     jwtSecretName: None
   externalAccess:
     type: None
   tls:
     caSecretName: None
+  single:
+    volumeClaimTemplate:
+      metadata:
+        name: arangodb
+      spec:
+        accessModes:
+        - {{ .Values.accessMode }}
+        resources:
+          requests:
+            storage: 8Gi
+    resources:
+      limits:
+        memory: 1024Mi
+status:
+  agency:
+    id:
+      - SNGL-000000
+    size: 1
+  members:
+    single:
+      - id: SNGL-000000
+        persistentVolumeClaim:
+          name: arangodb-single-000000
+        persistentVolumeClaimName: arangodb-single-000000

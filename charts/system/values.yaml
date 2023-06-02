@@ -1,3 +1,5 @@
+accessMode: ReadWriteOnce
+
 jobs:
   migrations:
     enabled: true
@@ -48,6 +50,8 @@ identity-srv:
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
+      - name: database__main__host
+        value: arangodb-single-000000
 
 notification-srv:
   fullnameOverride: notification-srv
@@ -70,6 +74,8 @@ access-control-srv:
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
+      - name: database__main__host
+        value: arangodb-single-000000
 
 ostorage-srv:
   fullnameOverride: ostorage-srv
@@ -119,6 +125,8 @@ fulfillment-srv:
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
+      - name: database__main__host
+        value: arangodb-single-000000
 
 indexing-srv:
   fullnameOverride: indexing-srv
@@ -139,6 +147,8 @@ catalog-srv:
         value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
+      - name: database__main__host
+        value: arangodb-single-000000
 
 invoicing-srv:
   fullnameOverride: invoicing-srv
@@ -148,6 +158,8 @@ invoicing-srv:
         value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
+      - name: database__main__host
+        value: arangodb-single-000000
 
 ordering-srv:
   fullnameOverride: ordering-srv
@@ -157,6 +169,8 @@ ordering-srv:
         value: redis-master
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
+      - name: database__main__host
+        value: arangodb-single-000000
 
 payment-srv:
   fullnameOverride: payment-srv
@@ -179,6 +193,8 @@ resource-srv:
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
+      - name: database__main__host
+        value: arangodb-single-000000
 
 facade-srv:
   fullnameOverride: facade-srv

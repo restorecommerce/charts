@@ -28,7 +28,7 @@ dependencies:
   version: 0.1.6
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.7
+  version: 0.1.8
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.8
@@ -53,5 +53,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 17.8.4
-digest: sha256:79243bf71b9f3c73cd508af1f9fddf45cc82b043bd3734ebd211ebf62a99ea0f
-generated: "2023-05-23T01:54:49.526568376+03:00"
+digest: sha256:27dc644f416870ab8a65dbdafe59caff5f8f83bed4d48636a487195610e0fd3b
+generated: "2023-05-31T00:50:16.759202202+03:00"
