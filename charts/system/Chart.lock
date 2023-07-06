@@ -1,22 +1,22 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.15
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.13
+  version: 0.1.14
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.12
+  version: 0.1.13
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.13
+  version: 0.1.14
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.15
+  version: 0.1.16
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.15
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.10
@@ -25,25 +25,25 @@ dependencies:
   version: 0.1.6
 - name: indexing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.6
+  version: 0.1.7
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.8
+  version: 0.1.9
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.8
+  version: 0.1.9
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.6
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.7
+  version: 0.1.8
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.7
+  version: 0.1.8
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.13
+  version: 0.1.14
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -53,5 +53,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 17.8.4
-digest: sha256:27dc644f416870ab8a65dbdafe59caff5f8f83bed4d48636a487195610e0fd3b
-generated: "2023-05-31T00:50:16.759202202+03:00"
+digest: sha256:8c9af7f2e97a4bb9ee568046bc3cd571e6e3ef42a672d3932e90db1216306b62
+generated: "2023-07-07T01:44:14.038928691+03:00"

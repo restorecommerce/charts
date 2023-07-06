@@ -1,65 +1,65 @@
 apiVersion: v2
-name: system
-description: A Helm chart for the Restorecommerce system
-type: application
-version: 0.1.14
-icon: https://avatars0.githubusercontent.com/u/8339525
-home: https://github.com/restorecommerce/system
-maintainers:
-  - name: restorecommerce
-    url: https://restorecommerce.io/
-    email: info@restorecommerce.io
 dependencies:
-  - name: identity-srv
-    version: 0.1.14
-    repository: https://restorecommerce.github.io/charts/
-  - name: notification-srv
-    version: 0.1.13
-    repository: https://restorecommerce.github.io/charts/
-  - name: access-control-srv
-    version: 0.1.12
-    repository: https://restorecommerce.github.io/charts/
-  - name: ostorage-srv
-    version: 0.1.13
-    repository: https://restorecommerce.github.io/charts/
-  - name: scheduling-srv
-    version: 0.1.15
-    repository: https://restorecommerce.github.io/charts/
-  - name: rendering-srv
-    version: 0.1.14
-    repository: https://restorecommerce.github.io/charts/
-  - name: pdf-rendering-srv
-    version: 0.1.10
-    repository: https://restorecommerce.github.io/charts/
-  - name: fulfillment-srv
-    version: 0.1.6
-    repository: https://restorecommerce.github.io/charts/
-  - name: indexing-srv
-    version: 0.1.6
-    repository: https://restorecommerce.github.io/charts/
-  - name: catalog-srv
-    version: 0.1.8
-    repository: https://restorecommerce.github.io/charts/
-  - name: invoicing-srv
-    version: 0.1.8
-    repository: https://restorecommerce.github.io/charts/
-  - name: ordering-srv
-    version: 0.1.6
-    repository: https://restorecommerce.github.io/charts/
-  - name: payment-srv
-    version: 0.1.7
-    repository: https://restorecommerce.github.io/charts/
-  - name: resource-srv
-    version: 0.1.7
-    repository: https://restorecommerce.github.io/charts/
-  - name: facade-srv
-    version: 0.1.13
-    repository: https://restorecommerce.github.io/charts/
-  - name: cloudserver
-    version: 1.0.4
-  - name: kafka
-    version: 21.4.0
-    repository: https://charts.bitnami.com/bitnami
-  - name: redis
-    version: 17.8.4
-    repository: https://charts.bitnami.com/bitnami
+- name: identity-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.15
+- name: notification-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.14
+- name: access-control-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.13
+- name: ostorage-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.14
+- name: scheduling-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.16
+- name: rendering-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.15
+- name: pdf-rendering-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.10
+- name: fulfillment-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.6
+- name: indexing-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.7
+- name: catalog-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.9
+- name: invoicing-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.9
+- name: ordering-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.6
+- name: payment-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.8
+- name: resource-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.8
+- name: facade-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.14
+- name: cloudserver
+  version: 1.0.4
+- name: kafka
+  repository: https://charts.bitnami.com/bitnami
+  version: 21.4.0
+- name: redis
+  repository: https://charts.bitnami.com/bitnami
+  version: 17.8.4
+description: A Helm chart for the Restorecommerce system
+home: https://github.com/restorecommerce/system
+icon: https://avatars0.githubusercontent.com/u/8339525
+maintainers:
+- email: info@restorecommerce.io
+  name: restorecommerce
+  url: https://restorecommerce.io/
+name: system
+type: application
+version: 0.1.15
