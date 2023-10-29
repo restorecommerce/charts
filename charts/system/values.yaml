@@ -165,8 +165,10 @@ ordering-srv:
   fullnameOverride: ordering-srv
   env:
     extras:
-      - name: redis__host
-        value: redis-master
+      - name: redis__url
+        value: redis://redis-master:6379
+      - name: authorization__cache__url
+        value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
