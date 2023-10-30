@@ -22,5 +22,8 @@ fi
 
 # validate charts
 for CHART_DIR in ${CHART_DIRS}; do
-  helm template charts/"${CHART_DIR}" | $KUBEVAL_PATH --strict --ignore-missing-schemas --kubernetes-version "${KUBERNETES_VERSION#v}" --schema-location "${SCHEMA_LOCATION}"
+  if [ -d "charts/$CHART_DIR" ] 
+  then
+    helm template charts/"${CHART_DIR}" | $KUBEVAL_PATH --strict --ignore-missing-schemas --kubernetes-version "${KUBERNETES_VERSION#v}" --schema-location "${SCHEMA_LOCATION}"
+  fi
 done

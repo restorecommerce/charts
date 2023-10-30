@@ -96,6 +96,9 @@ command: []
 # args -- Override arguments for all pods
 args: []
 
+# enableHealthCheck -- Enable health checks
+enableHealthCheck: true
+
 env:
   # env.nodeEnv -- The selected node environment and config
   nodeEnv: production

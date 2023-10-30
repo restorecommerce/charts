@@ -1,6 +1,6 @@
 # resource-srv
 
-![Version: 0.1.8](https://img.shields.io/badge/Version-0.1.8-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.1](https://img.shields.io/badge/AppVersion-1.0.1-informational?style=flat-square)
+![Version: 0.1.9](https://img.shields.io/badge/Version-0.1.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.3.1](https://img.shields.io/badge/AppVersion-1.3.1-informational?style=flat-square)
 
 Restorecommerce resource-srv
 
@@ -31,6 +31,7 @@ Restorecommerce resource-srv
 | config.file | string | `"config_production_override.json"` | Name of the file in the config map |
 | config.literal | string | `""` | Provide the literal config through this string. Has to be in a JSON format |
 | config.name | string | `""` | Name of the config map to be mounted. If specified, config will be appended to the node environment automatically |
+| enableHealthCheck | bool | `true` | Enable health checks |
 | env.extras | list | `[]` | Any extra environment variables appended to all pods |
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |

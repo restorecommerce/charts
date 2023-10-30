@@ -8,7 +8,6 @@ Helm chart index:
 * [facade-srv](./charts/facade-srv)
 * [fulfillment-srv](./charts/fulfillment-srv)
 * [identity-srv](./charts/identity-srv)
-* [indexing-srv](./charts/indexing-srv)
 * [invoicing-srv](./charts/invoicing-srv)
 * [notification-srv](./charts/notification-srv)
 * [ordering-srv](./charts/ordering-srv)
@@ -69,7 +68,7 @@ helm-docs
 Validation uses the [kubeval](https://github.com/instrumenta/kubeval) tool
 
 ```bash
-KUBERNETES_VERSION=1.26.0 ./.github/kubeval.sh
+KUBERNETES_VERSION=1.28.3 ./.github/kubeval.sh
 ```
 
 ### Update Dependencies and Lockfiles

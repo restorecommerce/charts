@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 0.0.2
+appVersion: 0.0.3
 description: Restorecommerce console
 icon: https://avatars0.githubusercontent.com/u/8339525
 maintainers:
@@ -10,4 +10,4 @@ name: console
 sources:
 - https://github.com/restorecommerce/console
 type: application
-version: 0.1.10
+version: 0.1.11

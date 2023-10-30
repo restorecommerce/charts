@@ -142,22 +142,6 @@ releases:
             - name: logger__elasticsearch__clientOpts__node
               value: http://elasticsearch-master:9200
 
-  - name: indexing-srv
-    namespace: restorecommerce
-    chart: ../../charts/indexing-srv
-    installed: true
-    atomic: true
-    cleanupOnFail: true
-    values:
-      - env:
-          extras:
-            - name: redis__host
-              value: redis-master
-            - name: logger__elasticsearch__clientOpts__node
-              value: http://elasticsearch-master:9200
-            - name: elasticsearch__client__node
-              value: http://elasticsearch-master:9200
-
   - name: catalog-srv
     namespace: restorecommerce
     chart: ../../charts/catalog-srv
