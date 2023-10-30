@@ -23,9 +23,6 @@ dependencies:
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.6
-- name: indexing-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.7
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.9
@@ -53,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 17.8.4
-digest: sha256:8c9af7f2e97a4bb9ee568046bc3cd571e6e3ef42a672d3932e90db1216306b62
-generated: "2023-07-07T01:44:14.038928691+03:00"
+digest: sha256:683d0fca042ee79709ea19a64be92821ddba533100c675a28c08007ccb6cf7f3
+generated: "2023-10-31T00:45:57.484488171+02:00"

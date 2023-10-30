@@ -128,17 +128,6 @@ fulfillment-srv:
       - name: database__main__host
         value: arangodb-single-000000
 
-indexing-srv:
-  fullnameOverride: indexing-srv
-  env:
-    extras:
-      - name: redis__host
-        value: redis-master
-      - name: logger__elasticsearch__clientOpts__node
-        value: http://restorecommerce-es-http:9200
-      - name: elasticsearch__client__node
-        value: http://restorecommerce-es-http:9200
-
 catalog-srv:
   fullnameOverride: catalog-srv
   env:

@@ -24,9 +24,6 @@ dependencies:
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.6
-- name: indexing-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.7
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.9

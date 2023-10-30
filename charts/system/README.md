@@ -47,7 +47,6 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | https://restorecommerce.github.io/charts/ | facade-srv | 0.1.14 |
 | https://restorecommerce.github.io/charts/ | fulfillment-srv | 0.1.6 |
 | https://restorecommerce.github.io/charts/ | identity-srv | 0.1.15 |
-| https://restorecommerce.github.io/charts/ | indexing-srv | 0.1.7 |
 | https://restorecommerce.github.io/charts/ | invoicing-srv | 0.1.9 |
 | https://restorecommerce.github.io/charts/ | notification-srv | 0.1.14 |
 | https://restorecommerce.github.io/charts/ | ordering-srv | 0.1.6 |
