@@ -2,22 +2,22 @@ apiVersion: v2
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.15
+  version: 0.1.17
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.16
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.13
+  version: 0.1.15
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.16
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.16
+  version: 0.1.18
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.15
+  version: 0.1.17
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.10
@@ -26,22 +26,22 @@ dependencies:
   version: 0.1.6
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.9
+  version: 0.1.11
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.9
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.6
+  version: 0.1.8
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.8
+  version: 0.1.10
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.8
+  version: 0.1.10
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.16
 - name: cloudserver
   version: 1.0.4
 - name: kafka
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.16
+version: 0.1.17
