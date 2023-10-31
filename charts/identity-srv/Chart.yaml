@@ -11,4 +11,4 @@ name: identity-srv
 sources:
 - https://github.com/restorecommerce/identity-srv
 type: application
-version: 0.1.16
+version: 0.1.17

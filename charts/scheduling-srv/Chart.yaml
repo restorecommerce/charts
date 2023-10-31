@@ -11,4 +11,4 @@ name: scheduling-srv
 sources:
 - https://github.com/restorecommerce/scheduling-srv
 type: application
-version: 0.1.17
+version: 0.1.18

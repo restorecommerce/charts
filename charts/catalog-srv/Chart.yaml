@@ -11,4 +11,4 @@ name: catalog-srv
 sources:
 - https://github.com/restorecommerce/catalog-srv
 type: application
-version: 0.1.10
+version: 0.1.11
