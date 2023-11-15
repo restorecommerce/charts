@@ -1,0 +1,34 @@
+{
+  "name": "charts",
+  "version": "1.0.0",
+  "description": "Helm chart index:",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restorecommerce/charts.git"
+  },
+  "keywords": [
+    "k8s"
+  ],
+  "author": "n-fuse GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/restorecommerce/charts/issues"
+  },
+  "homepage": "https://github.com/restorecommerce/charts#readme",
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
