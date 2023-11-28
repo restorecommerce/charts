@@ -81,13 +81,14 @@ done
 
 ## Packaging and Releasing
 
-Packaging uses the [helm](https://helm.sh/) tool.
+Process:
 
-Releasing uses the [chart-releaser](https://github.com/helm/chart-releaser) tool.
+- Packaging uses the [helm](https://helm.sh/) tool.
+- Releasing uses the [chart-releaser](https://github.com/helm/chart-releaser) tool.
 
-Both tasks are executed by CI/CD when a branch is merged into `master` branch.
+Both tasks are executed automatically by CI/CD when a branch is merged into `master` branch.
 
-## Version upgrading
+## Version Upgrading
 
 Automatic upgrade script is available in `python3 upgrade.py`.
 
