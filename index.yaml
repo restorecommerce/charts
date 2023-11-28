@@ -946,6 +946,24 @@ entries:
   fulfillment-srv:
   - apiVersion: v2
     appVersion: 0.0.19
+    created: "2023-11-28T22:45:44.254470436Z"
+    description: Restorecommerce fulfillment-srv
+    digest: 4b2ba2f1b4af402a2c1705b553c506d34391a6dd677cbe9a44ccaa4a1d886b20
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/fulfillment-srv-0.1.8/fulfillment-srv-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
+    appVersion: 0.0.19
     created: "2023-05-22T22:48:49.667539087Z"
     description: Restorecommerce fulfillment-srv
     digest: c9d472db6b52c95a82f0576cc171ff7f589d101830310e20349812eec0a330e5
@@ -1895,6 +1913,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/notification-srv-0.1.0/notification-srv-0.1.0.tgz
     version: 0.1.0
   ordering-srv:
+  - apiVersion: v2
+    appVersion: 0.0.13
+    created: "2023-11-28T22:45:44.42944236Z"
+    description: Restorecommerce ordering-srv
+    digest: fdaeb7d8160cabc77708abcb1f9c5f36448f5d185d11dadd55833fa655146426
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.9/ordering-srv-0.1.9.tgz
+    version: 0.1.9
   - apiVersion: v2
     appVersion: 0.0.12
     created: "2023-10-31T00:20:00.847237911Z"
@@ -4651,4 +4687,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2023-10-31T00:40:06.812580809Z"
+generated: "2023-11-28T22:45:44.430075127Z"
