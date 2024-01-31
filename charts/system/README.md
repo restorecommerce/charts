@@ -4,18 +4,20 @@
 
 A Helm chart for the Restorecommerce system
 
-## WARNING: ArangoDB
+## Dependencies
+
+### ArangoDB
 
 This chart depends on having the ArangoDB operator and CRD's installed in the cluster.
 
 Replace the `restorecommerce` namespace with your own.
 
 ```shell
-helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-crd-1.2.24.tgz
-helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-1.2.24.tgz
+helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-crd-1.2.27.tgz
+helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-1.2.27.tgz
 ```
 
-## WARNING: Elastic
+### Elastic
 
 This chart depends on having the Elastic operator and CRD's installed in the cluster.
 
@@ -24,7 +26,7 @@ Replace the `restorecommerce` namespace with your own.
 ```shell
 helm repo add elastic https://helm.elastic.co
 helm repo update
-helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator
+helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator --version 2.11.1
 ```
 
 **Homepage:** <https://github.com/restorecommerce/system>

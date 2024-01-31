@@ -3,7 +3,7 @@ kind: Elasticsearch
 metadata:
   name: restorecommerce
 spec:
-  version: 7.9.2
+  version: 8.12.0
   http:
     tls:
       selfSignedCertificate:

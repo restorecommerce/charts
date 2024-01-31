@@ -194,7 +194,7 @@ cloudserver:
   fullnameOverride: cloudserver
   image:
     repository: zenko/cloudserver
-    tag: latest-7.70.10
+    tag: latest-7.70.43
     pullPolicy: IfNotPresent
   api:
     replicaCount: 1
