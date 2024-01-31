@@ -1,23 +1,21 @@
 # system
 
-![Version: 0.1.17](https://img.shields.io/badge/Version-0.1.17-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.18](https://img.shields.io/badge/Version-0.1.18-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
-## Dependencies
-
-### ArangoDB
+## WARNING: ArangoDB
 
 This chart depends on having the ArangoDB operator and CRD's installed in the cluster.
 
 Replace the `restorecommerce` namespace with your own.
 
 ```shell
-helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-crd-1.2.27.tgz
-helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-1.2.27.tgz
+helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-crd-1.2.24.tgz
+helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-1.2.24.tgz
 ```
 
-### Elastic
+## WARNING: Elastic
 
 This chart depends on having the Elastic operator and CRD's installed in the cluster.
 
@@ -26,7 +24,7 @@ Replace the `restorecommerce` namespace with your own.
 ```shell
 helm repo add elastic https://helm.elastic.co
 helm repo update
-helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator --version 2.11.1
+helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator
 ```
 
 **Homepage:** <https://github.com/restorecommerce/system>
@@ -42,8 +40,8 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | Repository | Name | Version |
 |------------|------|---------|
 |  | cloudserver | 1.0.4 |
-| https://charts.bitnami.com/bitnami | kafka | 21.4.0 |
-| https://charts.bitnami.com/bitnami | redis | 17.8.4 |
+| https://charts.bitnami.com/bitnami | kafka | 26.8.3 |
+| https://charts.bitnami.com/bitnami | redis | 18.9.1 |
 | https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.15 |
 | https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.11 |
 | https://restorecommerce.github.io/charts/ | facade-srv | 0.1.16 |
