@@ -1,46 +1,46 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.17
+  version: 0.1.18
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.16
+  version: 0.1.17
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.15
+  version: 0.1.16
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.16
+  version: 0.1.17
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.19
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.17
+  version: 0.1.18
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.10
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.6
+  version: 0.1.9
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.11
+  version: 0.1.12
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.9
+  version: 0.1.10
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.8
+  version: 0.1.10
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.10
+  version: 0.1.11
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.10
+  version: 0.1.11
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.16
+  version: 0.1.17
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 18.9.1
-digest: sha256:2df4afa33a88b3135bd3d6c8c8de2d20a2044001bd7fe5613771506777e4f0de
-generated: "2024-01-30T15:30:40.275703031+01:00"
+digest: sha256:40e69a25520e82d6007301813cae90f5beebb8b573a7ecf0bda4422e711f1f8f
+generated: "2024-02-06T23:12:27.658581279+02:00"

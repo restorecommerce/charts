@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.20](https://img.shields.io/badge/Version-0.1.20-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.21](https://img.shields.io/badge/Version-0.1.21-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -13,8 +13,8 @@ This chart depends on having the ArangoDB operator and CRD's installed in the cl
 Replace the `restorecommerce` namespace with your own.
 
 ```shell
-helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-crd-1.2.27.tgz
-helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.24/kube-arangodb-1.2.27.tgz
+helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.27/kube-arangodb-crd-1.2.27.tgz
+helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.27/kube-arangodb-1.2.27.tgz
 ```
 
 ### Elastic
@@ -44,17 +44,17 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 |  | cloudserver | 1.0.4 |
 | https://charts.bitnami.com/bitnami | kafka | 26.8.3 |
 | https://charts.bitnami.com/bitnami | redis | 18.9.1 |
-| https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.15 |
-| https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.11 |
-| https://restorecommerce.github.io/charts/ | facade-srv | 0.1.16 |
-| https://restorecommerce.github.io/charts/ | fulfillment-srv | 0.1.6 |
-| https://restorecommerce.github.io/charts/ | identity-srv | 0.1.17 |
-| https://restorecommerce.github.io/charts/ | invoicing-srv | 0.1.9 |
-| https://restorecommerce.github.io/charts/ | notification-srv | 0.1.16 |
-| https://restorecommerce.github.io/charts/ | ordering-srv | 0.1.8 |
-| https://restorecommerce.github.io/charts/ | ostorage-srv | 0.1.16 |
-| https://restorecommerce.github.io/charts/ | payment-srv | 0.1.10 |
+| https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.16 |
+| https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.12 |
+| https://restorecommerce.github.io/charts/ | facade-srv | 0.1.17 |
+| https://restorecommerce.github.io/charts/ | fulfillment-srv | 0.1.9 |
+| https://restorecommerce.github.io/charts/ | identity-srv | 0.1.18 |
+| https://restorecommerce.github.io/charts/ | invoicing-srv | 0.1.10 |
+| https://restorecommerce.github.io/charts/ | notification-srv | 0.1.17 |
+| https://restorecommerce.github.io/charts/ | ordering-srv | 0.1.10 |
+| https://restorecommerce.github.io/charts/ | ostorage-srv | 0.1.17 |
+| https://restorecommerce.github.io/charts/ | payment-srv | 0.1.11 |
 | https://restorecommerce.github.io/charts/ | pdf-rendering-srv | 0.1.10 |
-| https://restorecommerce.github.io/charts/ | rendering-srv | 0.1.17 |
-| https://restorecommerce.github.io/charts/ | resource-srv | 0.1.10 |
-| https://restorecommerce.github.io/charts/ | scheduling-srv | 0.1.18 |
+| https://restorecommerce.github.io/charts/ | rendering-srv | 0.1.18 |
+| https://restorecommerce.github.io/charts/ | resource-srv | 0.1.11 |
+| https://restorecommerce.github.io/charts/ | scheduling-srv | 0.1.19 |
