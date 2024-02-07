@@ -49,18 +49,14 @@ spec:
           livenessProbe:
             initialDelaySeconds: 10
             periodSeconds: 30
-            exec:
-              command:
-                - /bin/grpc_health_probe
-                - -addr=:50051
+            grpc:
+              port: 50051
           readinessProbe:
             initialDelaySeconds: 10
             periodSeconds: 15
-            exec:
-              command:
-                - /bin/grpc_health_probe
-                - -addr=:50051
-                - -service=readiness
+            grpc:
+                port: 50051
+                service: readiness
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
