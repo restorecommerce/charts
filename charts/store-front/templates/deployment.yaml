@@ -37,10 +37,15 @@ spec:
             - name: http
               containerPort: 4000
               protocol: TCP
-          {{- if .Values.env.extras }}
           env:
+            - name: npm_config_cache
+              value: /tmp/npm/
+            {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
-          {{- end }}
+            {{- end }}
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
           livenessProbe:
             {{- toYaml .Values.probes | nindent 12 }}
           readinessProbe:
@@ -67,3 +72,6 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      volumes:
+        - name: tmp
+          emptyDir: {}
