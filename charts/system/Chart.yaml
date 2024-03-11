@@ -32,7 +32,7 @@ dependencies:
   version: 0.1.12
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.11
+  version: 0.1.12
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.12
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.24
+version: 0.1.25
