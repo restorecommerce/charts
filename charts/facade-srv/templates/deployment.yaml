@@ -47,7 +47,7 @@ spec:
             - name: NODE_ENV
               value: {{ include "facade-srv.nodeEnv" . }}
             {{- if (ne .Values.global.authorization.apiKey "") }}
-            - name: authorization__apiKey
+            - name: apiKey
               valueFrom:
                 secretKeyRef:
                   name: "{{ include "facade-srv.fullname" . }}-api-key"
