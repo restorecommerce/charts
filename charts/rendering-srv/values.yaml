@@ -129,3 +129,8 @@ handlebars:
         return "<ul>\n" + itemsAsHtml.join("\n") + "\n</ul>";
       });
     };
+
+global:
+  authorization:
+    # global.authorization.apiKey -- The global root API key
+    apiKey: ""

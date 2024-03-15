@@ -125,3 +125,8 @@ extraPorts:
 
   # extraPorts.service -- Any extra ports to be added to the service
   service: []
+
+global:
+  authorization:
+    # global.authorization.apiKey -- The global root API key
+    apiKey: ""

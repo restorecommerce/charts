@@ -3,7 +3,6 @@
 # Upgrades system charts to highest available semver-compatible versions of our charts
 
 from os import path
-from urllib.parse import urlparse
 from yaml import load, dump
 
 try:
@@ -12,7 +11,6 @@ except ImportError:
     from yaml import Loader, Dumper
 
 import glob
-import dxf
 import semver
 
 CHART_DIRECTORIES = "charts/*"

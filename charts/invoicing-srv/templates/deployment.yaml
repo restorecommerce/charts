@@ -15,6 +15,9 @@ spec:
     metadata:
       annotations:
         checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+        {{- if (ne .Values.global.authorization.apiKey "") }}
+        checksum/apisecret: {{ include (print $.Template.BasePath "/api-key-secret.yaml") . | sha256sum }}
+        {{- end }}
         {{- with .Values.podAnnotations }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
@@ -43,6 +46,13 @@ spec:
               value: /tmp/npm/
             - name: NODE_ENV
               value: {{ include "invoicing-srv.nodeEnv" . }}
+            {{- if (ne .Values.global.authorization.apiKey "") }}
+            - name: authorization__apiKey
+              valueFrom:
+                secretKeyRef:
+                  name: "{{ include "invoicing-srv.fullname" . }}-api-key"
+                  key: authorization__apiKey
+            {{- end }}
             {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
             {{- end }}

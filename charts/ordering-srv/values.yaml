@@ -118,3 +118,8 @@ config:
   # config.literal -- Provide the literal config through this string.
   # Has to be in a JSON format
   literal: ""
+
+global:
+  authorization:
+    # global.authorization.apiKey -- The global root API key
+    apiKey: ""
