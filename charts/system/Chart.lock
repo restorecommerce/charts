@@ -1,46 +1,46 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.19
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.17
+  version: 0.1.18
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.19
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.10
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.10
+  version: 0.1.11
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.13
+  version: 0.1.14
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.12
+  version: 0.1.13
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.12
+  version: 0.1.13
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.12
+  version: 0.1.13
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.12
+  version: 0.1.13
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.19
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 18.9.1
-digest: sha256:fd825877f63cf261051eb9102bc0b50043a8c445ae69c4081bd2b7545ebc9def
-generated: "2024-03-11T16:06:09.174509905+02:00"
+digest: sha256:ec6f6097aece66426fab481b9e359533a0d33dcaa79e4c97c350292bc97cc49d
+generated: "2024-03-15T15:22:51.056578083+02:00"
