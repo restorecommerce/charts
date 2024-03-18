@@ -63,6 +63,10 @@ jobs:
           ref: master
           propagate_failure: true
 
+      - name: Wait 10 minutes for gh pages cache expiry
+        if: ${{ steps.diff.outputs.changes == '1' }}
+        run: sleep 600
+
       - uses: benc-uk/workflow-dispatch@v1
         if: ${{ steps.diff.outputs.changes == '1' }}
         with:
