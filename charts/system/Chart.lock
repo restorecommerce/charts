@@ -1,22 +1,22 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.21
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.20
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.10
@@ -37,7 +37,7 @@ dependencies:
   version: 0.1.13
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.13
+  version: 0.1.14
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.20
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 18.9.1
-digest: sha256:44c4209a63e6aaf58b570d2b161ca727c1196560a27a7ee30ab01dd83a75e4fd
-generated: "2024-03-15T15:44:58.984060453+02:00"
+digest: sha256:ccefb28a90aa7e27126e6ca57b7a33d5b40e8230246df1d7108e5a2bbcf18610
+generated: "2024-03-18T15:54:30.118047618Z"
