@@ -1,3 +1,3 @@
-PyYAML
-python-dxf
-semver
+PyYAML == 6.0.1
+python-dxf == 11.4.0
+semver == 3.0.2

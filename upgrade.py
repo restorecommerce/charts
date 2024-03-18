@@ -49,7 +49,7 @@ for dir in glob.glob(CHART_DIRECTORIES):
             
             highestSemver = appVersion
             for alias in aliases:
-                if semver.VersionInfo.isvalid(alias):
+                if semver.VersionInfo.is_valid(alias):
                     if semver.compare(highestSemver, alias) == -1:
                         highestSemver = alias
 

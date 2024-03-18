@@ -3,7 +3,7 @@
 # Bakes all charts and places them in the dependencies of the system chart
 
 from os import path
-from yaml import load, dump
+from yaml import load
 
 try:
     from yaml import CLoader as Loader

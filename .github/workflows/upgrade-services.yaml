@@ -29,8 +29,5 @@ jobs:
       - name: Bump chart versions
         run: python upgrade.py
 
-      - name: Bump chart versions
-        run: python upgrade.py
-
       - name: Debug
         run: git diff
