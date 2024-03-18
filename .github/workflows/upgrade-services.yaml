@@ -42,11 +42,14 @@ jobs:
 
       - name: Changes
         if: ${{ steps.diff.outputs.changes == '1' }}
-        run: git diff
+        run: |
+          git diff
+          git status
 
       - name: Commit and push
         if: ${{ steps.diff.outputs.changes == '1' }}
         run: |
+          git add -A
           git commit -m "chore: automated service version bump"
           git push -u origin master
 
