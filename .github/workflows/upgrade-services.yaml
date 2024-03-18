@@ -26,8 +26,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Bump chart versions
-        run: python upgrade.py
+      # - name: Bump chart versions
+      #   run: python upgrade.py
 
       - name: Check if changes detected
         id: diff
