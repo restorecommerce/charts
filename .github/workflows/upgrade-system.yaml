@@ -1,8 +1,8 @@
-name: Upgrade Services Charts
+name: Upgrade System Chart
 
 on:
   repository_dispatch:
-    types: [upgrade-services]
+    types: [upgrade-system]
   workflow_dispatch:
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Bump chart versions
-        run: python upgrade.py
+        run: python upgrade_system.py
 
       - name: Check if changes detected
         id: diff
@@ -44,19 +44,10 @@ jobs:
       - name: Commit and push
         if: ${{ steps.diff.outputs.changes == '1' }}
         run: |
-          git commit -m "chore: automated service version bump"
+          git commit -m "chore: automated system version bump"
           git push -u origin master
 
       - uses: benc-uk/workflow-dispatch@v1
-        id: dispatcher
         with:
-          workflow: upgrade-system.yaml
+          workflow: release.yaml
           ref: master
-
-      - name: Await Run ID ${{ steps.dispatcher.outputs.workflowId }}
-        uses: Codex-/await-remote-run@v1.0.0
-        with:
-          token: ${{ github.token }}
-          owner: restorecommerce
-          repo: charts
-          run_id: ${{ steps.dispatcher.outputs.workflowId }}
