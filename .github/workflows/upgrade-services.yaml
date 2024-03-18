@@ -24,7 +24,10 @@ jobs:
         run: .github/add-repos.sh
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          ./.github/install-chart-testing.sh
+          ./.github/install-helm-docs.sh
 
       - name: Bump chart versions
         run: python upgrade.py
