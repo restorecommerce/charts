@@ -50,7 +50,7 @@ jobs:
       - uses: benc-uk/workflow-dispatch@v1
         id: dispatcher
         with:
-          workflow: upgrade-system.yaml
+          workflow: release.yaml
           ref: master
 
       - name: Await Run ID ${{ steps.dispatcher.outputs.workflowId }}
@@ -60,3 +60,8 @@ jobs:
           owner: restorecommerce
           repo: charts
           run_id: ${{ steps.dispatcher.outputs.workflowId }}
+
+      - uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: upgrade-system.yaml
+          ref: master
