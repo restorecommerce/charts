@@ -54,6 +54,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    permissions:
+      contents: write
     needs:
       - lint-chart
       - lint-docs
