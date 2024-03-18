@@ -53,21 +53,28 @@ jobs:
           git commit -m "chore: automated service version bump"
           git push -u origin master
 
-      - uses: benc-uk/workflow-dispatch@v1
+      - name: Dispatch an action and get the run ID
+        if: ${{ steps.diff.outputs.changes == '1' }}
+        uses: codex-/return-dispatch@v1
         id: dispatcher
         with:
+          token: ${{ github.token }}
+          owner: restorecommerce
+          repo: charts
           workflow: release.yaml
           ref: master
 
-      - name: Await Run ID ${{ steps.dispatcher.outputs.workflowId }}
+      - name: Await Run ID ${{ steps.dispatcher.outputs.run_id }}
+        if: ${{ steps.diff.outputs.changes == '1' }}
         uses: Codex-/await-remote-run@v1.0.0
         with:
           token: ${{ github.token }}
           owner: restorecommerce
           repo: charts
-          run_id: ${{ steps.dispatcher.outputs.workflowId }}
+          run_id: ${{ steps.dispatcher.outputs.run_id }}
 
       - uses: benc-uk/workflow-dispatch@v1
+        if: ${{ steps.diff.outputs.changes == '1' }}
         with:
           workflow: upgrade-system.yaml
           ref: master

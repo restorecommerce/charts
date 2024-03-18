@@ -54,6 +54,7 @@ jobs:
           git push -u origin master
 
       - uses: benc-uk/workflow-dispatch@v1
+        if: ${{ steps.diff.outputs.changes == '1' }}
         with:
           workflow: release.yaml
           ref: master
