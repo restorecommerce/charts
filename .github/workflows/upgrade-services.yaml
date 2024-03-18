@@ -29,5 +29,10 @@ jobs:
       - name: Bump chart versions
         run: python upgrade.py
 
+      - name: Check if changes detected
+        id: diff
+        run: echo "changes=$(git diff --exit-code > /dev/null || echo $?)\n" >> $GITHUB_OUTPUT
+
       - name: Debug
+        if: ${{ steps.diff.outputs.changes == '1' }}
         run: git diff
