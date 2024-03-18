@@ -53,25 +53,15 @@ jobs:
           git commit -m "chore: automated service version bump"
           git push -u origin master
 
-      - name: Dispatch an action and get the run ID
+      - uses: convictional/trigger-workflow-and-wait@v1.6.1
         if: ${{ steps.diff.outputs.changes == '1' }}
-        uses: codex-/return-dispatch@v1
-        id: dispatcher
         with:
-          token: ${{ github.token }}
           owner: restorecommerce
           repo: charts
-          workflow: release.yaml
+          github_token: ${{ github.token }}
+          workflow_file_name: release.yaml
           ref: master
-
-      - name: Await Run ID ${{ steps.dispatcher.outputs.run_id }}
-        if: ${{ steps.diff.outputs.changes == '1' }}
-        uses: Codex-/await-remote-run@v1.0.0
-        with:
-          token: ${{ github.token }}
-          owner: restorecommerce
-          repo: charts
-          run_id: ${{ steps.dispatcher.outputs.run_id }}
+          propagate_failure: true
 
       - uses: benc-uk/workflow-dispatch@v1
         if: ${{ steps.diff.outputs.changes == '1' }}
