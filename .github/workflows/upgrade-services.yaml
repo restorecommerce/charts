@@ -31,9 +31,7 @@ jobs:
 
       - name: Check if changes detected
         id: diff
-        run: |
-          echo "changes=$(git diff --exit-code > /dev/null || echo $?)\n" >> $GITHUB_OUTPUT
-          cat $GITHUB_OUTPUT
+        run: echo "changes=$(git diff --exit-code > /dev/null || echo $?)" >> $GITHUB_OUTPUT
 
       - name: Debug
         if: ${{ steps.diff.outputs.changes == '1' }}
