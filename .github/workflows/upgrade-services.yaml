@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  release:
+  upgrade:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,7 +31,9 @@ jobs:
 
       - name: Check if changes detected
         id: diff
-        run: echo "changes=$(git diff --exit-code > /dev/null || echo $?)\n" >> $GITHUB_OUTPUT
+        run: |
+          echo "changes=$(git diff --exit-code > /dev/null || echo $?)\n" >> $GITHUB_OUTPUT
+          cat $GITHUB_OUTPUT
 
       - name: Debug
         if: ${{ steps.diff.outputs.changes == '1' }}
