@@ -1396,6 +1396,24 @@ entries:
     version: 0.1.0
   identity-srv:
   - apiVersion: v2
+    appVersion: 1.6.5
+    created: "2024-03-19T17:54:08.089665026Z"
+    description: Restorecommerce identity-srv
+    digest: 8d5abfbc42a19510e8bfd596ee149f92cca532db37aa9f645d5f91142648668d
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.23/identity-srv-0.1.23.tgz
+    version: 0.1.23
+  - apiVersion: v2
     appVersion: 1.6.4
     created: "2024-03-19T12:01:01.23284652Z"
     description: Restorecommerce identity-srv
@@ -1897,6 +1915,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/indexing-srv-0.1.0/indexing-srv-0.1.0.tgz
     version: 0.1.0
   invoicing-srv:
+  - apiVersion: v2
+    appVersion: 1.3.4
+    created: "2024-03-19T17:54:08.215281297Z"
+    description: Restorecommerce invoicing-srv
+    digest: 50a9036f47ebd6e97a3213cb2353f56748025fbe3d27bbb3d4f09f36484b190a
+    home: https://docs.restorecommerce.io/invoicing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: invoicing-srv
+    sources:
+    - https://github.com/restorecommerce/invoicing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/invoicing-srv-0.1.14/invoicing-srv-0.1.14.tgz
+    version: 0.1.14
   - apiVersion: v2
     appVersion: 1.3.3
     created: "2024-03-15T13:19:34.23597946Z"
@@ -6413,4 +6449,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-19T12:13:56.119857387Z"
+generated: "2024-03-19T17:54:08.217003376Z"
