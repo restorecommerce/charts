@@ -7,7 +7,7 @@ dependencies:
   version: 0.1.21
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.22
+  version: 0.1.23
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.21
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 18.9.1
-digest: sha256:07d1c83bff08cb7d023bf94885e7e0cf095fef5589760a5c3b84c8c5ee83d4da
-generated: "2024-03-19T19:35:07.862235999Z"
+digest: sha256:a7790908f4c5f44d5b7e73ec6b390e9458e0094f370515684aee9e32c1421271
+generated: "2024-03-20T10:01:10.956794213Z"
