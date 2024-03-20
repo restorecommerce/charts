@@ -4633,6 +4633,73 @@ entries:
     version: 0.1.0
   system:
   - apiVersion: v2
+    created: "2024-03-20T10:25:49.353107528Z"
+    dependencies:
+    - name: identity-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.24
+    - name: notification-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.21
+    - name: access-control-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.23
+    - name: ostorage-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.21
+    - name: scheduling-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.20
+    - name: rendering-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.23
+    - name: pdf-rendering-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.10
+    - name: fulfillment-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.11
+    - name: catalog-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.14
+    - name: invoicing-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.15
+    - name: ordering-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.13
+    - name: payment-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.13
+    - name: resource-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.14
+    - name: facade-srv
+      repository: https://restorecommerce.github.io/charts/
+      version: 0.1.20
+    - name: cloudserver
+      repository: ""
+      version: 1.0.4
+    - name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 26.8.3
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 18.9.1
+    description: A Helm chart for the Restorecommerce system
+    digest: a007e9376bbfba8107627c7e87c1ad2cb7bdb1cb00bb15feae406ee7c6545437
+    home: https://github.com/restorecommerce/system
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: system
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/system-0.1.33/system-0.1.33.tgz
+    version: 0.1.33
+  - apiVersion: v2
     created: "2024-03-20T10:03:03.716781074Z"
     dependencies:
     - name: identity-srv
@@ -6722,4 +6789,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-20T10:13:29.658759133Z"
+generated: "2024-03-20T10:25:49.353991622Z"
