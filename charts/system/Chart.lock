@@ -10,7 +10,7 @@ dependencies:
   version: 0.1.24
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.20
@@ -37,7 +37,7 @@ dependencies:
   version: 0.1.13
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.15
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.20
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 18.9.1
-digest: sha256:44c50c0bbc5b23a2b219d53d50a896d120319a68d0b8494eeff62daaada018bd
-generated: "2024-03-20T15:43:59.616684952Z"
+digest: sha256:e85abcda3cac80da62ffcc93589b1470a2463a23d90cb981599606012ca8372a
+generated: "2024-03-20T16:06:23.529176783Z"
