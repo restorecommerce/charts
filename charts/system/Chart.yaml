@@ -46,10 +46,10 @@ dependencies:
   version: 1.0.4
 - name: kafka
   repository: https://charts.bitnami.com/bitnami
-  version: 26.8.3
+  version: 27.1.2
 - name: redis
   repository: https://charts.bitnami.com/bitnami
-  version: 18.9.1
+  version: 19.0.1
 description: A Helm chart for the Restorecommerce system
 home: https://github.com/restorecommerce/system
 icon: https://avatars0.githubusercontent.com/u/8339525
