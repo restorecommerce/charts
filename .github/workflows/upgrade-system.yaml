@@ -51,7 +51,7 @@ jobs:
         run: |
           git add -A
           git commit -m "chore: automated system version bump"
-          git pull -u origin master
+          git pull
           git push -u origin master
 
       - uses: benc-uk/workflow-dispatch@v1

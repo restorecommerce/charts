@@ -55,7 +55,7 @@ jobs:
         run: |
           git add -A
           git commit -m "chore: automated service version bump"
-          git pull -u origin master
+          git pull
           git push -u origin master
 
       - uses: convictional/trigger-workflow-and-wait@v1.6.1
