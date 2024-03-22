@@ -29,7 +29,7 @@ dependencies:
   version: 0.1.14
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.15
+  version: 0.1.16
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.13
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.36
+version: 0.1.37
