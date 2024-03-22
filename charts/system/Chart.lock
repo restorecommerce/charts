@@ -46,9 +46,9 @@ dependencies:
   version: 1.0.4
 - name: kafka
   repository: https://charts.bitnami.com/bitnami
-  version: 26.8.3
+  version: 27.1.2
 - name: redis
   repository: https://charts.bitnami.com/bitnami
-  version: 18.9.1
+  version: 19.0.1
 digest: sha256:0ee6acaa58bbe6c2fa7b6e7ad64784abad8eebe850875151da6876b319b49f67
 generated: "2024-03-22T10:51:44.057308237Z"
