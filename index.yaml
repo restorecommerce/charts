@@ -1233,6 +1233,24 @@ entries:
     version: 0.1.0
   fulfillment-srv:
   - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2024-03-22T10:29:00.479315564Z"
+    description: Restorecommerce fulfillment-srv
+    digest: 4f4793b73026ff8e28a1a2d7eac4fd0bdc0b0505b66ef9cb360988f67c821e0e
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/fulfillment-srv-0.1.12/fulfillment-srv-0.1.12.tgz
+    version: 0.1.12
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2024-03-15T13:19:33.96462668Z"
     description: Restorecommerce fulfillment-srv
@@ -2651,6 +2669,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/notification-srv-0.1.0/notification-srv-0.1.0.tgz
     version: 0.1.0
   ordering-srv:
+  - apiVersion: v2
+    appVersion: 0.2.3
+    created: "2024-03-22T10:29:00.579344898Z"
+    description: Restorecommerce ordering-srv
+    digest: 34ef1e85ba4a8cb50b147eac04bd34a32b863dd6574fa890d4c650c56fec81ab
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.14/ordering-srv-0.1.14.tgz
+    version: 0.1.14
   - apiVersion: v2
     appVersion: 0.2.2
     created: "2024-03-15T13:19:34.486296895Z"
@@ -7201,4 +7237,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-22T10:24:29.488683008Z"
+generated: "2024-03-22T10:29:00.580336457Z"
