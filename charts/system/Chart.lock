@@ -40,7 +40,7 @@ dependencies:
   version: 0.1.15
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.0.1
-digest: sha256:9003ad450223296cc8a4d80f79cd2fec7a277a9ce34077cb26200cfb5647075b
-generated: "2024-03-22T12:46:58.987285307Z"
+digest: sha256:94dd7d4d6e884f38606d9963f2133780d1d9540eb185b5a91b3b7686a41cd5cb
+generated: "2024-03-22T13:34:17.042594337Z"
