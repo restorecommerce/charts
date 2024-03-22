@@ -7,7 +7,7 @@ dependencies:
   version: 0.1.22
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.24
+  version: 0.1.25
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.22
@@ -25,7 +25,7 @@ dependencies:
   version: 0.1.12
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.15
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.16
@@ -40,7 +40,7 @@ dependencies:
   version: 0.1.15
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.0.1
-digest: sha256:f79e6df5730907b35fee82eb7d8ee537139a4a1f596ca16e09eaee49fe58d634
-generated: "2024-03-22T12:17:29.721276365+01:00"
+digest: sha256:884647460fd67238209f09c1634790fbd7f0940265e45e599895613a05a93523
+generated: "2024-03-22T11:49:29.385552088Z"

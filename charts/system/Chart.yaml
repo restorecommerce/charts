@@ -8,7 +8,7 @@ dependencies:
   version: 0.1.22
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.24
+  version: 0.1.25
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.22
@@ -26,7 +26,7 @@ dependencies:
   version: 0.1.12
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.15
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.16
@@ -41,7 +41,7 @@ dependencies:
   version: 0.1.15
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: cloudserver
   version: 1.0.4
 - name: kafka
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.39
+version: 0.1.40
