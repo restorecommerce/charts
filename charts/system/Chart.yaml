@@ -41,7 +41,7 @@ dependencies:
   version: 0.1.15
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.22
+  version: 0.1.23
 - name: cloudserver
   version: 1.0.4
 - name: kafka
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.42
+version: 0.1.43
