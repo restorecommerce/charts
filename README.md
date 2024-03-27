@@ -37,6 +37,8 @@ It uses the [helmfile](https://github.com/roboll/helmfile) tool to specify all r
 
 ## Development
 
+After any changes to a chart you must always increment the version number in the appropriate `Chart.yaml` file and afterwards execute the pre-commit script!
+
 | :warning: Make sure to **ALWAYS** run the `./pre-commit.sh` script (below) before committing and pushing! |
 |:------------|
 
