@@ -37,59 +37,23 @@ It uses the [helmfile](https://github.com/roboll/helmfile) tool to specify all r
 
 ## Development
 
+| :warning: Make sure to **ALWAYS** run the `./pre-commit.sh` script (below) before committing and pushing! |
+|:------------|
+
 ### Pre-Commit
 
-There is a convenience script to execute all pre-commit scripts in order:
+This is a required step to update all charts to lint them, test them and generate their docs.
+
+First install all necessary packages via `pip3 install -r requirements.txt`.
+
+Then execute the script:
 
 ```bash
 ./pre-commit.sh
 ```
 
-If you wish to execute each step manually, they are described below:
-
-### Linting
-
-Linting uses the [chart-testing](https://github.com/helm/chart-testing) tool
-
-```bash
-ct lint --all --config .github/ct.yaml
-```
-
-### Documentation Generation
-
-Documentation generation uses the [helm-docs](https://github.com/norwoodj/helm-docs) tool
-
-```bash
-helm-docs
-```
-
-### Chart Validation
-
-Validation uses the [kubeval](https://github.com/instrumenta/kubeval) tool
-
-```bash
-KUBERNETES_VERSION=1.28.3 ./.github/kubeval.sh
-```
-
-### Update Dependencies and Lockfiles
-
-```bash
-for CHART_DIR in ./charts/*; do
-  helm dependency update "${CHART_DIR}"
-done
-```
-
 ## Packaging and Releasing
 
-Process:
+Releases are automated via github workflows. Anything pushed to master is considered as to be released!
 
-- Packaging uses the [helm](https://helm.sh/) tool.
-- Releasing uses the [chart-releaser](https://github.com/helm/chart-releaser) tool.
-
-Both tasks are executed automatically by CI/CD when a branch is merged into `master` branch.
-
-## Version Upgrading
-
-Automatic upgrade script is available in `python3 upgrade.py`.
-
-First install all necessary packages via `pip3 install -r requirements.txt`.
+Do not ever manually package and release the charts!
