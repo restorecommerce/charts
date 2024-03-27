@@ -48,6 +48,12 @@ This is a required step to update all charts to lint them, test them and generat
 
 First install all necessary packages via `pip3 install -r requirements.txt`.
 
+And ensure these tools are also installed:
+
+* helm-docs: https://github.com/norwoodj/helm-docs
+* chart-testing: https://github.com/helm/chart-testing
+* kubeval: https://github.com/instrumenta/kubeval
+
 Then execute the script:
 
 ```bash
