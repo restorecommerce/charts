@@ -1,7 +1,7 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.27
+  version: 0.1.28
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.22
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.0.1
-digest: sha256:fe02b8237660eeef5d17bac70c62631e75813afece93040b2342e8bcc222871d
-generated: "2024-04-03T13:54:55.919846825Z"
+digest: sha256:6213acb26de90ec3e65cb1edfc145a8d15f1eaecf118604413863ed22c8e6d34
+generated: "2024-04-04T08:26:29.991435274Z"
