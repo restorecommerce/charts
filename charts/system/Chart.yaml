@@ -8,7 +8,7 @@ dependencies:
   version: 0.1.22
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.26
+  version: 0.1.27
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.22
@@ -17,7 +17,7 @@ dependencies:
   version: 0.1.20
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.24
+  version: 0.1.25
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.10
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.48
+version: 0.1.49
