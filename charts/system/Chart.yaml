@@ -26,7 +26,7 @@ dependencies:
   version: 0.1.12
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.15
+  version: 0.1.16
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.16
@@ -38,7 +38,7 @@ dependencies:
   version: 0.1.14
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.15
+  version: 0.1.16
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.23
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.51
+version: 0.1.52
