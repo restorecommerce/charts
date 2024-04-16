@@ -1034,6 +1034,24 @@ entries:
     version: 0.1.8
   facade-srv:
   - apiVersion: v2
+    appVersion: 1.5.4
+    created: "2024-04-16T16:14:15.807067224Z"
+    description: Restorecommerce facade-srv
+    digest: c648e6593577779d330601f45b4d1f51c6906ec94781d46c9f5153a46f145cbc
+    home: https://docs.restorecommerce.io/facade-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: facade-srv
+    sources:
+    - https://github.com/restorecommerce/facade-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/facade-srv-0.1.24/facade-srv-0.1.24.tgz
+    version: 0.1.24
+  - apiVersion: v2
     appVersion: 1.5.3
     created: "2024-03-25T11:56:21.442356532Z"
     description: Restorecommerce facade-srv
@@ -2239,6 +2257,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/indexing-srv-0.1.0/indexing-srv-0.1.0.tgz
     version: 0.1.0
   invoicing-srv:
+  - apiVersion: v2
+    appVersion: 1.3.7
+    created: "2024-04-16T16:14:15.959922443Z"
+    description: Restorecommerce invoicing-srv
+    digest: 2dcbf27016608cfaf9aeb67b0a21113f5790909a297d7e8ebd8f575af3025328
+    home: https://docs.restorecommerce.io/invoicing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: invoicing-srv
+    sources:
+    - https://github.com/restorecommerce/invoicing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/invoicing-srv-0.1.17/invoicing-srv-0.1.17.tgz
+    version: 0.1.17
   - apiVersion: v2
     appVersion: 1.3.6
     created: "2024-03-22T10:12:22.11843328Z"
@@ -8651,4 +8687,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-16T15:37:32.282896156Z"
+generated: "2024-04-16T16:14:15.961238088Z"
