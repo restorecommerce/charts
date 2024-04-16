@@ -3568,6 +3568,24 @@ entries:
     version: 0.1.0
   payment-srv:
   - apiVersion: v2
+    appVersion: 1.3.2
+    created: "2024-04-16T15:25:17.023351664Z"
+    description: Restorecommerce payment-srv
+    digest: 3e774a977b604483bdfcce4c0ff37b2b2d189f3028f01208abbf48a8a8c08d3b
+    home: https://docs.restorecommerce.io/payment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: payment-srv
+    sources:
+    - https://github.com/restorecommerce/payment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/payment-srv-0.1.15/payment-srv-0.1.15.tgz
+    version: 0.1.15
+  - apiVersion: v2
     appVersion: 1.3.1
     created: "2024-03-22T10:41:08.294098242Z"
     description: Restorecommerce payment-srv
@@ -8566,4 +8584,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-16T15:02:06.577431463Z"
+generated: "2024-04-16T15:25:17.02471405Z"
