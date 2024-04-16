@@ -467,6 +467,24 @@ entries:
     version: 0.1.0
   catalog-srv:
   - apiVersion: v2
+    appVersion: 1.4.3
+    created: "2024-04-16T13:39:51.256769385Z"
+    description: Restorecommerce catalog-srv
+    digest: 6a2ecaf074f7e27d639e59fec8e839d9223dd32a8b8261eb7f77a91c300647ab
+    home: https://docs.restorecommerce.io/catalog-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: catalog-srv
+    sources:
+    - https://github.com/restorecommerce/catalog-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/catalog-srv-0.1.16/catalog-srv-0.1.16.tgz
+    version: 0.1.16
+  - apiVersion: v2
     appVersion: 1.4.2
     created: "2024-03-22T11:38:58.768642708Z"
     description: Restorecommerce catalog-srv
@@ -8378,4 +8396,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-16T13:25:49.562817238Z"
+generated: "2024-04-16T13:39:51.258402748Z"
