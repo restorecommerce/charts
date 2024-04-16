@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   access-control-srv:
   - apiVersion: v2
+    appVersion: 1.4.0
+    created: "2024-04-16T11:19:42.556769224Z"
+    description: Restorecommerce access-control-srv
+    digest: 7a96cd92c176e2142cb523ff4d2c8d6a350037497a127192d8a68094aa890775
+    home: https://docs.restorecommerce.io/access-control-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: access-control-srv
+    sources:
+    - https://github.com/restorecommerce/access-control-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/access-control-srv-0.1.27/access-control-srv-0.1.27.tgz
+    version: 0.1.27
+  - apiVersion: v2
     appVersion: 1.3.10
     created: "2024-03-22T12:36:26.539320437Z"
     description: Restorecommerce access-control-srv
@@ -3871,6 +3889,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/pdf-rendering-srv-0.1.0/pdf-rendering-srv-0.1.0.tgz
     version: 0.1.0
   rendering-srv:
+  - apiVersion: v2
+    appVersion: 1.3.7
+    created: "2024-04-16T11:19:42.673242644Z"
+    description: Restorecommerce rendering-srv
+    digest: 8cbaa321d7273bd84b578fdff0916cf4fd7d64d03f3960c079d2b12407a7de20
+    home: https://docs.restorecommerce.io/rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: rendering-srv
+    sources:
+    - https://github.com/restorecommerce/rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/rendering-srv-0.1.25/rendering-srv-0.1.25.tgz
+    version: 0.1.25
   - apiVersion: v2
     appVersion: 1.3.6
     created: "2024-03-20T15:36:37.493222499Z"
@@ -8087,4 +8123,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-16T11:05:25.498902256Z"
+generated: "2024-04-16T11:19:42.674584677Z"
