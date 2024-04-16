@@ -35,7 +35,7 @@ dependencies:
   version: 0.1.15
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.15
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.16
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.53
+version: 0.1.54

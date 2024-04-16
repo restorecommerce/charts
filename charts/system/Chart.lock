@@ -34,7 +34,7 @@ dependencies:
   version: 0.1.15
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.14
+  version: 0.1.15
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.16
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.0.1
-digest: sha256:0bb85cb73957158d8544faceafc6c1bcc980e3cce64ec03767a9d51cc2f118b0
-generated: "2024-04-16T15:00:29.682230283Z"
+digest: sha256:994706ec70cf5305c2c1a403ed293a610b81f72e374aa70c88737f66d8ba45bc
+generated: "2024-04-16T15:35:50.630516565Z"
