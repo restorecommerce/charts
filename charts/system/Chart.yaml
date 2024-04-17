@@ -20,7 +20,7 @@ dependencies:
   version: 0.1.25
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.11
+  version: 0.1.12
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.13
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.58
+version: 0.1.59
