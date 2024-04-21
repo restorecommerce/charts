@@ -5,7 +5,7 @@ dependencies:
   version: 0.1.30
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.23
+  version: 0.1.24
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.29
@@ -23,10 +23,10 @@ dependencies:
   version: 0.1.12
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.13
+  version: 0.1.14
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.16
+  version: 0.1.17
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.17
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.62
+version: 0.1.63
