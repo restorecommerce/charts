@@ -3048,6 +3048,24 @@ entries:
     version: 0.1.0
   ordering-srv:
   - apiVersion: v2
+    appVersion: 0.2.6
+    created: "2024-04-21T11:00:47.334630138Z"
+    description: Restorecommerce ordering-srv
+    digest: 67d8d919d780f6db8b48b0a824726a7310d4053e453510dc82afeaded65fcdba
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.17/ordering-srv-0.1.17.tgz
+    version: 0.1.17
+  - apiVersion: v2
     appVersion: 0.2.5
     created: "2024-04-17T12:48:11.411182592Z"
     description: Restorecommerce ordering-srv
@@ -3747,6 +3765,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/ostorage-srv-0.1.0/ostorage-srv-0.1.0.tgz
     version: 0.1.0
   payment-srv:
+  - apiVersion: v2
+    appVersion: 1.3.3
+    created: "2024-04-21T11:00:47.457470424Z"
+    description: Restorecommerce payment-srv
+    digest: 670b613595e6cb8b039e00145af2745fff380f2f66f6d4596aaccc78ef352e63
+    home: https://docs.restorecommerce.io/payment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: payment-srv
+    sources:
+    - https://github.com/restorecommerce/payment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/payment-srv-0.1.16/payment-srv-0.1.16.tgz
+    version: 0.1.16
   - apiVersion: v2
     appVersion: 1.3.2
     created: "2024-04-16T15:25:17.023351664Z"
@@ -9506,4 +9542,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-21T10:56:08.166806404Z"
+generated: "2024-04-21T11:00:47.458995414Z"
