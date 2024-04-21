@@ -11,13 +11,13 @@ dependencies:
   version: 0.1.29
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.23
+  version: 0.1.24
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.20
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.25
+  version: 0.1.26
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.12
@@ -38,7 +38,7 @@ dependencies:
   version: 0.1.15
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.16
+  version: 0.1.17
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.24
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.61
+version: 0.1.62
