@@ -13,10 +13,11 @@ spec:
       {{- include "pdf-rendering-srv.selectorLabels" . | nindent 6 }}
   template:
     metadata:
-      {{- with .Values.podAnnotations }}
       annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+        {{- with .Values.podAnnotations }}
         {{- toYaml . | nindent 8 }}
-      {{- end }}
+        {{- end }}
       labels:
         {{- include "pdf-rendering-srv.selectorLabels" . | nindent 8 }}
     spec:
@@ -34,36 +35,40 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http
-              containerPort: 9000
+            - name: grpc
+              containerPort: 50051
               protocol: TCP
           env:
             - name: npm_config_cache
               value: /tmp/npm/
-          {{- if .Values.env.extras }}
+            - name: NODE_ENV
+              value: {{ include "pdf-rendering-srv.nodeEnv" . }}
+            {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
-          {{- end }}
+            {{- end }}
+          {{- if .Values.enableHealthCheck }}
           livenessProbe:
             initialDelaySeconds: 10
             periodSeconds: 30
-            exec:
-              command:
-                - curl
-                - -I
-                - http://localhost:9000/
+            grpc:
+              port: 50051
           readinessProbe:
             initialDelaySeconds: 10
-            periodSeconds: 30
-            exec:
-              command:
-                - curl
-                - -I
-                - http://localhost:9000/
+            periodSeconds: 15
+            grpc:
+              port: 50051
+              service: readiness
+          {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
             - name: tmp
               mountPath: /tmp
+          {{- if or .Values.config.name .Values.config.literal }}
+            - name: config
+              mountPath: "/home/node/pdf-rendering-srv/cfg/config_{{ .Values.env.nodeEnv }}_override.json"
+              subPath: {{ .Values.config.file | quote }}
+          {{- end }}
           {{- if .Values.command }}
           command:
             {{- toYaml .Values.command | nindent 12 }}
@@ -87,3 +92,13 @@ spec:
       volumes:
         - name: tmp
           emptyDir: {}
+      {{- if or .Values.config.name .Values.config.literal }}
+        - name: config
+          configMap:
+            {{- with .Values.config.name }}
+            name: {{ . | quote }}
+            {{- end }}
+            {{- if .Values.config.literal }}
+            name: "{{ include "pdf-rendering-srv.fullname" . }}-config"
+            {{- end }}
+      {{- end }}

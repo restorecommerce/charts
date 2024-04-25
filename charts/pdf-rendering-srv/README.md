@@ -1,6 +1,6 @@
 # pdf-rendering-srv
 
-![Version: 0.1.12](https://img.shields.io/badge/Version-0.1.12-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.1](https://img.shields.io/badge/AppVersion-1.0.1-informational?style=flat-square)
+![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.1](https://img.shields.io/badge/AppVersion-1.0.1-informational?style=flat-square)
 
 Restorecommerce pdf-rendering-srv
 
@@ -28,12 +28,16 @@ Restorecommerce pdf-rendering-srv
 | autoscaling.targetCPUUtilizationPercentage | int | `80` | Target CPU usage for HPA |
 | autoscaling.targetMemoryUtilizationPercentage | int | `80` | Target memory usage for HPA |
 | command | list | `[]` | Override command for all pods |
+| config.file | string | `"config_production_override.json"` | Name of the file in the config map |
+| config.literal | string | `""` | Provide the literal config through this string. Has to be in a JSON format |
+| config.name | string | `""` | Name of the config map to be mounted. If specified, config will be appended to the node environment automatically |
+| enableHealthCheck | bool | `true` | Enable health checks |
 | env.extras | list | `[]` | Any extra environment variables appended to all pods |
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |
 | image.pullPolicy | string | `"IfNotPresent"` | Pull policy of the deployment |
-| image.repository | string | `"restorecommerce/pdf-rendering-srv"` | Image to be used for deployment |
-| image.tag | string | `"0.1.0"` | Image tag |
+| image.repository | string | `"ghcr.io/restorecommerce/pdf-rendering-srv"` | Image to be used for deployment |
+| image.tag | string | `""` | Image tag |
 | imagePullSecrets | list | `[]` | List of secrets for images |
 | nameOverride | string | `""` | Name override for all resources |
 | nodeSelector | object | `{}` | Specify the nodeSelector for all pods |
@@ -42,7 +46,7 @@ Restorecommerce pdf-rendering-srv
 | replicaCount | int | `1` | Replica count of the deployment |
 | resources | object | `{}` | Any resource configuration applied to all pods |
 | securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |
-| service.port | int | `9000` | Port to be exposed on the service |
+| service.port | int | `50051` | Port to be exposed on the service |
 | service.type | string | `"ClusterIP"` | Service type to be used |
 | serviceAccount.annotations | object | `{}` | Annotations to add to the service account |
 | serviceAccount.create | bool | `true` | Specifies whether a service account should be created |

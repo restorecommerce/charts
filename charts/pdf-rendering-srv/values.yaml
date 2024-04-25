@@ -5,13 +5,13 @@ replicaCount: 1
 
 image:
   # image.repository -- Image to be used for deployment
-  repository: restorecommerce/pdf-rendering-srv
+  repository: ghcr.io/restorecommerce/pdf-rendering-srv
 
   # image.pullPolicy -- Pull policy of the deployment
   pullPolicy: IfNotPresent
 
   # image.tag -- Image tag
-  tag: 0.1.0
+  tag: ""
 
 # imagePullSecrets -- List of secrets for images
 imagePullSecrets: []
@@ -54,7 +54,7 @@ service:
   type: ClusterIP
 
   # service.port -- Port to be exposed on the service
-  port: 9000
+  port: 50051
 
 # resources -- Any resource configuration applied to all pods
 resources: {}
@@ -96,9 +96,25 @@ command: []
 # args -- Override arguments for all pods
 args: []
 
+# enableHealthCheck -- Enable health checks
+enableHealthCheck: true
+
 env:
   # env.nodeEnv -- The selected node environment and config
   nodeEnv: production
 
   # env.extras -- Any extra environment variables appended to all pods
   extras: []
+
+# Override the config of the container
+config:
+  # config.name -- Name of the config map to be mounted.
+  # If specified, config will be appended to the node environment automatically
+  name: ""
+
+  # config.file -- Name of the file in the config map
+  file: "config_production_override.json"
+
+  # config.literal -- Provide the literal config through this string.
+  # Has to be in a JSON format
+  literal: ""
