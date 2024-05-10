@@ -23,7 +23,7 @@ dependencies:
   version: 0.2.3
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.15
+  version: 0.1.16
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.17
@@ -59,4 +59,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.71
+version: 0.1.72
