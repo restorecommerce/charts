@@ -126,7 +126,7 @@ fulfillment-srv:
   env:
     extras:
       - name: redis__url
-        value: redis-master
+        value: redis://redis-master:6379
       - name: authorization__cache__url
         value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
@@ -178,7 +178,7 @@ payment-srv:
   env:
     extras:
       - name: redis__host
-        value: redis-master
+        value: redis://redis-master:6379
       - name: authorization__cache__url
         value: redis://redis-master:6379
       - name: logger__elasticsearch__clientOpts__node
