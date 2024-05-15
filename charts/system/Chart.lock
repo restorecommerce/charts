@@ -19,7 +19,7 @@ dependencies:
   version: 0.1.27
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.2.4
+  version: 0.2.5
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.18
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.1.3
-digest: sha256:81833ff19102bb09baa6db8ded5206527b6633bacc29f0b61c3a4d4a1a91fb95
-generated: "2024-05-14T10:32:05.563500669Z"
+digest: sha256:3d015ff5401fbc38b4310154130a74b11d85ae99226597a3bf9ff3476b14b6c4
+generated: "2024-05-15T18:52:39.874045359Z"
