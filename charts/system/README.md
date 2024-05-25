@@ -35,15 +35,15 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| restorecommerce | info@restorecommerce.io | https://restorecommerce.io/ |
+| restorecommerce | <info@restorecommerce.io> | <https://restorecommerce.io/> |
 
 ## Requirements
 
 | Repository | Name | Version |
 |------------|------|---------|
 |  | cloudserver | 1.0.4 |
-| https://charts.bitnami.com/bitnami | kafka | 28.0.4 |
-| https://charts.bitnami.com/bitnami | redis | 19.1.3 |
+| https://charts.bitnami.com/bitnami | kafka | 29.0.3 |
+| https://charts.bitnami.com/bitnami | redis | 19.5.0 |
 | https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.29 |
 | https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.17 |
 | https://restorecommerce.github.io/charts/ | facade-srv | 0.1.28 |

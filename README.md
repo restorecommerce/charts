@@ -1,6 +1,6 @@
 # Restorecommerce Helm Charts
 
-Helm chart index:
+Helm chart index for individual services:
 
 * [access-control-srv](./charts/access-control-srv)
 * [catalog-srv](./charts/catalog-srv)
@@ -18,6 +18,9 @@ Helm chart index:
 * [resource-srv](./charts/resource-srv)
 * [scheduling-srv](./charts/scheduling-srv)
 * [store-front](./charts/store-front)
+
+Helm chart for the whole system:
+
 * [system](./charts/system)
 
 ## Installation
@@ -50,9 +53,11 @@ First install all necessary packages via `pip3 install -r requirements.txt`.
 
 And ensure these tools are also installed:
 
+* yamllint
 * helm-docs: https://github.com/norwoodj/helm-docs
 * chart-testing: https://github.com/helm/chart-testing
 * kubeval: https://github.com/instrumenta/kubeval
+* kubeconform https://github.com/yannh/kubeconform
 
 Then execute the script:
 
