@@ -3,11 +3,11 @@
 set -euxo pipefail
 
 for CHART_DIR in ./charts/*; do
-  helm dependency update "${CHART_DIR}"
+  helm dependency update --skip-refresh "${CHART_DIR}"
 done
 
-ct lint --all --config .github/ct.yaml
+ct lint --all --helm-dependency-extra-args='--skip-refresh' --config .github/ct.yaml
 
 helm-docs
 
-KUBERNETES_VERSION=1.28.3 ./.github/kubeval.sh
+./.github/kubeconform.sh

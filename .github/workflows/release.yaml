@@ -34,7 +34,7 @@ jobs:
       - name: Run helm-docs
         run: .github/helm-docs.sh
 
-  kubeval-chart:
+  kubeconform-chart:
     runs-on: ubuntu-latest
     needs:
       - lint-chart
@@ -46,10 +46,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Run kubeval
+      - name: Install devbox
+        uses: jetify-com/devbox-install-action@v0.11.0
+      - name: Run kubeconform
         env:
           KUBERNETES_VERSION: ${{ matrix.k8s }}
-        run: .github/kubeval.sh
+        run: .github/kubeconform.sh
 
   release:
     runs-on: ubuntu-latest
@@ -59,7 +61,7 @@ jobs:
     needs:
       - lint-chart
       - lint-docs
-      - kubeval-chart
+      - kubeconform-chart
     steps:
       - name: Checkout
         uses: actions/checkout@v2

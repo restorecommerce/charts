@@ -28,25 +28,25 @@ spec:
         # TODO Wait for all services
         - name: wait-for-facade
           image: groundnuty/k8s-wait-for:v1.5.1
-          imagepullPolicy: IfNotPresent
+          imagePullPolicy: IfNotPresent
           args:
             - "service"
             - "facade-srv"
         - name: wait-for-identity
           image: groundnuty/k8s-wait-for:v1.5.1
-          imagepullPolicy: IfNotPresent
+          imagePullPolicy: IfNotPresent
           args:
             - "service"
             - "identity-srv"
         - name: wait-for-resource
           image: groundnuty/k8s-wait-for:v1.5.1
-          imagepullPolicy: IfNotPresent
+          imagePullPolicy: IfNotPresent
           args:
             - "service"
             - "resource-srv"
         - name: wait-for-access-control
           image: groundnuty/k8s-wait-for:v1.5.1
-          imagepullPolicy: IfNotPresent
+          imagePullPolicy: IfNotPresent
           args:
             - "service"
             - "access-control-srv"

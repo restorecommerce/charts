@@ -40,6 +40,10 @@ It uses the [helmfile](https://github.com/roboll/helmfile) tool to specify all r
 
 ## Development
 
+It is suggested that you utilize [`direnv`](https://direnv.net/) together with [`devbox`](https://www.jetify.com/devbox) to ease the package management process.
+
+### Committing
+
 After any changes to a chart you must always increment the version number in the appropriate `Chart.yaml` file and afterwards execute the pre-commit script!
 
 | :warning: Make sure to **ALWAYS** run the `./pre-commit.sh` script (below) before committing and pushing! |
@@ -56,7 +60,6 @@ And ensure these tools are also installed:
 * yamllint
 * helm-docs: https://github.com/norwoodj/helm-docs
 * chart-testing: https://github.com/helm/chart-testing
-* kubeval: https://github.com/instrumenta/kubeval
 * kubeconform https://github.com/yannh/kubeconform
 
 Then execute the script:

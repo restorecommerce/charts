@@ -20,14 +20,14 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
+      - name: Install devbox
+        uses: jetify-com/devbox-install-action@v0.11.0
+
       - name: Add helm repos
         run: .github/add-repos.sh
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          ./.github/install-chart-testing.sh
-          ./.github/install-helm-docs.sh
+      - name: Install python dependencies
+        run: pip install -r requirements.txt
 
       - name: Bump chart versions
         run: python upgrade_system.py

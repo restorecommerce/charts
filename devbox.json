@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.10.7/.schema/devbox.schema.json",
+  "packages": [
+    "kubernetes-helm@3.15.0",
+    "chart-testing@3.11.0",
+    "helm-docs@1.13.1",
+    "kubeconform@0.6.6"
+  ],
+  "env": {
+    "KUBERNETES_VERSION": "1.28.3"
+  }
+}
