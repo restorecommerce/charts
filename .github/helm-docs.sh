@@ -2,5 +2,5 @@
 
 set -euxo pipefail
 
-./helm-docs
+helm-docs
 git diff --exit-code
