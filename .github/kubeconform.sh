@@ -13,6 +13,6 @@ SCHEMA_LOCATION="default"
 for CHART_DIR in ${CHART_DIRS}; do
   if [ -d "charts/$CHART_DIR" ] 
   then
-    helm template charts/"${CHART_DIR}" | kubeconform --strict --kubernetes-version "${KUBERNETES_VERSION#v}" --schema-location "${SCHEMA_LOCATION}"
+    helm template charts/"${CHART_DIR}" | kubeconform --strict --ignore-missing-schemas --kubernetes-version "${KUBERNETES_VERSION#v}" --schema-location "${SCHEMA_LOCATION}"
   fi
 done

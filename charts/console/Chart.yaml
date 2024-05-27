@@ -10,4 +10,4 @@ name: console
 sources:
 - https://github.com/restorecommerce/console
 type: application
-version: 0.1.12
+version: 0.1.13

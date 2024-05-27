@@ -4,15 +4,17 @@
     "kubernetes-helm@3.15.0",
     "chart-testing@3.11.0",
     "helm-docs@1.13.1",
-    "kubeconform@0.6.6"
+    "kubeconform@0.6.6",
+    "yamale@5.2.1",
+    "yamllint@1.35.1"
   ],
   "env": {
     "KUBERNETES_VERSION": "1.28.3"
   },
   "shell": {
     "scripts": {
-      "pre-commit": "sh ./pre-commit.sh",
-      "helm-docs": "sh ./.github/helm-docs.sh",
+      "pre-commit":  "sh ./pre-commit.sh",
+      "helm-docs":   "sh ./.github/helm-docs.sh",
       "kubeconform": "sh ./.github/kubeconform.sh"
     }
   }

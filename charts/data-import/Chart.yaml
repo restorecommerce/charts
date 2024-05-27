@@ -11,4 +11,4 @@ name: data-import
 sources:
 - https://github.com/restorecommerce/data
 type: application
-version: 0.1.13
+version: 0.1.14
