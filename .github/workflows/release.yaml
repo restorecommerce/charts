@@ -31,8 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+      - name: Install devbox
+        uses: jetify-com/devbox-install-action@v0.11.0
       - name: Run helm-docs
-        run: .github/helm-docs.sh
+        run: devbox run helm-docs
 
   kubeconform-chart:
     runs-on: ubuntu-latest
@@ -51,7 +53,7 @@ jobs:
       - name: Run kubeconform
         env:
           KUBERNETES_VERSION: ${{ matrix.k8s }}
-        run: .github/kubeconform.sh
+        run: devbox run kubeconform
 
   release:
     runs-on: ubuntu-latest
