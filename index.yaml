@@ -2940,6 +2940,25 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/invoicing-srv-0.1.0/invoicing-srv-0.1.0.tgz
     version: 0.1.0
+  ldap-srv:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-05-30T12:33:55.293239935Z"
+    description: Restorecommerce ldap-srv
+    digest: 9f978f500ce1a84c43c5c812b74b5969f74b981ce15891e59d22452a12b3c358
+    home: https://docs.restorecommerce.io/ldap-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ldap-srv
+    sources:
+    - https://github.com/restorecommerce/ldap-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ldap-srv-0.1.0/ldap-srv-0.1.0.tgz
+    version: 0.1.0
   notification-srv:
   - apiVersion: v2
     appVersion: 1.3.6
@@ -11175,4 +11194,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-27T10:21:09.371917817Z"
+generated: "2024-05-30T12:33:55.294859867Z"
