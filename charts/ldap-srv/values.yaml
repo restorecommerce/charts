@@ -54,7 +54,7 @@ service:
   type: ClusterIP
 
   # service.port -- Port to be exposed on the service
-  port: 50051
+  port: 389
 
 # resources -- Any resource configuration applied to all pods
 resources: {}

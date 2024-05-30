@@ -38,8 +38,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: grpc
-              containerPort: 50051
+            - name: ldap
+              containerPort: 389
               protocol: TCP
           env:
             - name: npm_config_cache

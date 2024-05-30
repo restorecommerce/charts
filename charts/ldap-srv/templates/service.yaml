@@ -8,8 +8,8 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: grpc
+      targetPort: ldap
       protocol: TCP
-      name: grpc
+      name: ldap
   selector:
     {{- include "app.selectorLabels" . | nindent 4 }}

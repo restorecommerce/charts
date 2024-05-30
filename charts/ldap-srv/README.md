@@ -1,6 +1,6 @@
 # ldap-srv
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.0](https://img.shields.io/badge/AppVersion-1.0.0-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.1](https://img.shields.io/badge/AppVersion-1.0.1-informational?style=flat-square)
 
 Restorecommerce ldap-srv
 
@@ -47,7 +47,7 @@ Restorecommerce ldap-srv
 | replicaCount | int | `1` | Replica count of the deployment |
 | resources | object | `{}` | Any resource configuration applied to all pods |
 | securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |
-| service.port | int | `50051` | Port to be exposed on the service |
+| service.port | int | `389` | Port to be exposed on the service |
 | service.type | string | `"ClusterIP"` | Service type to be used |
 | serviceAccount.annotations | object | `{}` | Annotations to add to the service account |
 | serviceAccount.create | bool | `true` | Specifies whether a service account should be created |
