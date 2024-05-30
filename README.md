@@ -9,6 +9,7 @@ Helm chart index for individual services:
 * [fulfillment-srv](./charts/fulfillment-srv)
 * [identity-srv](./charts/identity-srv)
 * [invoicing-srv](./charts/invoicing-srv)
+* [ldap-srv](./charts/ldap-srv)
 * [notification-srv](./charts/notification-srv)
 * [ordering-srv](./charts/ordering-srv)
 * [ostorage-srv](./charts/ostorage-srv)
