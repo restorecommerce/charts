@@ -26,6 +26,8 @@ jobs:
 
       - name: Install devbox
         uses: jetify-com/devbox-install-action@v0.11.0
+        with:
+          enable-cache: true
 
       - name: Add helm repos
         run: .github/add-repos.sh
@@ -42,7 +44,7 @@ jobs:
 
       - name: Pre-commit
         if: ${{ steps.diff.outputs.changes == '1' }}
-        run: bash pre-commit.sh
+        run: devbox run pre-commit
 
       - name: Changes
         if: ${{ steps.diff.outputs.changes == '1' }}
