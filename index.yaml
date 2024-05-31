@@ -3,6 +3,24 @@ entries:
   access-control-srv:
   - apiVersion: v2
     appVersion: 1.4.2
+    created: "2024-05-31T13:49:52.372913603Z"
+    description: Restorecommerce access-control-srv
+    digest: 2b5086b9b0ce8b3e0a68231ca07ec1ad973b3ed89fecc8d4963f7ec133e497a4
+    home: https://docs.restorecommerce.io/access-control-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: access-control-srv
+    sources:
+    - https://github.com/restorecommerce/access-control-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/access-control-srv-0.1.31/access-control-srv-0.1.31.tgz
+    version: 0.1.31
+  - apiVersion: v2
+    appVersion: 1.4.2
     created: "2024-05-27T10:21:07.222619118Z"
     description: Restorecommerce access-control-srv
     digest: 0db3aa82f0750ea37ab9bd95cf7dbc564c996634d602649d0c1ee63e8559bc9b
@@ -520,6 +538,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/access-control-srv-0.1.0/access-control-srv-0.1.0.tgz
     version: 0.1.0
   catalog-srv:
+  - apiVersion: v2
+    appVersion: 1.4.5
+    created: "2024-05-31T13:49:52.470270796Z"
+    description: Restorecommerce catalog-srv
+    digest: 494596268d1d75cd27738d03e1ae494323e78996838f77c0aabeeb46f906f0bd
+    home: https://docs.restorecommerce.io/catalog-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: catalog-srv
+    sources:
+    - https://github.com/restorecommerce/catalog-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/catalog-srv-0.1.19/catalog-srv-0.1.19.tgz
+    version: 0.1.19
   - apiVersion: v2
     appVersion: 1.4.5
     created: "2024-05-27T10:21:07.355314173Z"
@@ -1160,6 +1196,24 @@ entries:
   facade-srv:
   - apiVersion: v2
     appVersion: 1.5.8
+    created: "2024-05-31T13:49:52.598847548Z"
+    description: Restorecommerce facade-srv
+    digest: c0908535c4abc053e4b58a45e31bf15c75c231fae7e5b85eb01ae814ff2363d5
+    home: https://docs.restorecommerce.io/facade-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: facade-srv
+    sources:
+    - https://github.com/restorecommerce/facade-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/facade-srv-0.1.30/facade-srv-0.1.30.tgz
+    version: 0.1.30
+  - apiVersion: v2
+    appVersion: 1.5.8
     created: "2024-05-27T10:21:07.729586271Z"
     description: Restorecommerce facade-srv
     digest: d622b1ad8c50b45c52e51485c251caab419a3e5a24874a450eb5535542eb7bbc
@@ -1593,6 +1647,24 @@ entries:
   fulfillment-srv:
   - apiVersion: v2
     appVersion: 0.2.6
+    created: "2024-05-31T13:49:52.686264836Z"
+    description: Restorecommerce fulfillment-srv
+    digest: bdd102a76c2e3d138b6408207935430c5f29ee3505dfc4795642ffa7a9b7c4f2
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/fulfillment-srv-0.1.20/fulfillment-srv-0.1.20.tgz
+    version: 0.1.20
+  - apiVersion: v2
+    appVersion: 0.2.6
     created: "2024-05-27T10:21:07.867545755Z"
     description: Restorecommerce fulfillment-srv
     digest: 0ac86d665f2c1ede1ad663661aef4938750c2ef0ed19396561736bf698b41208
@@ -1916,6 +1988,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/fulfillment-srv-0.1.0/fulfillment-srv-0.1.0.tgz
     version: 0.1.0
   identity-srv:
+  - apiVersion: v2
+    appVersion: 1.6.13
+    created: "2024-05-31T13:49:52.781453098Z"
+    description: Restorecommerce identity-srv
+    digest: 16c06ece55c8c635744782f8b5d6c53b1af933f036fb5a6d36a0e20bb97f62e5
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.33/identity-srv-0.1.33.tgz
+    version: 0.1.33
   - apiVersion: v2
     appVersion: 1.6.13
     created: "2024-05-27T10:21:08.012570748Z"
@@ -2600,6 +2690,24 @@ entries:
   invoicing-srv:
   - apiVersion: v2
     appVersion: 1.3.8
+    created: "2024-05-31T13:49:52.881416407Z"
+    description: Restorecommerce invoicing-srv
+    digest: 3d5330da28e2156744b8bc0f583b962f422b66f0a7121c65edb17c6fd6999e54
+    home: https://docs.restorecommerce.io/invoicing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: invoicing-srv
+    sources:
+    - https://github.com/restorecommerce/invoicing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/invoicing-srv-0.1.20/invoicing-srv-0.1.20.tgz
+    version: 0.1.20
+  - apiVersion: v2
+    appVersion: 1.3.8
     created: "2024-05-27T10:21:08.135235866Z"
     description: Restorecommerce invoicing-srv
     digest: 75cfe73e6721219d016896551ea811f6b31699fd71a9f6276e5b3e60afb2f77f
@@ -2943,6 +3051,24 @@ entries:
   ldap-srv:
   - apiVersion: v2
     appVersion: 1.0.8
+    created: "2024-05-31T13:49:52.994653494Z"
+    description: Restorecommerce ldap-srv
+    digest: eb6b367f359fcad082f3012beedc912ec72e4133b1368622656ec9be9bc0aa68
+    home: https://docs.restorecommerce.io/ldap-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ldap-srv
+    sources:
+    - https://github.com/restorecommerce/ldap-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ldap-srv-0.1.10/ldap-srv-0.1.10.tgz
+    version: 0.1.10
+  - apiVersion: v2
+    appVersion: 1.0.8
     created: "2024-05-31T13:21:53.244459739Z"
     description: Restorecommerce ldap-srv
     digest: 634914cc073ec65c6ffb5447f2d8274d6cd197918b1a9228968248670b01fae4
@@ -3122,6 +3248,24 @@ entries:
     - https://github.com/restorecommerce/charts/releases/download/ldap-srv-0.1.0/ldap-srv-0.1.0.tgz
     version: 0.1.0
   notification-srv:
+  - apiVersion: v2
+    appVersion: 1.3.6
+    created: "2024-05-31T13:49:53.12798095Z"
+    description: Restorecommerce notification-srv
+    digest: 433e0fead6ad05495efd91f70a9fc373a724411aac750a4b552b913b599c60cf
+    home: https://docs.restorecommerce.io/notification-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: notification-srv
+    sources:
+    - https://github.com/restorecommerce/notification-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/notification-srv-0.1.26/notification-srv-0.1.26.tgz
+    version: 0.1.26
   - apiVersion: v2
     appVersion: 1.3.6
     created: "2024-05-27T10:21:08.253701252Z"
@@ -3535,6 +3679,24 @@ entries:
   ordering-srv:
   - apiVersion: v2
     appVersion: 0.2.9
+    created: "2024-05-31T13:49:53.222398829Z"
+    description: Restorecommerce ordering-srv
+    digest: 3e025bf1058ad501ec448b65bab01a24d1c520bbabf9496cdb1e7f2d1162c293
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.21/ordering-srv-0.1.21.tgz
+    version: 0.1.21
+  - apiVersion: v2
+    appVersion: 0.2.9
     created: "2024-05-27T10:21:08.388344714Z"
     description: Restorecommerce ordering-srv
     digest: 4e5eff0de2343f2cc0c6dddae3c7499d496ccbdbb22bd17a895b030667d01fcd
@@ -3894,6 +4056,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/ordering-srv-0.1.0/ordering-srv-0.1.0.tgz
     version: 0.1.0
   ostorage-srv:
+  - apiVersion: v2
+    appVersion: 1.3.7
+    created: "2024-05-31T13:49:53.323400929Z"
+    description: Restorecommerce ostorage-srv
+    digest: 7d573609e4c2bcd318706e2020726da2860a292c06758af70326908942a9ee1a
+    home: https://docs.restorecommerce.io/ostorage-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ostorage-srv
+    sources:
+    - https://github.com/restorecommerce/ostorage-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ostorage-srv-0.1.26/ostorage-srv-0.1.26.tgz
+    version: 0.1.26
   - apiVersion: v2
     appVersion: 1.3.7
     created: "2024-05-27T10:21:08.505517629Z"
@@ -4323,6 +4503,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/ostorage-srv-0.1.0/ostorage-srv-0.1.0.tgz
     version: 0.1.0
   payment-srv:
+  - apiVersion: v2
+    appVersion: 1.3.3
+    created: "2024-05-31T13:49:53.434656726Z"
+    description: Restorecommerce payment-srv
+    digest: 749a06ce46529318b8f4e2fe60261fa979a971f8bc14aef185f6f01cb564e35f
+    home: https://docs.restorecommerce.io/payment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: payment-srv
+    sources:
+    - https://github.com/restorecommerce/payment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/payment-srv-0.1.18/payment-srv-0.1.18.tgz
+    version: 0.1.18
   - apiVersion: v2
     appVersion: 1.3.3
     created: "2024-05-27T10:21:08.619143443Z"
@@ -4953,6 +5151,24 @@ entries:
   rendering-srv:
   - apiVersion: v2
     appVersion: 1.3.9
+    created: "2024-05-31T13:49:53.535533234Z"
+    description: Restorecommerce rendering-srv
+    digest: 9c201b7121aef6f125741e8d76d689c3b14903d0d023c95cb87eece01bb919a5
+    home: https://docs.restorecommerce.io/rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: rendering-srv
+    sources:
+    - https://github.com/restorecommerce/rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/rendering-srv-0.1.29/rendering-srv-0.1.29.tgz
+    version: 0.1.29
+  - apiVersion: v2
+    appVersion: 1.3.9
     created: "2024-05-27T10:21:08.848435887Z"
     description: Restorecommerce rendering-srv
     digest: 198bb9f5aa0f54d22b879810e769819f5cd065cbeddeb3921019cbac9a83dd8c
@@ -5418,6 +5634,24 @@ entries:
   resource-srv:
   - apiVersion: v2
     appVersion: 1.5.6
+    created: "2024-05-31T13:49:53.645306358Z"
+    description: Restorecommerce resource-srv
+    digest: a16500a97ec786fe9885a50daa80e74b3b2197882e6ed34e43e66212eb6814a6
+    home: https://docs.restorecommerce.io/resource-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: resource-srv
+    sources:
+    - https://github.com/restorecommerce/resource-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/resource-srv-0.1.20/resource-srv-0.1.20.tgz
+    version: 0.1.20
+  - apiVersion: v2
+    appVersion: 1.5.6
     created: "2024-05-27T10:21:08.970212339Z"
     description: Restorecommerce resource-srv
     digest: 88276add5a30f5c4f4a9b9bd7ba63e90337041603e2602c1b25d462545e97a11
@@ -5741,6 +5975,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/resource-srv-0.1.0/resource-srv-0.1.0.tgz
     version: 0.1.0
   scheduling-srv:
+  - apiVersion: v2
+    appVersion: 1.2.7
+    created: "2024-05-31T13:49:53.755519492Z"
+    description: Restorecommerce scheduling-srv
+    digest: 070bdda7d3cb4dbe414e2c9059e71ed3588abbd4098481326a8034b0964e4cfb
+    home: https://docs.restorecommerce.io/scheduling-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: scheduling-srv
+    sources:
+    - https://github.com/restorecommerce/scheduling-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/scheduling-srv-0.1.22/scheduling-srv-0.1.22.tgz
+    version: 0.1.22
   - apiVersion: v2
     appVersion: 1.2.7
     created: "2024-05-27T10:21:09.100890158Z"
@@ -11599,4 +11851,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-31T13:21:53.245871643Z"
+generated: "2024-05-31T13:49:53.758080159Z"
