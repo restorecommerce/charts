@@ -52,7 +52,7 @@ dependencies:
   name: resource-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.19
-- condition: facade-srv-srv.enabled
+- condition: facade-srv.enabled
   name: facade-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.29
@@ -73,4 +73,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.80
+version: 0.1.81
