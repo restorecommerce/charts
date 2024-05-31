@@ -48,6 +48,8 @@ jobs:
         uses: actions/checkout@v1
       - name: Install devbox
         uses: jetify-com/devbox-install-action@v0.11.0
+        with:
+          enable-cache: true
       - name: Run kubeconform
         env:
           KUBERNETES_VERSION: ${{ matrix.k8s }}
