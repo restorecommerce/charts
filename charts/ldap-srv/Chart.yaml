@@ -11,4 +11,4 @@ name: ldap-srv
 sources:
 - https://github.com/restorecommerce/ldap-srv
 type: application
-version: 0.1.9
+version: 0.1.10

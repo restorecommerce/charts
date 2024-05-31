@@ -127,6 +127,6 @@ extraPorts:
   service: []
 
 global:
-  authorization:
-    # global.authorization.apiKey -- The global root API key
+  authentication:
+    # global.authentication.apiKey -- The global root API key
     apiKey: ""

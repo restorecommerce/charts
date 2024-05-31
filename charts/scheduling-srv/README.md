@@ -1,6 +1,6 @@
 # scheduling-srv
 
-![Version: 0.1.21](https://img.shields.io/badge/Version-0.1.21-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.7](https://img.shields.io/badge/AppVersion-1.2.7-informational?style=flat-square)
+![Version: 0.1.22](https://img.shields.io/badge/Version-0.1.22-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.7](https://img.shields.io/badge/AppVersion-1.2.7-informational?style=flat-square)
 
 Restorecommerce scheduling-srv
 
@@ -37,7 +37,7 @@ Restorecommerce scheduling-srv
 | extraPorts.deployment | list | `[]` | Any extra ports to be added to the deployment |
 | extraPorts.service | list | `[]` | Any extra ports to be added to the service |
 | fullnameOverride | string | `""` | Full name override for all resources |
-| global.authorization.apiKey | string | `""` | The global root API key |
+| global.authentication.apiKey | string | `""` | The global root API key |
 | image.pullPolicy | string | `"IfNotPresent"` | Pull policy of the deployment |
 | image.repository | string | `"ghcr.io/restorecommerce/scheduling-srv"` | Image to be used for deployment |
 | image.tag | string | `""` | Image tag |

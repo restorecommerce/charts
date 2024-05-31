@@ -1,6 +1,6 @@
 # rendering-srv
 
-![Version: 0.1.28](https://img.shields.io/badge/Version-0.1.28-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.3.9](https://img.shields.io/badge/AppVersion-1.3.9-informational?style=flat-square)
+![Version: 0.1.29](https://img.shields.io/badge/Version-0.1.29-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.3.9](https://img.shields.io/badge/AppVersion-1.3.9-informational?style=flat-square)
 
 Restorecommerce rendering-srv
 
@@ -35,7 +35,7 @@ Restorecommerce rendering-srv
 | env.extras | list | `[]` | Any extra environment variables appended to all pods |
 | env.nodeEnv | string | `"production"` | The selected node environment and config |
 | fullnameOverride | string | `""` | Full name override for all resources |
-| global.authorization.apiKey | string | `""` | The global root API key |
+| global.authentication.apiKey | string | `""` | The global root API key |
 | handlebars | object | `{"helper-list.js":"module.exports = function listHandlebarsExtensions(hbs, opts) {\n  hbs.registerHelper(\"list\", function(items, options) {\n    const itemsAsHtml = items.map(item => \"<li>\" + options.fn(item) + \"</li>\");\n    return \"<ul>\\n\" + itemsAsHtml.join(\"\\n\") + \"\\n</ul>\";\n  });\n};\n"}` | Handlebar helpers to be injected in the container More information: https://github.com/restorecommerce/handlebars-helperized |
 | image.pullPolicy | string | `"IfNotPresent"` | Pull policy of the deployment |
 | image.repository | string | `"ghcr.io/restorecommerce/rendering-srv"` | Image to be used for deployment |
