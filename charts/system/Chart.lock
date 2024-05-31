@@ -1,46 +1,46 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.32
+  version: 0.1.33
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.25
+  version: 0.1.26
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.30
+  version: 0.1.31
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.25
+  version: 0.1.26
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.28
+  version: 0.1.29
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.2.6
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.19
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.17
+  version: 0.1.18
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.29
+  version: 0.1.30
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.5.0
-digest: sha256:1fd2b0878e979fb4b9b3362a0a9d8862b0760e2f9a90978bb9e2e0038fb19acb
-generated: "2024-05-31T13:00:43.908149706+03:00"
+digest: sha256:3f63951dcb0e944311b9ed80650e3769425234b47042b8b01e07be9f0f39c3cc
+generated: "2024-05-31T14:02:43.248447716Z"
