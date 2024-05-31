@@ -39,7 +39,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: ldap
-              containerPort: 389
+              containerPort: 1389
               protocol: TCP
           env:
             - name: npm_config_cache
@@ -60,14 +60,13 @@ spec:
           livenessProbe:
             initialDelaySeconds: 10
             periodSeconds: 30
-            grpc:
-              port: 50051
+            tcpSocket:
+              port: ldap
           readinessProbe:
             initialDelaySeconds: 10
             periodSeconds: 15
-            grpc:
-              port: 50051
-              service: readiness
+            tcpSocket:
+              port: ldap
           {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
