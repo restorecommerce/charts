@@ -1,46 +1,46 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.31
+  version: 0.1.32
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.24
+  version: 0.1.25
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.29
+  version: 0.1.30
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.24
+  version: 0.1.25
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.27
+  version: 0.1.28
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.2.5
+  version: 0.2.6
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.19
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.17
+  version: 0.1.18
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.19
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.16
+  version: 0.1.17
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
+  version: 0.1.19
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.28
+  version: 0.1.29
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.5.0
-digest: sha256:3aaf6c68f8d95ecfe141d35019dfda3d6b0e61ad33af2b31872a14e1e2170bec
-generated: "2024-05-30T15:40:51.359278305+03:00"
+digest: sha256:29519217929d0489ea48cbbe0f7cc01d8c42b115c9834c2e514691b2c2c49e5b
+generated: "2024-05-31T08:49:02.612894279Z"

@@ -1,61 +1,61 @@
 apiVersion: v2
 dependencies:
-- name: identity-srv
+- condition: identity-srv.enabled
+  name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.31
-  condition: identity-srv.enabled
-- name: notification-srv
+  version: 0.1.32
+- condition: notification-srv.enabled
+  name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.24
-  condition: notification-srv.enabled
-- name: access-control-srv
+  version: 0.1.25
+- condition: access-control-srv.enabled
+  name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.29
-  condition: access-control-srv.enabled
-- name: ostorage-srv
+  version: 0.1.30
+- condition: ostorage-srv.enabled
+  name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.24
-  condition: ostorage-srv.enabled
-- name: scheduling-srv
+  version: 0.1.25
+- condition: scheduling-srv.enabled
+  name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
-  condition: scheduling-srv.enabled
-- name: rendering-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.27
-  condition: rendering-srv.enabled
-- name: pdf-rendering-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.2.5
-  condition: pdf-rendering-srv.enabled
-- name: fulfillment-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
-  condition: fulfillment-srv.enabled
-- name: catalog-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.17
-  condition: catalog-srv.enabled
-- name: invoicing-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
-  condition: invoicing-srv.enabled
-- name: ordering-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
-  condition: ordering-srv.enabled
-- name: payment-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.16
-  condition: payment-srv.enabled
-- name: resource-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.1.18
-  condition: resource-srv.enabled
-- name: facade-srv
+  version: 0.1.21
+- condition: rendering-srv.enabled
+  name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.28
-  condition: facade-srv-srv.enabled
+- condition: pdf-rendering-srv.enabled
+  name: pdf-rendering-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.2.6
+- condition: fulfillment-srv.enabled
+  name: fulfillment-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.19
+- condition: catalog-srv.enabled
+  name: catalog-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.18
+- condition: invoicing-srv.enabled
+  name: invoicing-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.19
+- condition: ordering-srv.enabled
+  name: ordering-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.20
+- condition: payment-srv.enabled
+  name: payment-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.17
+- condition: resource-srv.enabled
+  name: resource-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.19
+- condition: facade-srv-srv.enabled
+  name: facade-srv
+  repository: https://restorecommerce.github.io/charts/
+  version: 0.1.29
 - name: cloudserver
   version: 1.0.4
 - name: kafka
@@ -73,4 +73,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.79
+version: 0.1.80
