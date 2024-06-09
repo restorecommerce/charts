@@ -3,14 +3,14 @@ kind: Elasticsearch
 metadata:
   name: restorecommerce
 spec:
-  version: 8.12.0
+  version: 8.14.0
   http:
     tls:
       selfSignedCertificate:
         disabled: true
   nodeSets:
   - name: default
-    count: 2
+    count: 1
     config:
       node.store.allow_mmap: false
       xpack.security.authc:
