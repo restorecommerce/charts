@@ -53,6 +53,10 @@ spec:
                   name: "{{ include "identity-srv.fullname" . }}-api-key"
                   key: authentication__apiKey
             {{- end }}
+            {{- if .Values.seedAccounts }}
+            - name: seed_account_file
+              value: /seed-accounts.json
+            {{- end }}
             {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
             {{- end }}
@@ -78,6 +82,12 @@ spec:
             - name: config
               mountPath: "/home/node/identity-srv/cfg/config_{{ .Values.env.nodeEnv }}_override.json"
               subPath: {{ .Values.config.file | quote }}
+          {{- end }}
+          {{- if .Values.seedAccounts }}
+            - name: seed-accounts
+              readOnly: true
+              mountPath: "/seed-accounts.json"
+              subPath: seed-accounts.json
           {{- end }}
           {{- if .Values.command }}
           command:
@@ -111,4 +121,9 @@ spec:
             {{- if .Values.config.literal }}
             name: "{{ include "identity-srv.fullname" . }}-config"
             {{- end }}
+      {{- end }}
+      {{- if .Values.seedAccounts }}
+        - name: seed-accounts
+          secret:
+            secretName: "{{ include "identity-srv.fullname" . }}-seed-accounts"
       {{- end }}

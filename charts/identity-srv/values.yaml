@@ -119,6 +119,10 @@ config:
   # Has to be in a JSON format
   literal: ""
 
+# seedAccounts -- Provide the literal config through this string.
+# Has to be in a JSON format - which is an array of User objects.
+seedAccounts: ""
+
 global:
   authentication:
     # global.authentication.apiKey -- The global root API key
