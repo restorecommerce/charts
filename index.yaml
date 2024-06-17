@@ -5705,6 +5705,24 @@ entries:
     version: 0.1.0
   resource-srv:
   - apiVersion: v2
+    appVersion: 1.5.7
+    created: "2024-06-17T14:07:04.950964693Z"
+    description: Restorecommerce resource-srv
+    digest: 12dab033115c311079247f76d338413672176fb41eaf9126bb5570230af7df42
+    home: https://docs.restorecommerce.io/resource-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: resource-srv
+    sources:
+    - https://github.com/restorecommerce/resource-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/resource-srv-0.1.21/resource-srv-0.1.21.tgz
+    version: 0.1.21
+  - apiVersion: v2
     appVersion: 1.5.6
     created: "2024-05-31T13:49:53.645306358Z"
     description: Restorecommerce resource-srv
@@ -12085,4 +12103,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-17T11:22:00.12442134Z"
+generated: "2024-06-17T14:07:04.952698252Z"
