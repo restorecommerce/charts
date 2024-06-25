@@ -7,8 +7,6 @@ spec:
   count: 1
   elasticsearchRef:
     name: restorecommerce
-  config:
-    xpack.security.enabled: false
   http:
     tls:
       selfSignedCertificate:
