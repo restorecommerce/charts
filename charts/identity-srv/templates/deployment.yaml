@@ -54,8 +54,12 @@ spec:
                   key: authentication__apiKey
             {{- end }}
             {{- if .Values.seedAccounts }}
-            - name: seed_account_file
+            - name: seed_data__users
               value: /seed-accounts.json
+            {{- end }}
+            {{- if .Values.seedRoles }}
+            - name: seed_data__roles
+              value: /seed-roles.json
             {{- end }}
             {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
@@ -88,6 +92,12 @@ spec:
               readOnly: true
               mountPath: "/seed-accounts.json"
               subPath: seed-accounts.json
+          {{- end }}
+          {{- if .Values.seedRoles }}
+            - name: seed-roles
+              readOnly: true
+              mountPath: "/seed-roles.json"
+              subPath: seed-roles.json
           {{- end }}
           {{- if .Values.command }}
           command:
@@ -126,4 +136,9 @@ spec:
         - name: seed-accounts
           secret:
             secretName: "{{ include "identity-srv.fullname" . }}-seed-accounts"
+      {{- end }}
+      {{- if .Values.seedRoles }}
+        - name: seed-roles
+          secret:
+            secretName: "{{ include "identity-srv.fullname" . }}-seed-roles"
       {{- end }}

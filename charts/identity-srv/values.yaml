@@ -123,6 +123,10 @@ config:
 # Has to be in a JSON format - which is an array of User objects.
 seedAccounts: ""
 
+# seedRoles -- Provide the literal config through this string.
+# Has to be in a JSON format - which is an array of Role objects.
+seedRoles: ""
+
 global:
   authentication:
     # global.authentication.apiKey -- The global root API key
