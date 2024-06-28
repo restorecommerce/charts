@@ -4,43 +4,43 @@ dependencies:
   version: 0.1.36
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.26
+  version: 0.1.27
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.32
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.26
+  version: 0.1.27
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.22
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.29
+  version: 0.1.30
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.2.6
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.18
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.30
+  version: 0.1.31
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.5.0
-digest: sha256:f34dab492931cef0f63af97eeea74c0786bf1dc19bf010eb0de46e9368cde8e9
-generated: "2024-06-28T10:45:09.825885366Z"
+digest: sha256:c21b6a12cf5d52ca3a253da34c3500e596c42b31bcb1d844273c94682d0ab553
+generated: "2024-06-28T11:05:16.647980345Z"

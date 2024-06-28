@@ -7,7 +7,7 @@ dependencies:
 - condition: notification-srv.enabled
   name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.26
+  version: 0.1.27
 - condition: access-control-srv.enabled
   name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
@@ -15,7 +15,7 @@ dependencies:
 - condition: ostorage-srv.enabled
   name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.26
+  version: 0.1.27
 - condition: scheduling-srv.enabled
   name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
@@ -23,7 +23,7 @@ dependencies:
 - condition: rendering-srv.enabled
   name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.29
+  version: 0.1.30
 - condition: pdf-rendering-srv.enabled
   name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
@@ -31,19 +31,19 @@ dependencies:
 - condition: fulfillment-srv.enabled
   name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - condition: catalog-srv.enabled
   name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - condition: invoicing-srv.enabled
   name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - condition: ordering-srv.enabled
   name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - condition: payment-srv.enabled
   name: payment-srv
   repository: https://restorecommerce.github.io/charts/
@@ -51,11 +51,11 @@ dependencies:
 - condition: resource-srv.enabled
   name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - condition: facade-srv.enabled
   name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.30
+  version: 0.1.31
 - name: cloudserver
   version: 1.0.4
 - name: kafka
@@ -73,4 +73,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.86
+version: 0.1.87
