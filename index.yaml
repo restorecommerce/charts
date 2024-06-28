@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   access-control-srv:
   - apiVersion: v2
+    appVersion: 1.5.1
+    created: "2024-06-28T12:34:39.76350185Z"
+    description: Restorecommerce access-control-srv
+    digest: ad08318f42832505d47379fe3b4fd07b9c4bfd9807675ae622e906fb5d7c893a
+    home: https://docs.restorecommerce.io/access-control-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: access-control-srv
+    sources:
+    - https://github.com/restorecommerce/access-control-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/access-control-srv-0.1.33/access-control-srv-0.1.33.tgz
+    version: 0.1.33
+  - apiVersion: v2
     appVersion: 1.5.0
     created: "2024-06-28T10:34:16.714511234Z"
     description: Restorecommerce access-control-srv
@@ -2078,6 +2096,24 @@ entries:
     version: 0.1.0
   identity-srv:
   - apiVersion: v2
+    appVersion: 1.8.1
+    created: "2024-06-28T12:34:39.862755777Z"
+    description: Restorecommerce identity-srv
+    digest: a5a5c1bbf566e7903489b17e70c1c50119995f42c6ef296d9cf1037cfab75e94
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.37/identity-srv-0.1.37.tgz
+    version: 0.1.37
+  - apiVersion: v2
     appVersion: 1.8.0
     created: "2024-06-28T10:34:16.9296461Z"
     description: Restorecommerce identity-srv
@@ -3445,6 +3481,24 @@ entries:
     - https://github.com/restorecommerce/charts/releases/download/ldap-srv-0.1.0/ldap-srv-0.1.0.tgz
     version: 0.1.0
   notification-srv:
+  - apiVersion: v2
+    appVersion: 1.3.8
+    created: "2024-06-28T12:34:39.985370114Z"
+    description: Restorecommerce notification-srv
+    digest: 6da58955a96f3bd0b18ae7d3f4ef9b09f84912a30c15c055c0fbbf63df27d5aa
+    home: https://docs.restorecommerce.io/notification-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: notification-srv
+    sources:
+    - https://github.com/restorecommerce/notification-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/notification-srv-0.1.28/notification-srv-0.1.28.tgz
+    version: 0.1.28
   - apiVersion: v2
     appVersion: 1.3.7
     created: "2024-06-28T10:54:32.554087985Z"
@@ -5418,6 +5472,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/pdf-rendering-srv-0.1.0/pdf-rendering-srv-0.1.0.tgz
     version: 0.1.0
   rendering-srv:
+  - apiVersion: v2
+    appVersion: 1.3.11
+    created: "2024-06-28T12:34:40.073684944Z"
+    description: Restorecommerce rendering-srv
+    digest: b57158884f70d4b7216230831c0cbe1a2ad5f84e47742979fadda8ce1f1c9a63
+    home: https://docs.restorecommerce.io/rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: rendering-srv
+    sources:
+    - https://github.com/restorecommerce/rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/rendering-srv-0.1.31/rendering-srv-0.1.31.tgz
+    version: 0.1.31
   - apiVersion: v2
     appVersion: 1.3.10
     created: "2024-06-28T10:54:32.853900821Z"
@@ -12741,4 +12813,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-28T11:35:10.23168134Z"
+generated: "2024-06-28T12:34:40.075843973Z"
