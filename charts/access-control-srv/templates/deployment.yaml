@@ -53,6 +53,18 @@ spec:
                   name: "{{ include "access-control-srv.fullname" . }}-api-key"
                   key: authentication__apiKey
             {{- end }}
+            {{- if .Values.seedPolicySets }}
+            - name: seed_data__policy_set
+              value: /seed-policysets.yaml
+            {{- end }}
+            {{- if .Values.seedPolicies }}
+            - name: seed_data__policy
+              value: /seed-policies.yaml
+            {{- end }}
+            {{- if .Values.seedRules }}
+            - name: seed_data__rule
+              value: /seed-rules.yaml
+            {{- end }}
             {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
             {{- end }}
@@ -78,6 +90,24 @@ spec:
             - name: config
               mountPath: "/home/node/access-control-srv/cfg/config_{{ .Values.env.nodeEnv }}_override.json"
               subPath: {{ .Values.config.file | quote }}
+          {{- end }}
+          {{- if .Values.seedPolicySets }}
+            - name: seed-policysets
+              readOnly: true
+              mountPath: "/seed-policysets.yaml"
+              subPath: seed-policysets.yaml
+          {{- end }}
+          {{- if .Values.seedPolicies }}
+            - name: seed-policies
+              readOnly: true
+              mountPath: "/seed-policies.json"
+              subPath: seed-policies.json
+          {{- end }}
+          {{- if .Values.seedRules }}
+            - name: seed-rules
+              readOnly: true
+              mountPath: "/seed-rules.json"
+              subPath: seed-rules.json
           {{- end }}
           {{- if .Values.command }}
           command:
@@ -111,4 +141,19 @@ spec:
             {{- if .Values.config.literal }}
             name: "{{ include "access-control-srv.fullname" . }}-config"
             {{- end }}
+      {{- end }}
+      {{- if .Values.seedPolicySets }}
+        - name: seed-policysets
+          secret:
+            secretName: "{{ include "identity-srv.fullname" . }}-seed-policysets"
+      {{- end }}
+      {{- if .Values.seedPolicies }}
+        - name: seed-policies
+          secret:
+            secretName: "{{ include "identity-srv.fullname" . }}-seed-policies"
+      {{- end }}
+      {{- if .Values.seedRules }}
+        - name: seed-rules
+          secret:
+            secretName: "{{ include "identity-srv.fullname" . }}-seed-rules"
       {{- end }}
