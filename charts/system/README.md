@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.89](https://img.shields.io/badge/Version-0.1.89-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.90](https://img.shields.io/badge/Version-0.1.90-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -48,7 +48,7 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.20 |
 | https://restorecommerce.github.io/charts/ | facade-srv | 0.1.31 |
 | https://restorecommerce.github.io/charts/ | fulfillment-srv | 0.1.21 |
-| https://restorecommerce.github.io/charts/ | identity-srv | 0.1.37 |
+| https://restorecommerce.github.io/charts/ | identity-srv | 0.1.38 |
 | https://restorecommerce.github.io/charts/ | invoicing-srv | 0.1.21 |
 | https://restorecommerce.github.io/charts/ | notification-srv | 0.1.28 |
 | https://restorecommerce.github.io/charts/ | ordering-srv | 0.1.22 |
