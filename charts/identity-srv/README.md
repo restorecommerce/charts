@@ -48,6 +48,7 @@ Restorecommerce identity-srv
 | resources | object | `{}` | Any resource configuration applied to all pods |
 | securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |
 | seedAccounts | string | `""` | Provide the literal config through this string. Has to be in a JSON format - which is an array of User objects. |
+| seedRoles | string | `""` | Provide the literal config through this string. Has to be in a JSON format - which is an array of Role objects. |
 | service.port | int | `50051` | Port to be exposed on the service |
 | service.type | string | `"ClusterIP"` | Service type to be used |
 | serviceAccount.annotations | object | `{}` | Annotations to add to the service account |
