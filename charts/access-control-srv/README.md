@@ -47,8 +47,8 @@ Restorecommerce access-control-srv
 | replicaCount | int | `1` | Replica count of the deployment |
 | resources | object | `{}` | Any resource configuration applied to all pods |
 | securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |
+| seedPolicies | string | `""` | Provide the literal config through this string. Has to be in a YAML format - which is an array of Policy objects. |
 | seedPolicySets | string | `""` | Provide the literal config through this string. Has to be in a YAML format - which is an array of PolicySet objects. |
-| seedPolicies | string | `""` | Provide the literal config through this string. Has to be in a YAML format - which is an array of Policiy objects. |
 | seedRules | string | `""` | Provide the literal config through this string. Has to be in a YAML format - which is an array of Rule objects. |
 | service.port | int | `50051` | Port to be exposed on the service |
 | service.type | string | `"ClusterIP"` | Service type to be used |
