@@ -3,6 +3,24 @@ entries:
   access-control-srv:
   - apiVersion: v2
     appVersion: 1.5.1
+    created: "2024-07-03T13:53:23.581971249Z"
+    description: Restorecommerce access-control-srv
+    digest: 0011c6f4afaf44b32b9ebcc6096c0909fa301d6f908ccea587004ab1b69f701d
+    home: https://docs.restorecommerce.io/access-control-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: access-control-srv
+    sources:
+    - https://github.com/restorecommerce/access-control-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/access-control-srv-0.1.34/access-control-srv-0.1.34.tgz
+    version: 0.1.34
+  - apiVersion: v2
+    appVersion: 1.5.1
     created: "2024-06-28T12:34:39.76350185Z"
     description: Restorecommerce access-control-srv
     digest: ad08318f42832505d47379fe3b4fd07b9c4bfd9807675ae622e906fb5d7c893a
@@ -2095,6 +2113,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/fulfillment-srv-0.1.0/fulfillment-srv-0.1.0.tgz
     version: 0.1.0
   identity-srv:
+  - apiVersion: v2
+    appVersion: 1.8.2
+    created: "2024-07-03T13:53:23.764669072Z"
+    description: Restorecommerce identity-srv
+    digest: 850dfa71da609592ab891e71baaaa1d1c37fd80dd6563b53bb7c79fe14261ac0
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.39/identity-srv-0.1.39.tgz
+    version: 0.1.39
   - apiVersion: v2
     appVersion: 1.8.2
     created: "2024-07-01T11:26:51.32725875Z"
@@ -13029,4 +13065,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-01T11:39:11.870535446Z"
+generated: "2024-07-03T13:53:23.766915662Z"
