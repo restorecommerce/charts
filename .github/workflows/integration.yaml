@@ -38,4 +38,4 @@ jobs:
           helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator --version 2.11.1
 
       - name: Install system chart
-        run: helm install -n restorecommerce ./charts/system
+        run: helm install -n restorecommerce restorecommerce ./charts/system
