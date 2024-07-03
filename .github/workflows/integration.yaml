@@ -1,0 +1,38 @@
+name: integration
+
+on:
+  push:
+    paths:
+      - "./charts/system"
+  pull_request:
+    paths:
+      - "./charts/system"
+
+jobs:
+  integration-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        k8s:
+          - v1.28.11
+          - v1.29.6
+          - v1.30.2
+    steps:
+      - uses: medyagh/setup-minikube@latest
+        with:
+          container-runtime: containerd
+          kubernetes-version: ${{ matrix.k8s }}
+          cni: cilium
+          addons: volumesnapshots,csi-hostpath-driver,storage-provisioner,default-storageclass
+
+      - name: Install dependencies
+        run: |
+          helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.39/kube-arangodb-crd-1.2.39.tgz
+          helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.39/kube-arangodb-1.2.39.tgz
+
+          helm repo add elastic https://helm.elastic.co
+          helm repo update
+          helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator --version 2.11.1
+
+      - name: Install system chart
+        run: helm install -n restorecommerce ./charts/system
