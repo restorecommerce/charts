@@ -41,4 +41,7 @@ jobs:
           helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator --version 2.11.1
 
       - name: Install system chart
-        run: helm install -n restorecommerce --timeout 30m0s restorecommerce ./charts/system
+        run: helm install -n restorecommerce --timeout 30m0s --wait restorecommerce ./charts/system
+
+      - name: View pods
+        run: kubectl -n restorecommerce get pods
