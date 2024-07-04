@@ -226,10 +226,10 @@ cloudserver:
 
 kafka:
   fullnameOverride: kafka
-  zookeeper:
-    enabled: false
   deleteTopicEnable: true
   autoCreateTopicsEnable: true
+  controller:
+    replicaCount: 1
   kraft:
     enabled: true
 
