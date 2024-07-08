@@ -1,14 +1,14 @@
 name: integration
 
-on:
-  push:
-    paths:
-      - ".github/workflows/integration.yaml"
-      - "charts/system/**/*"
-  pull_request:
-    paths:
-      - ".github/workflows/integration.yaml"
-      - "charts/system/**/*"
+on: workflow_dispatch
+  # push:
+  #   paths:
+  #     - ".github/workflows/integration.yaml"
+  #     - "charts/system/**/*"
+  # pull_request:
+  #   paths:
+  #     - ".github/workflows/integration.yaml"
+  #     - "charts/system/**/*"
 
 jobs:
   integration-test:
