@@ -954,6 +954,23 @@ entries:
     version: 0.1.0
   console:
   - apiVersion: v2
+    appVersion: 0.0.6
+    created: "2024-07-31T08:19:25.919785492Z"
+    description: Restorecommerce console
+    digest: 68cbd501974c5fcfbf00bf8b7f0e43c00df44af163ef24ce78ee5e2a1e9bae87
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: console
+    sources:
+    - https://github.com/restorecommerce/console
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/console-0.1.15/console-0.1.15.tgz
+    version: 0.1.15
+  - apiVersion: v2
     appVersion: 0.0.5
     created: "2024-06-28T10:34:16.829169254Z"
     description: Restorecommerce console
@@ -4054,6 +4071,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/notification-srv-0.1.0/notification-srv-0.1.0.tgz
     version: 0.1.0
   ordering-srv:
+  - apiVersion: v2
+    appVersion: 0.2.13
+    created: "2024-07-31T08:19:26.037628299Z"
+    description: Restorecommerce ordering-srv
+    digest: 3a6e995061e10424b734e090b775b6a7f1d269ed71c4ccaa4c04565dcc59a4d2
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.25/ordering-srv-0.1.25.tgz
+    version: 0.1.25
   - apiVersion: v2
     appVersion: 0.2.12
     created: "2024-07-24T14:19:49.596892409Z"
@@ -13281,4 +13316,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-24T14:19:49.599025859Z"
+generated: "2024-07-31T08:19:26.039676411Z"
