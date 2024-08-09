@@ -1,6 +1,6 @@
 # identity-srv
 
-![Version: 0.1.39](https://img.shields.io/badge/Version-0.1.39-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.8.2](https://img.shields.io/badge/AppVersion-1.8.2-informational?style=flat-square)
+![Version: 0.1.40](https://img.shields.io/badge/Version-0.1.40-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.8.2](https://img.shields.io/badge/AppVersion-1.8.2-informational?style=flat-square)
 
 Restorecommerce identity-srv
 
@@ -47,8 +47,8 @@ Restorecommerce identity-srv
 | replicaCount | int | `1` | Replica count of the deployment |
 | resources | object | `{}` | Any resource configuration applied to all pods |
 | securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |
-| seedAccounts | string | `""` | Provide the literal config through this string. Has to be in a JSON format - which is an array of User objects. |
-| seedRoles | string | `""` | Provide the literal config through this string. Has to be in a JSON format - which is an array of Role objects. |
+| seedAccounts | string | `""` | Provide the literal config through this string. Has to be in a JSON format - which is an array of User objects. Is run through `tpl` so you can use a helm template string |
+| seedRoles | string | `""` | Provide the literal config through this string. Has to be in a JSON format - which is an array of Role objects. Is run through `tpl` so you can use a helm template string |
 | service.port | int | `50051` | Port to be exposed on the service |
 | service.type | string | `"ClusterIP"` | Service type to be used |
 | serviceAccount.annotations | object | `{}` | Annotations to add to the service account |

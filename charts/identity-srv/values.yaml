@@ -121,10 +121,12 @@ config:
 
 # seedAccounts -- Provide the literal config through this string.
 # Has to be in a JSON format - which is an array of User objects.
+# Is run through `tpl` so you can use a helm template string
 seedAccounts: ""
 
 # seedRoles -- Provide the literal config through this string.
 # Has to be in a JSON format - which is an array of Role objects.
+# Is run through `tpl` so you can use a helm template string
 seedRoles: ""
 
 global:

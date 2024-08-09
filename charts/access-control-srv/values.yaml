@@ -121,14 +121,17 @@ config:
 
 # seedPolicySets -- Provide the literal config through this string.
 # Has to be in a YAML format - which is an array of PolicySet objects.
+# Is run through `tpl` so you can use a helm template string
 seedPolicySets: ""
 
 # seedPolicies -- Provide the literal config through this string.
 # Has to be in a YAML format - which is an array of Policy objects.
+# Is run through `tpl` so you can use a helm template string
 seedPolicies: ""
 
 # seedRules -- Provide the literal config through this string.
 # Has to be in a YAML format - which is an array of Rule objects.
+# Is run through `tpl` so you can use a helm template string
 seedRules: ""
 
 global:
