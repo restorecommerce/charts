@@ -90,13 +90,13 @@ spec:
           {{- if .Values.seedAccounts }}
             - name: seed-accounts
               readOnly: true
-              mountPath: "/seed-accounts.json"
+              mountPath: {{ .Values.seedAccountsMountLocation | quote }}
               subPath: seed-accounts.json
           {{- end }}
           {{- if .Values.seedRoles }}
             - name: seed-roles
               readOnly: true
-              mountPath: "/seed-roles.json"
+              mountPath: {{ .Values.seedRolesMountLocation | quote }}
               subPath: seed-roles.json
           {{- end }}
           {{- if .Values.command }}

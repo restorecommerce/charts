@@ -124,10 +124,16 @@ config:
 # Is run through `tpl` so you can use a helm template string
 seedAccounts: ""
 
+# seedAccountsMountLocation -- Location where to mount seed accounts json.
+seedAccountsMountLocation: "/seed-accounts.json"
+
 # seedRoles -- Provide the literal config through this string.
 # Has to be in a JSON format - which is an array of Role objects.
 # Is run through `tpl` so you can use a helm template string
 seedRoles: ""
+
+# seedRolesMountLocation -- Location where to mount seed roles json.
+seedRolesMountLocation: "/seed-roles.json"
 
 global:
   authentication:
