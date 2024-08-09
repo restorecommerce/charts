@@ -55,11 +55,11 @@ spec:
             {{- end }}
             {{- if .Values.seedAccounts }}
             - name: seed_data__users
-              value: /seed-accounts.json
+              value: {{ .Values.seedAccountsMountLocation | quote }}
             {{- end }}
             {{- if .Values.seedRoles }}
             - name: seed_data__roles
-              value: /seed-roles.json
+              value: {{ .Values.seedRolesMountLocation | quote }}
             {{- end }}
             {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
