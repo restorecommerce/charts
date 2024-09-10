@@ -11,4 +11,4 @@ name: notification-srv
 sources:
 - https://github.com/restorecommerce/notification-srv
 type: application
-version: 0.1.28
+version: 0.1.29
