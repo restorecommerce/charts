@@ -1,46 +1,46 @@
 dependencies:
 - name: identity-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.39
+  version: 0.1.44
 - name: notification-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.28
+  version: 0.1.29
 - name: access-control-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.35
+  version: 0.1.37
 - name: ostorage-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.27
+  version: 0.1.28
 - name: scheduling-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.22
+  version: 0.1.23
 - name: rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.31
+  version: 0.1.32
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.2.6
+  version: 0.2.7
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - name: catalog-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.20
+  version: 0.1.21
 - name: invoicing-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.21
+  version: 0.1.22
 - name: ordering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.22
+  version: 0.1.28
 - name: payment-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.19
+  version: 0.1.20
 - name: resource-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.22
+  version: 0.1.23
 - name: facade-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.1.31
+  version: 0.1.33
 - name: cloudserver
   repository: ""
   version: 1.0.4
@@ -50,5 +50,5 @@ dependencies:
 - name: redis
   repository: https://charts.bitnami.com/bitnami
   version: 19.6.1
-digest: sha256:4bc1e537d0a1787ea93de41a875c04369bc8b2153f6dbb6440f8b6ca9f1d7062
-generated: "2024-07-24T13:56:14.314036706Z"
+digest: sha256:ea4a86891af2cbd603e936afd02aa2e7705004c76e51987f96123444a55133fc
+generated: "2024-09-11T17:24:07.452755769Z"
