@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.93](https://img.shields.io/badge/Version-0.1.93-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.94](https://img.shields.io/badge/Version-0.1.94-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -45,7 +45,7 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | https://charts.bitnami.com/bitnami | kafka | 29.3.6 |
 | https://charts.bitnami.com/bitnami | redis | 19.6.1 |
 | https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.37 |
-| https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.21 |
+| https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.22 |
 | https://restorecommerce.github.io/charts/ | facade-srv | 0.1.33 |
 | https://restorecommerce.github.io/charts/ | fulfillment-srv | 0.1.22 |
 | https://restorecommerce.github.io/charts/ | identity-srv | 0.1.44 |
