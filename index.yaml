@@ -4413,6 +4413,24 @@ entries:
     version: 0.1.0
   ordering-srv:
   - apiVersion: v2
+    appVersion: 0.2.19
+    created: "2024-10-08T13:34:57.357854569Z"
+    description: Restorecommerce ordering-srv
+    digest: bfc626f57599ad7ebf3db06026b1f451f5856ae1e74a9c2e7fa9b20dca1a35b1
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.32/ordering-srv-0.1.32.tgz
+    version: 0.1.32
+  - apiVersion: v2
     appVersion: 0.2.18
     created: "2024-10-04T13:28:21.576720624Z"
     description: Restorecommerce ordering-srv
@@ -14637,4 +14655,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-07T12:54:30.822111866Z"
+generated: "2024-10-08T13:34:57.35881161Z"
