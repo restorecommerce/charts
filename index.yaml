@@ -1913,6 +1913,24 @@ entries:
     version: 0.1.0
   fulfillment-srv:
   - apiVersion: v2
+    appVersion: 0.2.12
+    created: "2024-10-24T16:09:51.489824808Z"
+    description: Restorecommerce fulfillment-srv
+    digest: 432f13624b3669960a0da33b52f6f530719838f565c10d17fce8b7152718ef4d
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/fulfillment-srv-0.1.26/fulfillment-srv-0.1.26.tgz
+    version: 0.1.26
+  - apiVersion: v2
     appVersion: 0.2.10
     created: "2024-10-21T12:49:27.178309631Z"
     description: Restorecommerce fulfillment-srv
@@ -4430,6 +4448,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/notification-srv-0.1.0/notification-srv-0.1.0.tgz
     version: 0.1.0
   ordering-srv:
+  - apiVersion: v2
+    appVersion: 0.2.22
+    created: "2024-10-24T16:09:51.587906175Z"
+    description: Restorecommerce ordering-srv
+    digest: 8435357928d0e98111e45e4bc1be6cb7731bc42dd97f7bd20fadcc4fc4d05950
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.35/ordering-srv-0.1.35.tgz
+    version: 0.1.35
   - apiVersion: v2
     appVersion: 0.2.21
     created: "2024-10-23T12:12:26.820403399Z"
@@ -15033,4 +15069,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-23T12:25:04.725135573Z"
+generated: "2024-10-24T16:09:51.588966122Z"
