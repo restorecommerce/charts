@@ -43,8 +43,8 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 |------------|------|---------|
 |  | cloudserver | 1.0.4 |
 | https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.2.42 |
-| https://charts.bitnami.com/bitnami | kafka | 30.0.5 |
-| https://charts.bitnami.com/bitnami | redis | 20.1.0 |
+| https://charts.bitnami.com/bitnami | kafka | 30.1.7 |
+| https://charts.bitnami.com/bitnami | redis | 20.2.1 |
 | https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.37 |
 | https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.22 |
 | https://restorecommerce.github.io/charts/ | facade-srv | 0.1.33 |

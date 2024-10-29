@@ -46,9 +46,12 @@ dependencies:
   version: 1.0.4
 - name: kafka
   repository: https://charts.bitnami.com/bitnami
-  version: 30.0.5
+  version: 30.1.7
 - name: redis
   repository: https://charts.bitnami.com/bitnami
-  version: 19.6.1
-digest: sha256:aca0c4d2d23de71f32e30ca85d0a7395baa6d0837a687a5ff6ef7c12d74c95ef
-generated: "2024-10-25T12:05:30.92851921Z"
+  version: 20.2.1
+- name: kube-arangodb
+  repository: https://arangodb.github.io/kube-arangodb
+  version: 1.2.42
+digest: sha256:b7d9f1eff7588df0016bc48a895cb51ea152494f3a82ce3bf352108b8c39377e
+generated: "2024-10-29T21:36:25.672426447+01:00"
