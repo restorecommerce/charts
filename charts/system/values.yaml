@@ -238,3 +238,9 @@ redis:
   auth:
     enabled: false
   architecture: standalone
+  replica:
+    replicaCount: 0
+    disableCommands: []
+    resources:
+      limits:
+        memory: 256Mi

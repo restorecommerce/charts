@@ -60,10 +60,13 @@ dependencies:
   version: 1.0.4
 - name: kafka
   repository: https://charts.bitnami.com/bitnami
-  version: 29.3.6
+  version: 30.0.5
 - name: redis
   repository: https://charts.bitnami.com/bitnami
-  version: 19.6.1
+  version: 20.1.0
+- name: kube-arangodb
+  repository: https://arangodb.github.io/kube-arangodb
+  version: 1.2.42
 description: A Helm chart for the Restorecommerce system
 home: https://github.com/restorecommerce/system
 icon: https://avatars0.githubusercontent.com/u/8339525
