@@ -205,8 +205,8 @@ facade-srv:
 cloudserver:
   fullnameOverride: cloudserver
   image:
-    repository: zenko/cloudserver
-    tag: latest-7.70.10
+    repository: registry.scality.com/cloudserver/cloudserver
+    tag: 8.8.20
     pullPolicy: IfNotPresent
   api:
     replicaCount: 1

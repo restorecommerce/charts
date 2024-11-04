@@ -39,6 +39,12 @@ There is an example deployment with all required dependencies specified in [exam
 
 It uses the [helmfile](https://github.com/roboll/helmfile) tool to specify all releases and their values.
 
+## Security
+
+There are the following hard coded keys that you want to change in your values:
+
+- Access key of the S3 compatible store Cloudserver.
+
 ## Development
 
 It is suggested that you utilize [`direnv`](https://direnv.net/) together with [`devbox`](https://www.jetify.com/devbox) to ease the package management process.

@@ -36,6 +36,8 @@ spec:
               name: cloudserver
               subPath: localMetadata
           env:
+            - name: REMOTE_MANAGEMENT_DISABLE
+              value: 1
             - name: SCALITY_ACCESS_KEY_ID
               value: ZFKQGYD2P6DJO4U7N33U
             - name: SCALITY_SECRET_ACCESS_KEY
