@@ -27,7 +27,7 @@ dependencies:
 - condition: pdf-rendering-srv.enabled
   name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.2.7
+  version: 0.2.6
 - condition: fulfillment-srv.enabled
   name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/

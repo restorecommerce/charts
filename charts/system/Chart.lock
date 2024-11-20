@@ -19,7 +19,7 @@ dependencies:
   version: 0.1.32
 - name: pdf-rendering-srv
   repository: https://restorecommerce.github.io/charts/
-  version: 0.2.7
+  version: 0.2.6
 - name: fulfillment-srv
   repository: https://restorecommerce.github.io/charts/
   version: 0.1.27
@@ -53,5 +53,5 @@ dependencies:
 - name: kube-arangodb
   repository: https://arangodb.github.io/kube-arangodb
   version: 1.2.42
-digest: sha256:b7d9f1eff7588df0016bc48a895cb51ea152494f3a82ce3bf352108b8c39377e
-generated: "2024-10-29T21:36:25.672426447+01:00"
+digest: sha256:682ae9997838fe1ceee2d5f08f6f8c0a9acabc2d4883b87a008d5833e3e63b81
+generated: "2024-11-20T15:29:14.143224092+02:00"
