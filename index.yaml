@@ -5924,6 +5924,24 @@ entries:
     version: 0.1.0
   pdf-rendering-srv:
   - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2024-11-20T14:17:46.748861242Z"
+    description: Restorecommerce pdf-rendering-srv
+    digest: 2bb515f88ff2ac3d8cf70052f6b8bb0fa60a5c8dc05bd88901de6b7e7901aa87
+    home: https://docs.restorecommerce.io/pdf-rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: pdf-rendering-srv
+    sources:
+    - https://github.com/restorecommerce/pdf-rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/pdf-rendering-srv-0.2.8/pdf-rendering-srv-0.2.8.tgz
+    version: 0.2.8
+  - apiVersion: v2
     appVersion: 1.1.0
     created: "2024-09-10T22:34:26.191408357Z"
     description: Restorecommerce pdf-rendering-srv
@@ -15249,4 +15267,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-25T12:07:10.997376337Z"
+generated: "2024-11-20T14:17:46.859391865Z"
