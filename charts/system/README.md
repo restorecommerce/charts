@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.107](https://img.shields.io/badge/Version-0.1.107-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.108](https://img.shields.io/badge/Version-0.1.108-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -43,19 +43,19 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 |------------|------|---------|
 |  | cloudserver | 1.0.4 |
 | https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.2.42 |
-| https://charts.bitnami.com/bitnami | kafka | 30.1.7 |
-| https://charts.bitnami.com/bitnami | redis | 20.2.1 |
-| https://restorecommerce.github.io/charts/ | access-control-srv | 0.1.37 |
-| https://restorecommerce.github.io/charts/ | catalog-srv | 0.1.22 |
-| https://restorecommerce.github.io/charts/ | facade-srv | 0.1.33 |
-| https://restorecommerce.github.io/charts/ | fulfillment-srv | 0.1.27 |
-| https://restorecommerce.github.io/charts/ | identity-srv | 0.1.45 |
-| https://restorecommerce.github.io/charts/ | invoicing-srv | 0.1.22 |
-| https://restorecommerce.github.io/charts/ | notification-srv | 0.1.29 |
-| https://restorecommerce.github.io/charts/ | ordering-srv | 0.1.35 |
-| https://restorecommerce.github.io/charts/ | ostorage-srv | 0.1.28 |
-| https://restorecommerce.github.io/charts/ | payment-srv | 0.1.20 |
-| https://restorecommerce.github.io/charts/ | pdf-rendering-srv | 0.2.6 |
-| https://restorecommerce.github.io/charts/ | rendering-srv | 0.1.32 |
-| https://restorecommerce.github.io/charts/ | resource-srv | 0.1.24 |
-| https://restorecommerce.github.io/charts/ | scheduling-srv | 0.1.23 |
+| oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.37 |
+| oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.22 |
+| oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.33 |
+| oci://ghcr.io/restorecommerce/charts | fulfillment-srv | 0.1.27 |
+| oci://ghcr.io/restorecommerce/charts | identity-srv | 0.1.45 |
+| oci://ghcr.io/restorecommerce/charts | invoicing-srv | 0.1.22 |
+| oci://ghcr.io/restorecommerce/charts | notification-srv | 0.1.29 |
+| oci://ghcr.io/restorecommerce/charts | ordering-srv | 0.1.35 |
+| oci://ghcr.io/restorecommerce/charts | ostorage-srv | 0.1.28 |
+| oci://ghcr.io/restorecommerce/charts | payment-srv | 0.1.20 |
+| oci://ghcr.io/restorecommerce/charts | pdf-rendering-srv | 0.2.8 |
+| oci://ghcr.io/restorecommerce/charts | rendering-srv | 0.1.32 |
+| oci://ghcr.io/restorecommerce/charts | resource-srv | 0.1.24 |
+| oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.23 |
+| oci://registry-1.docker.io/bitnamicharts | kafka | 30.1.7 |
+| oci://registry-1.docker.io/bitnamicharts | redis | 20.2.1 |

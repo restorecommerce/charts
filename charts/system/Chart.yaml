@@ -2,67 +2,67 @@ apiVersion: v2
 dependencies:
 - condition: identity-srv.enabled
   name: identity-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.45
 - condition: notification-srv.enabled
   name: notification-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.29
 - condition: access-control-srv.enabled
   name: access-control-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.37
 - condition: ostorage-srv.enabled
   name: ostorage-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.28
 - condition: scheduling-srv.enabled
   name: scheduling-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.23
 - condition: rendering-srv.enabled
   name: rendering-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.32
 - condition: pdf-rendering-srv.enabled
   name: pdf-rendering-srv
-  repository: https://restorecommerce.github.io/charts/
-  version: 0.2.6
+  repository: "oci://ghcr.io/restorecommerce/charts"
+  version: 0.2.8
 - condition: fulfillment-srv.enabled
   name: fulfillment-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.27
 - condition: catalog-srv.enabled
   name: catalog-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.22
 - condition: invoicing-srv.enabled
   name: invoicing-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.22
 - condition: ordering-srv.enabled
   name: ordering-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.35
 - condition: payment-srv.enabled
   name: payment-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.20
 - condition: resource-srv.enabled
   name: resource-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.24
 - condition: facade-srv.enabled
   name: facade-srv
-  repository: https://restorecommerce.github.io/charts/
+  repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.33
 - name: cloudserver
   version: 1.0.4
 - name: kafka
-  repository: https://charts.bitnami.com/bitnami
+  repository: "oci://registry-1.docker.io/bitnamicharts"
   version: 30.1.7
 - name: redis
-  repository: https://charts.bitnami.com/bitnami
+  repository: "oci://registry-1.docker.io/bitnamicharts"
   version: 20.2.1
 - name: kube-arangodb
   repository: https://arangodb.github.io/kube-arangodb
@@ -76,4 +76,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.107
+version: 0.1.108
