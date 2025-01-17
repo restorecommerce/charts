@@ -2490,6 +2490,24 @@ entries:
     version: 0.1.0
   identity-srv:
   - apiVersion: v2
+    appVersion: 1.10.1
+    created: "2025-01-17T20:16:10.372358554Z"
+    description: Restorecommerce identity-srv
+    digest: 4cf3267905784f0c7483c151931c3e642fd8a59180b86d18ee61bbe645f39fb1
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.48/identity-srv-0.1.48.tgz
+    version: 0.1.48
+  - apiVersion: v2
     appVersion: 1.10.0
     created: "2025-01-13T14:23:34.610630183Z"
     description: Restorecommerce identity-srv
@@ -15675,4 +15693,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-17T14:31:15.75274881Z"
+generated: "2025-01-17T20:16:10.373870385Z"
