@@ -1480,6 +1480,24 @@ entries:
     version: 0.1.8
   facade-srv:
   - apiVersion: v2
+    appVersion: 1.6.1
+    created: "2025-01-17T12:16:29.790169596Z"
+    description: Restorecommerce facade-srv
+    digest: 2f2f6798760f5de960af9bd563e3b17eef64e414ea17cf96d52510bf02665c0e
+    home: https://docs.restorecommerce.io/facade-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: facade-srv
+    sources:
+    - https://github.com/restorecommerce/facade-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/facade-srv-0.1.36/facade-srv-0.1.36.tgz
+    version: 0.1.36
+  - apiVersion: v2
     appVersion: 1.6.0
     created: "2024-11-20T20:56:05.648231523Z"
     description: Restorecommerce facade-srv
@@ -5278,6 +5296,24 @@ entries:
     version: 0.1.0
   ostorage-srv:
   - apiVersion: v2
+    appVersion: 1.4.1
+    created: "2025-01-17T12:16:29.890794348Z"
+    description: Restorecommerce ostorage-srv
+    digest: 845c4c755a5ed28c006215916527c08437c2a034cbb67080f5ef1b23751dde93
+    home: https://docs.restorecommerce.io/ostorage-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ostorage-srv
+    sources:
+    - https://github.com/restorecommerce/ostorage-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ostorage-srv-0.1.30/ostorage-srv-0.1.30.tgz
+    version: 0.1.30
+  - apiVersion: v2
     appVersion: 1.3.8
     created: "2024-09-10T22:34:25.964785876Z"
     description: Restorecommerce ostorage-srv
@@ -6478,6 +6514,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/pdf-rendering-srv-0.1.0/pdf-rendering-srv-0.1.0.tgz
     version: 0.1.0
   rendering-srv:
+  - apiVersion: v2
+    appVersion: 1.3.12
+    created: "2025-01-17T12:16:29.988216212Z"
+    description: Restorecommerce rendering-srv
+    digest: e6c89ae3615d10befe1fc7033a001af816ea230a9c5898d5fb923224d5a48de1
+    home: https://docs.restorecommerce.io/rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: rendering-srv
+    sources:
+    - https://github.com/restorecommerce/rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/rendering-srv-0.1.33/rendering-srv-0.1.33.tgz
+    version: 0.1.33
   - apiVersion: v2
     appVersion: 1.3.11
     created: "2024-09-10T22:34:26.318467443Z"
@@ -15567,4 +15621,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-17T12:04:40.759982385Z"
+generated: "2025-01-17T12:16:29.989393023Z"
