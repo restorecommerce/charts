@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.108](https://img.shields.io/badge/Version-0.1.108-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.109](https://img.shields.io/badge/Version-0.1.109-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -42,7 +42,7 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | Repository | Name | Version |
 |------------|------|---------|
 |  | cloudserver | 1.0.4 |
-| https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.2.42 |
+| https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.2.46 |
 | oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.37 |
 | oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.22 |
 | oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.33 |
@@ -57,5 +57,5 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | oci://ghcr.io/restorecommerce/charts | rendering-srv | 0.1.32 |
 | oci://ghcr.io/restorecommerce/charts | resource-srv | 0.1.24 |
 | oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.23 |
-| oci://registry-1.docker.io/bitnamicharts | kafka | 30.1.7 |
-| oci://registry-1.docker.io/bitnamicharts | redis | 20.2.1 |
+| oci://registry-1.docker.io/bitnamicharts | kafka | 31.4.1 |
+| oci://registry-1.docker.io/bitnamicharts | redis | 20.11.1 |

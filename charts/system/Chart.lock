@@ -46,12 +46,12 @@ dependencies:
   version: 1.0.4
 - name: kafka
   repository: oci://registry-1.docker.io/bitnamicharts
-  version: 30.1.7
+  version: 31.4.1
 - name: redis
   repository: oci://registry-1.docker.io/bitnamicharts
-  version: 20.2.1
+  version: 20.11.1
 - name: kube-arangodb
   repository: https://arangodb.github.io/kube-arangodb
-  version: 1.2.42
-digest: sha256:8ce6eaf2bb4a61e6ccfc91af516775624e8f9c8c4ffb82f46d9735568765dfd3
-generated: "2024-11-20T21:39:44.96252074+02:00"
+  version: 1.2.46
+digest: sha256:82695a8ec024b8a15e39c879ce4a00f0fcf1add9ccf776e2799e49e539900f56
+generated: "2025-03-05T13:13:06.082596776+02:00"

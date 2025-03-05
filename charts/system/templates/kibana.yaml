@@ -3,7 +3,7 @@ kind: Kibana
 metadata:
   name: restorecommerce
 spec:
-  version: 8.15.3
+  version: 8.16.4
   count: 1
   elasticsearchRef:
     name: restorecommerce
