@@ -57,7 +57,7 @@ dependencies:
   repository: "oci://ghcr.io/restorecommerce/charts"
   version: 0.1.33
 - name: cloudserver
-  version: 1.0.4
+  version: 1.0.5
 - name: kafka
   repository: "oci://registry-1.docker.io/bitnamicharts"
   version: 31.4.1

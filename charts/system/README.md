@@ -41,7 +41,7 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 
 | Repository | Name | Version |
 |------------|------|---------|
-|  | cloudserver | 1.0.4 |
+|  | cloudserver | 1.0.5 |
 | https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.2.46 |
 | oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.37 |
 | oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.22 |

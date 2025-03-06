@@ -224,7 +224,7 @@ releases:
   - name: cloudserver
     namespace: restorecommerce
     chart: ../../charts/system/charts/cloudserver
-    version: 1.0.4
+    version: 1.0.5
     installed: true
     atomic: true
     cleanupOnFail: true
@@ -237,7 +237,7 @@ releases:
   - name: kafka
     namespace: restorecommerce
     chart: bitnami/kafka
-    version: 26.8.3
+    version: 31.4.1
     installed: true
     atomic: true
     cleanupOnFail: true
@@ -253,7 +253,7 @@ releases:
   - name: redis
     namespace: restorecommerce
     chart: bitnami/redis
-    version: 18.9.1
+    version: 20.11.1
     installed: true
     atomic: true
     cleanupOnFail: true
@@ -263,7 +263,7 @@ releases:
   - name: elasticsearch
     namespace: restorecommerce
     chart: elastic/elasticsearch
-    version: 8.12.0
+    version: 8.16.4
     installed: true
     atomic: true
     cleanupOnFail: true
@@ -279,7 +279,7 @@ releases:
   - name: kibana
     namespace: restorecommerce
     chart: elastic/kibana
-    version: 8.12.0
+    version: 8.16.4
     installed: true
     atomic: true
     cleanupOnFail: true
@@ -289,7 +289,7 @@ releases:
 
   - name: arangodb
     namespace: restorecommerce
-    chart: https://github.com/arangodb/kube-arangodb/releases/download/1.1.5/kube-arangodb-1.1.5.tgz
+    chart: https://github.com/arangodb/kube-arangodb/releases/download/1.2.46/kube-arangodb-1.2.46.tgz
     installed: true
     atomic: true
     cleanupOnFail: true

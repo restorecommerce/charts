@@ -43,7 +43,7 @@ dependencies:
   version: 0.1.33
 - name: cloudserver
   repository: ""
-  version: 1.0.4
+  version: 1.0.5
 - name: kafka
   repository: oci://registry-1.docker.io/bitnamicharts
   version: 31.4.1
@@ -53,5 +53,5 @@ dependencies:
 - name: kube-arangodb
   repository: https://arangodb.github.io/kube-arangodb
   version: 1.2.46
-digest: sha256:82695a8ec024b8a15e39c879ce4a00f0fcf1add9ccf776e2799e49e539900f56
-generated: "2025-03-05T13:13:06.082596776+02:00"
+digest: sha256:5e15ae9e56cc54a38f0aed8d89f58e1fc5126a2f6ea48678e10875d06e173480
+generated: "2025-03-06T13:58:06.215279717+02:00"
