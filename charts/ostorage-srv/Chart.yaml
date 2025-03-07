@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: 1.4.1
+appVersion: 1.4.2
 description: Restorecommerce ostorage-srv
 home: https://docs.restorecommerce.io/ostorage-srv/index.html
 icon: https://avatars0.githubusercontent.com/u/8339525
@@ -11,4 +11,4 @@ name: ostorage-srv
 sources:
 - https://github.com/restorecommerce/ostorage-srv
 type: application
-version: 0.1.30
+version: 0.1.31
