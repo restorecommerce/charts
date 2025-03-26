@@ -43,6 +43,10 @@ spec:
               value: /tmp/npm/
             - name: NODE_ENV
               value: {{ include "pdf-rendering-srv.nodeEnv" . }}
+            - name: XDG_CONFIG_HOME
+              value: /tmp/.chromium
+            - name: XDG_CACHE_HOME
+              value: /tmp/.chromium
             {{- if .Values.env.extras }}
             {{- toYaml .Values.env.extras | nindent 12 }}
             {{- end }}
