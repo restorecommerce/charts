@@ -10,4 +10,4 @@ name: store-front
 sources:
 - https://github.com/restorecommerce/store-front
 type: application
-version: 0.1.11
+version: 0.1.12

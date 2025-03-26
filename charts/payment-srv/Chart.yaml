@@ -11,4 +11,4 @@ name: payment-srv
 sources:
 - https://github.com/restorecommerce/payment-srv
 type: application
-version: 0.1.20
+version: 0.1.21
