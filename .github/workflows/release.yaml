@@ -84,7 +84,7 @@ jobs:
         run: helm registry login -u ${{ github.repository_owner }} -p ${{ secrets.CR_PAT }} ghcr.io
 
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.6.0
+        uses: helm/chart-releaser-action@v1.7.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 

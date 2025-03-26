@@ -60,7 +60,7 @@ jobs:
           git pull
           git push -u origin master
 
-      - uses: convictional/trigger-workflow-and-wait@v1.6.1
+      - uses: convictional/trigger-workflow-and-wait@v1.6.5
         if: ${{ steps.diff.outputs.changes == '1' }}
         with:
           owner: restorecommerce
