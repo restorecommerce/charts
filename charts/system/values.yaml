@@ -205,7 +205,7 @@ facade-srv:
 cloudserver:
   fullnameOverride: cloudserver
   image:
-    repository: registry.scality.com/cloudserver/cloudserver
+    repository: ghcr.io/scality/cloudserver
     tag: 9.0.2
     pullPolicy: IfNotPresent
   api:
