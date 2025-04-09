@@ -2092,6 +2092,24 @@ entries:
     version: 0.1.0
   fulfillment-srv:
   - apiVersion: v2
+    appVersion: 0.4.5
+    created: "2025-04-09T13:40:19.607782229Z"
+    description: Restorecommerce fulfillment-srv
+    digest: c65d47ea26b0c1c6d42319b779aa1c13f7d388b9d4dc22229ab5c91b781c8207
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/fulfillment-srv-0.1.36/fulfillment-srv-0.1.36.tgz
+    version: 0.1.36
+  - apiVersion: v2
     appVersion: 0.4.4
     created: "2025-03-26T15:32:00.349785811Z"
     description: Restorecommerce fulfillment-srv
@@ -3746,6 +3764,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/indexing-srv-0.1.0/indexing-srv-0.1.0.tgz
     version: 0.1.0
   invoicing-srv:
+  - apiVersion: v2
+    appVersion: 1.4.5
+    created: "2025-04-09T13:40:19.752695758Z"
+    description: Restorecommerce invoicing-srv
+    digest: 722eef8868e76784dff5129f351070ec3931b5963045097504537d8877cc8b28
+    home: https://docs.restorecommerce.io/invoicing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: invoicing-srv
+    sources:
+    - https://github.com/restorecommerce/invoicing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/invoicing-srv-0.1.29/invoicing-srv-0.1.29.tgz
+    version: 0.1.29
   - apiVersion: v2
     appVersion: 1.4.4
     created: "2025-03-26T15:32:00.647133156Z"
@@ -16591,4 +16627,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-02T14:09:51.402273846Z"
+generated: "2025-04-09T13:40:19.754661965Z"
