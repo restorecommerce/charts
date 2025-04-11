@@ -665,6 +665,24 @@ entries:
     version: 0.1.0
   catalog-srv:
   - apiVersion: v2
+    appVersion: 1.5.3
+    created: "2025-04-11T13:19:34.87410354Z"
+    description: Restorecommerce catalog-srv
+    digest: ba0e3ccd0856f6d407c20134cf7653c8603f18ebef33b8aeb57df915b7e0e32a
+    home: https://docs.restorecommerce.io/catalog-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: catalog-srv
+    sources:
+    - https://github.com/restorecommerce/catalog-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/catalog-srv-0.1.28/catalog-srv-0.1.28.tgz
+    version: 0.1.28
+  - apiVersion: v2
     appVersion: 1.5.2
     created: "2025-03-26T15:31:59.803434921Z"
     description: Restorecommerce catalog-srv
@@ -5149,6 +5167,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/notification-srv-0.1.0/notification-srv-0.1.0.tgz
     version: 0.1.0
   ordering-srv:
+  - apiVersion: v2
+    appVersion: 0.4.6
+    created: "2025-04-11T13:19:35.041615509Z"
+    description: Restorecommerce ordering-srv
+    digest: d2cf379e46196a0a0cb32f6db73cbdaf2be85e27800d367d057f4ee417d75526
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.47/ordering-srv-0.1.47.tgz
+    version: 0.1.47
   - apiVersion: v2
     appVersion: 0.4.5
     created: "2025-04-09T13:53:42.220349692Z"
@@ -16717,4 +16753,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-11T13:06:57.253311459Z"
+generated: "2025-04-11T13:19:35.042857949Z"
