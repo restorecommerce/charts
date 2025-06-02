@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   access-control-srv:
   - apiVersion: v2
+    appVersion: 1.6.1
+    created: "2025-06-02T17:22:23.782705339Z"
+    description: Restorecommerce access-control-srv
+    digest: b5b2aa59ed37538526a210f059d4ca3f1f981c551cdfb39a16a89833e0f8df2f
+    home: https://docs.restorecommerce.io/access-control-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: access-control-srv
+    sources:
+    - https://github.com/restorecommerce/access-control-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/access-control-srv-0.1.40/access-control-srv-0.1.40.tgz
+    version: 0.1.40
+  - apiVersion: v2
     appVersion: 1.6.0
     created: "2025-05-05T14:23:01.912577721Z"
     description: Restorecommerce access-control-srv
@@ -16879,4 +16897,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-26T11:12:28.262175197Z"
+generated: "2025-06-02T17:22:23.784223231Z"
