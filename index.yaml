@@ -3963,6 +3963,24 @@ entries:
     version: 0.1.0
   invoicing-srv:
   - apiVersion: v2
+    appVersion: 1.4.7
+    created: "2025-06-05T12:40:29.310873176Z"
+    description: Restorecommerce invoicing-srv
+    digest: 30a8e1b2602604f74c172405895cd82ba9305dec796e5649783fe163e61b91d3
+    home: https://docs.restorecommerce.io/invoicing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: invoicing-srv
+    sources:
+    - https://github.com/restorecommerce/invoicing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/invoicing-srv-0.1.31/invoicing-srv-0.1.31.tgz
+    version: 0.1.31
+  - apiVersion: v2
     appVersion: 1.4.6
     created: "2025-04-11T13:06:57.084771948Z"
     description: Restorecommerce invoicing-srv
@@ -16987,4 +17005,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-05T12:09:12.56076355Z"
+generated: "2025-06-05T12:40:29.313061212Z"
