@@ -4720,6 +4720,24 @@ entries:
     version: 0.1.0
   ldap-srv:
   - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2025-06-27T11:18:16.948556328Z"
+    description: Restorecommerce ldap-srv
+    digest: b1f8482f9ce8ab474c5b077596620a5612c28997f5bd5432df36de965f14701c
+    home: https://docs.restorecommerce.io/ldap-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ldap-srv
+    sources:
+    - https://github.com/restorecommerce/ldap-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ldap-srv-0.1.18/ldap-srv-0.1.18.tgz
+    version: 0.1.18
+  - apiVersion: v2
     appVersion: 1.1.1
     created: "2025-03-26T15:32:00.794767993Z"
     description: Restorecommerce ldap-srv
@@ -17257,4 +17275,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-25T14:26:21.746758429Z"
+generated: "2025-06-27T11:18:16.949590284Z"
