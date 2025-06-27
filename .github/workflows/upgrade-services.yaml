@@ -24,10 +24,8 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
-      - name: Install devbox
-        uses: jetify-com/devbox-install-action@v0.12.0
-        with:
-          enable-cache: true
+      - name: Install mise
+        uses: jdx/mise-action@v2
 
       - name: Add helm repos
         run: .github/add-repos.sh
@@ -44,7 +42,7 @@ jobs:
 
       - name: Pre-commit
         if: ${{ steps.diff.outputs.changes == '1' }}
-        run: devbox run pre-commit
+        run: mise exec -- ./pre-commit.sh
 
       - name: Changes
         if: ${{ steps.diff.outputs.changes == '1' }}

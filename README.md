@@ -47,7 +47,7 @@ There are the following hard coded keys that you want to change in your values:
 
 ## Development
 
-It is suggested that you utilize [`direnv`](https://direnv.net/) together with [`devbox`](https://www.jetify.com/devbox) to ease the package management process.
+It is suggested that you utilize [`mise`](https://mise.jdx.dev/) to ease the package management process.
 
 ### Committing
 

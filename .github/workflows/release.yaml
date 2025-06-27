@@ -30,12 +30,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Install devbox
-        uses: jetify-com/devbox-install-action@v0.12.0
-        with:
-          enable-cache: true
+      - name: Install mise
+        uses: jdx/mise-action@v2
       - name: Run helm-docs
-        run: devbox run helm-docs
+        run: mise exec -- ./.github/helm-docs.sh
 
   kubeconform-chart:
     runs-on: ubuntu-latest
@@ -48,14 +46,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Install devbox
-        uses: jetify-com/devbox-install-action@v0.12.0
-        with:
-          enable-cache: true
+      - name: Install mise
+        uses: jdx/mise-action@v2
       - name: Run kubeconform
         env:
           KUBERNETES_VERSION: ${{ matrix.k8s }}
-        run: devbox run kubeconform
+        run: mise exec -- ./.github/kubeconform.sh
 
   release:
     runs-on: ubuntu-latest
