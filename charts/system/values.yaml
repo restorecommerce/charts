@@ -206,7 +206,7 @@ cloudserver:
   fullnameOverride: cloudserver
   image:
     repository: ghcr.io/scality/cloudserver
-    tag: 9.0.2
+    tag: 9.0.18
     pullPolicy: IfNotPresent
   api:
     replicaCount: 1

@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.114](https://img.shields.io/badge/Version-0.1.114-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.115](https://img.shields.io/badge/Version-0.1.115-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
