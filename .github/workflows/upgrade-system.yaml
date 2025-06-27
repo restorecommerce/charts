@@ -26,11 +26,8 @@ jobs:
       - name: Add helm repos
         run: .github/add-repos.sh
 
-      - name: Install python dependencies
-        run: pip install -r requirements.txt
-
       - name: Bump chart versions
-        run: python upgrade_system.py
+        run: mise exec -- uv run upgrade_system.py
 
       - name: Check if changes detected
         id: diff
