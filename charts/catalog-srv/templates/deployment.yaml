@@ -58,16 +58,9 @@ spec:
             {{- end }}
           {{- if .Values.enableHealthCheck }}
           livenessProbe:
-            initialDelaySeconds: 10
-            periodSeconds: 30
-            grpc:
-              port: 50051
+            {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe:
-            initialDelaySeconds: 10
-            periodSeconds: 15
-            grpc:
-              port: 50051
-              service: readiness
+            {{- toYaml .Values.readinessProbe | nindent 12 }}
           {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}

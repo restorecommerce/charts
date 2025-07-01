@@ -99,6 +99,21 @@ args: []
 # enableHealthCheck -- Enable health checks
 enableHealthCheck: true
 
+# livenessProbe -- Define livenessProbe for the deployment
+livenessProbe:
+  initialDelaySeconds: 30
+  periodSeconds: 30
+  grpc:
+    port: 50051
+
+# readinessProbe -- Define readinessProbe for the deployment
+readinessProbe:
+  initialDelaySeconds: 30
+  periodSeconds: 15
+  grpc:
+    port: 50051
+    service: readiness
+
 env:
   # env.nodeEnv -- The selected node environment and config
   nodeEnv: production

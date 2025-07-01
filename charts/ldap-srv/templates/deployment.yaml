@@ -58,15 +58,9 @@ spec:
             {{- end }}
           {{- if .Values.enableHealthCheck }}
           livenessProbe:
-            initialDelaySeconds: 10
-            periodSeconds: 30
-            tcpSocket:
-              port: ldap
+            {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe:
-            initialDelaySeconds: 10
-            periodSeconds: 15
-            tcpSocket:
-              port: ldap
+            {{- toYaml .Values.readinessProbe | nindent 12 }}
           {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}

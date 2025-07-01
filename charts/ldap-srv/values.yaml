@@ -99,6 +99,20 @@ args: []
 # enableHealthCheck -- Enable health checks
 enableHealthCheck: true
 
+# livenessProbe -- Define livenessProbe for the deployment
+livenessProbe:
+  initialDelaySeconds: 30
+  periodSeconds: 30
+  tcpSocket:
+    port: ldap
+
+# readinessProbe -- Define readinessProbe for the deployment
+readinessProbe:
+  initialDelaySeconds: 30
+  periodSeconds: 15
+  tcpSocket:
+    port: ldap
+
 env:
   # env.nodeEnv -- The selected node environment and config
   nodeEnv: production

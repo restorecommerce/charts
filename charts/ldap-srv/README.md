@@ -1,6 +1,6 @@
 # ldap-srv
 
-![Version: 0.1.18](https://img.shields.io/badge/Version-0.1.18-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.0](https://img.shields.io/badge/AppVersion-1.2.0-informational?style=flat-square)
+![Version: 0.1.19](https://img.shields.io/badge/Version-0.1.19-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.0](https://img.shields.io/badge/AppVersion-1.2.0-informational?style=flat-square)
 
 Restorecommerce ldap-srv
 
@@ -40,10 +40,12 @@ Restorecommerce ldap-srv
 | image.repository | string | `"ghcr.io/restorecommerce/ldap-srv"` | Image to be used for deployment |
 | image.tag | string | `""` | Image tag |
 | imagePullSecrets | list | `[]` | List of secrets for images |
+| livenessProbe | object | `{"initialDelaySeconds":30,"periodSeconds":30,"tcpSocket":{"port":"ldap"}}` | Define livenessProbe for the deployment |
 | nameOverride | string | `""` | Name override for all resources |
 | nodeSelector | object | `{}` | Specify the nodeSelector for all pods |
 | podAnnotations | object | `{}` | Any extra annotations for all pods |
 | podSecurityContext | object | `{}` | Security context override for all pods |
+| readinessProbe | object | `{"initialDelaySeconds":30,"periodSeconds":15,"tcpSocket":{"port":"ldap"}}` | Define readinessProbe for the deployment |
 | replicaCount | int | `1` | Replica count of the deployment |
 | resources | object | `{}` | Any resource configuration applied to all pods |
 | securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |

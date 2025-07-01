@@ -1,6 +1,6 @@
 # scheduling-srv
 
-![Version: 0.1.24](https://img.shields.io/badge/Version-0.1.24-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.7](https://img.shields.io/badge/AppVersion-1.2.7-informational?style=flat-square)
+![Version: 0.1.25](https://img.shields.io/badge/Version-0.1.25-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.2.7](https://img.shields.io/badge/AppVersion-1.2.7-informational?style=flat-square)
 
 Restorecommerce scheduling-srv
 
@@ -42,10 +42,12 @@ Restorecommerce scheduling-srv
 | image.repository | string | `"ghcr.io/restorecommerce/scheduling-srv"` | Image to be used for deployment |
 | image.tag | string | `""` | Image tag |
 | imagePullSecrets | list | `[]` | List of secrets for images |
+| livenessProbe | object | `{"grpc":{"port":50051},"initialDelaySeconds":30,"periodSeconds":30}` | Define livenessProbe for the deployment |
 | nameOverride | string | `""` | Name override for all resources |
 | nodeSelector | object | `{}` | Specify the nodeSelector for all pods |
 | podAnnotations | object | `{}` | Any extra annotations for all pods |
 | podSecurityContext | object | `{}` | Security context override for all pods |
+| readinessProbe | object | `{"grpc":{"port":50051,"service":"readiness"},"initialDelaySeconds":30,"periodSeconds":15}` | Define readinessProbe for the deployment |
 | replicaCount | int | `1` | Replica count of the deployment |
 | resources | object | `{}` | Any resource configuration applied to all pods |
 | securityContext | object | `{"capabilities":{"drop":["ALL"]},"readOnlyRootFilesystem":true,"runAsNonRoot":true,"runAsUser":1000}` | Security context override for all containers |

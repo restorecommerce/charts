@@ -11,4 +11,4 @@ name: ostorage-srv
 sources:
 - https://github.com/restorecommerce/ostorage-srv
 type: application
-version: 0.1.33
+version: 0.1.34

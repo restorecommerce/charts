@@ -11,4 +11,4 @@ name: rendering-srv
 sources:
 - https://github.com/restorecommerce/rendering-srv
 type: application
-version: 0.1.36
+version: 0.1.37

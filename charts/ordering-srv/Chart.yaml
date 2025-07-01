@@ -11,4 +11,4 @@ name: ordering-srv
 sources:
 - https://github.com/restorecommerce/ordering-srv
 type: application
-version: 0.1.52
+version: 0.1.53
