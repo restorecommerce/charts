@@ -2362,6 +2362,24 @@ entries:
     version: 0.1.0
   fulfillment-srv:
   - apiVersion: v2
+    appVersion: 0.5.7
+    created: "2025-08-05T12:47:24.418674035Z"
+    description: Restorecommerce fulfillment-srv
+    digest: f3d82b5ab3d2f92a912c0e531909325771bd62593cc13d83aa2deed9bf9a2de3
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/fulfillment-srv-0.1.44/fulfillment-srv-0.1.44.tgz
+    version: 0.1.44
+  - apiVersion: v2
     appVersion: 0.5.5
     created: "2025-07-01T16:46:23.690315983Z"
     description: Restorecommerce fulfillment-srv
@@ -4197,6 +4215,24 @@ entries:
     version: 0.1.0
   invoicing-srv:
   - apiVersion: v2
+    appVersion: 1.4.13
+    created: "2025-08-05T12:47:24.562693003Z"
+    description: Restorecommerce invoicing-srv
+    digest: 107cca9d6ab569066a717f97a74ec85514661e6c8baf50cab4a8c892ec219efa
+    home: https://docs.restorecommerce.io/invoicing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: invoicing-srv
+    sources:
+    - https://github.com/restorecommerce/invoicing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/invoicing-srv-0.1.36/invoicing-srv-0.1.36.tgz
+    version: 0.1.36
+  - apiVersion: v2
     appVersion: 1.4.10
     created: "2025-07-01T16:46:23.895667544Z"
     description: Restorecommerce invoicing-srv
@@ -5707,6 +5743,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/notification-srv-0.1.0/notification-srv-0.1.0.tgz
     version: 0.1.0
   ordering-srv:
+  - apiVersion: v2
+    appVersion: 0.4.13
+    created: "2025-08-05T12:47:24.704098906Z"
+    description: Restorecommerce ordering-srv
+    digest: 856b564721e2e8921359a69769a653e6888d08357f444301ede4157d6605940d
+    home: https://docs.restorecommerce.io/ordering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ordering-srv
+    sources:
+    - https://github.com/restorecommerce/ordering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ordering-srv-0.1.54/ordering-srv-0.1.54.tgz
+    version: 0.1.54
   - apiVersion: v2
     appVersion: 0.4.11
     created: "2025-07-01T16:46:24.25768305Z"
@@ -8598,6 +8652,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/rendering-srv-0.1.0/rendering-srv-0.1.0.tgz
     version: 0.1.0
   resource-srv:
+  - apiVersion: v2
+    appVersion: 1.5.17
+    created: "2025-08-05T12:47:24.868923699Z"
+    description: Restorecommerce resource-srv
+    digest: e3b412ba3c9740bc03232c4e7d80b523188e753da495f353d39eafc425ddea45
+    home: https://docs.restorecommerce.io/resource-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: resource-srv
+    sources:
+    - https://github.com/restorecommerce/resource-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/resource-srv-0.1.33/resource-srv-0.1.33.tgz
+    version: 0.1.33
   - apiVersion: v2
     appVersion: 1.5.15
     created: "2025-07-01T16:46:24.889994471Z"
@@ -17881,4 +17953,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-01T16:55:54.763845383Z"
+generated: "2025-08-05T12:47:24.870653194Z"
