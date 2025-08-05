@@ -31,7 +31,7 @@ dependencies:
 - condition: fulfillment-srv.enabled
   name: fulfillment-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.43
+  version: 0.1.44
 - condition: catalog-srv.enabled
   name: catalog-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -39,11 +39,11 @@ dependencies:
 - condition: invoicing-srv.enabled
   name: invoicing-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.35
+  version: 0.1.36
 - condition: ordering-srv.enabled
   name: ordering-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.53
+  version: 0.1.54
 - condition: payment-srv.enabled
   name: payment-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -51,7 +51,7 @@ dependencies:
 - condition: resource-srv.enabled
   name: resource-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.32
+  version: 0.1.33
 - condition: facade-srv.enabled
   name: facade-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -76,4 +76,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.116
+version: 0.1.117
