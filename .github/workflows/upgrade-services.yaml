@@ -43,6 +43,8 @@ jobs:
       - name: Pre-commit
         if: ${{ steps.diff.outputs.changes == '1' }}
         run: mise exec -- ./pre-commit.sh
+        env:
+          KUBERNETES_VERSION: v1.30.0
 
       - name: Changes
         if: ${{ steps.diff.outputs.changes == '1' }}
