@@ -28,10 +28,10 @@ dependencies:
   version: 0.1.34
 - name: invoicing-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.36
+  version: 0.1.37
 - name: ordering-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.54
+  version: 0.1.55
 - name: payment-srv
   repository: oci://ghcr.io/restorecommerce/charts
   version: 0.1.22
@@ -40,7 +40,7 @@ dependencies:
   version: 0.1.33
 - name: facade-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.41
+  version: 0.1.42
 - name: cloudserver
   repository: ""
   version: 1.0.5
@@ -53,5 +53,5 @@ dependencies:
 - name: kube-arangodb
   repository: https://arangodb.github.io/kube-arangodb
   version: 1.2.46
-digest: sha256:2736a91216cb74eef70784bb8b5e5f99268d789c447abe4d9b190e01cf6dc0eb
-generated: "2025-08-07T13:51:48.952178522Z"
+digest: sha256:5719379d3ca1003208522de8d6b7450c0d9e257a2201ecd4e93a9e7e88d8dbfd
+generated: "2025-08-13T14:20:41.270540869Z"
