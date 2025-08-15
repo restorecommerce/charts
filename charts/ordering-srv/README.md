@@ -1,6 +1,6 @@
 # ordering-srv
 
-![Version: 0.1.55](https://img.shields.io/badge/Version-0.1.55-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.14](https://img.shields.io/badge/AppVersion-0.4.14-informational?style=flat-square)
+![Version: 0.1.56](https://img.shields.io/badge/Version-0.1.56-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.4.15](https://img.shields.io/badge/AppVersion-0.4.15-informational?style=flat-square)
 
 Restorecommerce ordering-srv
 
