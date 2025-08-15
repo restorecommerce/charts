@@ -39,11 +39,11 @@ dependencies:
 - condition: invoicing-srv.enabled
   name: invoicing-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.37
+  version: 0.1.38
 - condition: ordering-srv.enabled
   name: ordering-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.55
+  version: 0.1.56
 - condition: payment-srv.enabled
   name: payment-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -76,4 +76,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.120
+version: 0.1.121
