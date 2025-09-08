@@ -2398,6 +2398,24 @@ entries:
     version: 0.1.0
   fulfillment-srv:
   - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2025-09-08T11:25:12.124782223Z"
+    description: Restorecommerce fulfillment-srv
+    digest: f04922a1ecdabc16b9b13a4992942d0d4fcd04f5b9a2613b1042a2469257d4f6
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/fulfillment-srv-0.1.47/fulfillment-srv-0.1.47.tgz
+    version: 0.1.47
+  - apiVersion: v2
     appVersion: 0.5.9
     created: "2025-09-02T15:32:31.259003012Z"
     description: Restorecommerce fulfillment-srv
@@ -19147,4 +19165,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-02T15:44:01.621816182Z"
+generated: "2025-09-08T11:25:12.126741402Z"
