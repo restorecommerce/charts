@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.129](https://img.shields.io/badge/Version-0.1.129-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.130](https://img.shields.io/badge/Version-0.1.130-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -56,6 +56,6 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | oci://ghcr.io/restorecommerce/charts | pdf-rendering-srv | 0.2.13 |
 | oci://ghcr.io/restorecommerce/charts | rendering-srv | 0.1.38 |
 | oci://ghcr.io/restorecommerce/charts | resource-srv | 0.1.34 |
-| oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.25 |
+| oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.26 |
 | oci://registry-1.docker.io/bitnamicharts | kafka | 31.4.1 |
 | oci://registry-1.docker.io/bitnamicharts | redis | 20.11.1 |
