@@ -27,7 +27,7 @@ dependencies:
 - condition: pdf-rendering-srv.enabled
   name: pdf-rendering-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.2.14
+  version: 0.2.15
 - condition: fulfillment-srv.enabled
   name: fulfillment-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -76,4 +76,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.132
+version: 0.1.133
