@@ -19,7 +19,7 @@ dependencies:
 - condition: scheduling-srv.enabled
   name: scheduling-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.27
+  version: 0.1.28
 - condition: rendering-srv.enabled
   name: rendering-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -76,4 +76,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.134
+version: 0.1.135
