@@ -7,15 +7,14 @@
 
 ## Dependencies
 
-### ArangoDB
+### Strimzi Kafka Operator
 
-This chart depends on having the ArangoDB operator and CRD's installed in the cluster.
+This chart depends on having the Strimzi operator and CRD's installed in the cluster.
 
 Replace the `restorecommerce` namespace with your own.
 
 ```shell
-helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.39/kube-arangodb-crd-1.2.39.tgz
-helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.39/kube-arangodb-1.2.39.tgz
+helm install --create-namespace -n restorecommerce strimzi-kafka-operator --version 0.47.0 oci://quay.io/strimzi-helm/strimzi-kafka-operator
 ```
 
 ### Elastic

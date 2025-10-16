@@ -4,7 +4,7 @@ metadata:
   name: arangodb
 spec:
   mode: Single
-  image: 'arangodb/arangodb:3.12.5'
+  image: 'arangodb:3.12.5'
   auth:
     jwtSecretName: None
   externalAccess:

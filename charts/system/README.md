@@ -6,15 +6,14 @@ A Helm chart for the Restorecommerce system
 
 ## Dependencies
 
-### ArangoDB
+### Strimzi Kafka Operator
 
-This chart depends on having the ArangoDB operator and CRD's installed in the cluster.
+This chart depends on having the Strimzi operator and CRD's installed in the cluster.
 
 Replace the `restorecommerce` namespace with your own.
 
 ```shell
-helm install arangodb-crd https://github.com/arangodb/kube-arangodb/releases/download/1.2.39/kube-arangodb-crd-1.2.39.tgz
-helm install --create-namespace -n restorecommerce arangodb-operator https://github.com/arangodb/kube-arangodb/releases/download/1.2.39/kube-arangodb-1.2.39.tgz
+helm install --create-namespace -n restorecommerce strimzi-kafka-operator --version 0.47.0 oci://quay.io/strimzi-helm/strimzi-kafka-operator
 ```
 
 ### Elastic
@@ -42,7 +41,7 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | Repository | Name | Version |
 |------------|------|---------|
 |  | cloudserver | 1.0.5 |
-| https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.2.46 |
+| https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.3.0 |
 | oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.42 |
 | oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.34 |
 | oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.43 |
@@ -57,5 +56,4 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | oci://ghcr.io/restorecommerce/charts | rendering-srv | 0.1.38 |
 | oci://ghcr.io/restorecommerce/charts | resource-srv | 0.1.34 |
 | oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.28 |
-| oci://registry-1.docker.io/bitnamicharts | kafka | 31.4.1 |
-| oci://registry-1.docker.io/bitnamicharts | redis | 20.11.1 |
+| oci://registry-1.docker.io/cloudpirates | redis | 0.5.0 |

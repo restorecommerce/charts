@@ -43,50 +43,56 @@ identity-srv:
   env:
     extras:
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
       - name: database__main__host
         value: arangodb-single-000000
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 notification-srv:
   fullnameOverride: notification-srv
   env:
     extras:
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 access-control-srv:
   fullnameOverride: access-control-srv
   env:
     extras:
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
       - name: database__main__host
         value: arangodb-single-000000
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 ostorage-srv:
   fullnameOverride: ostorage-srv
   env:
     extras:
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: s3__client__accessKeyId
@@ -95,28 +101,34 @@ ostorage-srv:
         value: fO09epo9zT6tslwhh192l0UHbtpCjCYTnE3TYtec
       - name: s3__client__endpoint
         value: http://cloudserver:8000
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 scheduling-srv:
   fullnameOverride: scheduling-srv
   env:
     extras:
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 rendering-srv:
   fullnameOverride: rendering-srv
   env:
     extras:
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 pdf-rendering-srv:
   fullnameOverride: pdf-rendering-srv
@@ -126,78 +138,91 @@ fulfillment-srv:
   env:
     extras:
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
         value: arangodb-single-000000
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 catalog-srv:
   fullnameOverride: catalog-srv
   env:
     extras:
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
         value: arangodb-single-000000
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 invoicing-srv:
   fullnameOverride: invoicing-srv
   env:
     extras:
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
         value: arangodb-single-000000
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 ordering-srv:
   fullnameOverride: ordering-srv
   env:
     extras:
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
         value: arangodb-single-000000
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 payment-srv:
+  enabled: false
   fullnameOverride: payment-srv
   env:
     extras:
       - name: redis__host
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 resource-srv:
   fullnameOverride: resource-srv
   env:
     extras:
       - name: redis__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: authorization__cache__url
-        value: redis://redis-master:6379
+        value: redis://redis:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
         value: "false"
       - name: database__main__host
         value: arangodb-single-000000
+      - name: events__kafka__kafka__brokers
+        value: '["kafka-kafka-bootstrap:9092"]'
 
 facade-srv:
   fullnameOverride: facade-srv
@@ -206,7 +231,7 @@ cloudserver:
   fullnameOverride: cloudserver
   image:
     repository: ghcr.io/scality/cloudserver
-    tag: 9.0.18
+    tag: 9.0.30
     pullPolicy: IfNotPresent
   api:
     replicaCount: 1
@@ -224,23 +249,11 @@ cloudserver:
     limits:
       memory: 512Mi
 
-kafka:
-  fullnameOverride: kafka
-  deleteTopicEnable: true
-  autoCreateTopicsEnable: true
-  controller:
-    replicaCount: 1
-  kraft:
-    enabled: true
-
 redis:
   fullnameOverride: redis
   auth:
     enabled: false
   architecture: standalone
-  replica:
-    replicaCount: 0
-    disableCommands: []
-    resources:
-      limits:
-        memory: 256Mi
+  resources:
+    limits:
+      memory: 256Mi
