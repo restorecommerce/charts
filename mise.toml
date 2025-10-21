@@ -1,5 +1,5 @@
 [tools]
-helm = "3.97.0"
+helm = "3.19.0"
 helm-ct = "3.14.0"
 helm-docs = "1.14.2"
 kubeconform = "0.7.0"
