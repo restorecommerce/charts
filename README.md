@@ -22,9 +22,9 @@ Helm chart index for individual services:
 
 Helm chart for the whole system:
 
-* [system](./charts/system)
+* 🧩 [system](./charts/system)
 
-## Installation
+## 📦 Installation
 
 You can install this helm repository via:
 
@@ -33,38 +33,39 @@ helm repo add restorecommerce https://restorecommerce.github.io/charts/
 helm repo update
 ```
 
-## Example Deployment
+## 🚀 Example Deployment
 
 There is an example deployment with all required dependencies specified in [example](./example) directory.
 
 It uses the [helmfile](https://github.com/roboll/helmfile) tool to specify all releases and their values.
 
-## Security
+## 🔒 Security
 
 There are the following hard coded keys that you want to change in your values:
 
 - Access key of the S3 compatible store Cloudserver.
 
-## Development
+## 🛠️ Development
 
 It is suggested that you utilize [`mise`](https://mise.jdx.dev/) to ease the package management process.
 
-### Committing
+### 📝 Committing
 
 After any changes to a chart you must always increment the version number in the appropriate `Chart.yaml` file and afterwards execute the pre-commit script!
 
 | :warning: Make sure to **ALWAYS** run the `./pre-commit.sh` script (below) before committing and pushing! |
 |:------------|
 
-### Pre-Commit
+### ✅ Pre-Commit
 
 This is a required step to update all charts to lint them, test them and generate their docs.
 
 First install all necessary packages via `pip3 install -r requirements.txt`.
+Alternatively `apt-get install python3-yamale`.
 
 And ensure these tools are also installed:
 
-* yamllint
+* yamllint: (apt-get install yamllint)
 * helm-docs: https://github.com/norwoodj/helm-docs
 * chart-testing: https://github.com/helm/chart-testing
 * kubeconform https://github.com/yannh/kubeconform
@@ -75,8 +76,8 @@ Then execute the script:
 ./pre-commit.sh
 ```
 
-## Packaging and Releasing
+## 📤 Packaging and Releasing
 
 Releases are automated via github workflows. Anything pushed to master is considered as to be released!
 
-Do not ever manually package and release the charts!
+**NOTE:** Never manually package and release the charts!
