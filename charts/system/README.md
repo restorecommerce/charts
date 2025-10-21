@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.136](https://img.shields.io/badge/Version-0.1.136-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.137](https://img.shields.io/badge/Version-0.1.137-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -25,7 +25,7 @@ Replace the `restorecommerce` namespace with your own.
 ```shell
 helm repo add elastic https://helm.elastic.co
 helm repo update
-helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator --version 2.11.1
+helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-operator --version 3.1.0
 ```
 
 **Homepage:** <https://github.com/restorecommerce/system>
@@ -41,7 +41,7 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | Repository | Name | Version |
 |------------|------|---------|
 |  | cloudserver | 1.0.5 |
-| https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.3.0 |
+| https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.3.1 |
 | oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.42 |
 | oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.34 |
 | oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.43 |
