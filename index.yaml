@@ -7022,6 +7022,24 @@ entries:
     version: 0.1.0
   ostorage-srv:
   - apiVersion: v2
+    appVersion: 1.5.0
+    created: "2025-10-27T14:58:08.261227319Z"
+    description: Restorecommerce ostorage-srv
+    digest: 81574109a9e953b246659e6eb0dff1410c3af3d40649298f1c361534cad55195
+    home: https://docs.restorecommerce.io/ostorage-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ostorage-srv
+    sources:
+    - https://github.com/restorecommerce/ostorage-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ostorage-srv-0.1.35/ostorage-srv-0.1.35.tgz
+    version: 0.1.35
+  - apiVersion: v2
     appVersion: 1.4.3
     created: "2025-07-01T16:46:24.361635676Z"
     description: Restorecommerce ostorage-srv
@@ -20313,4 +20331,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-27T13:14:37.180556318Z"
+generated: "2025-10-27T14:58:08.262757907Z"
