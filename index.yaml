@@ -1332,6 +1332,23 @@ entries:
     version: 0.1.0
   console:
   - apiVersion: v2
+    appVersion: 0.0.9
+    created: "2025-10-29T11:59:28.759824607Z"
+    description: Restorecommerce console
+    digest: 74a9b46e8c9ef2d57374220dde2bd569e0f9a1c5e242ea7093847dd17fa0db88
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: console
+    sources:
+    - https://github.com/restorecommerce/console
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/console-0.1.19/console-0.1.19.tgz
+    version: 0.1.19
+  - apiVersion: v2
     appVersion: 0.0.8
     created: "2025-10-27T09:49:39.133615926Z"
     description: Restorecommerce console
@@ -20349,4 +20366,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-27T21:48:56.431943665Z"
+generated: "2025-10-29T11:59:28.761613178Z"
