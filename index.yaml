@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   access-control-srv:
   - apiVersion: v2
+    appVersion: 1.7.1
+    created: "2025-11-01T10:25:14.912095929Z"
+    description: Restorecommerce access-control-srv
+    digest: 2dec1e4712830a704f9df950a190fff8ea475b92caad3359fc72003979dbfb6b
+    home: https://docs.restorecommerce.io/access-control-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: access-control-srv
+    sources:
+    - https://github.com/restorecommerce/access-control-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/access-control-srv-0.1.44/access-control-srv-0.1.44.tgz
+    version: 0.1.44
+  - apiVersion: v2
     appVersion: 1.7.0
     created: "2025-10-27T13:14:37.179486137Z"
     description: Restorecommerce access-control-srv
@@ -5545,6 +5563,24 @@ entries:
     version: 0.1.0
   notification-srv:
   - apiVersion: v2
+    appVersion: 1.4.1
+    created: "2025-11-01T10:25:15.033280271Z"
+    description: Restorecommerce notification-srv
+    digest: 602e3105e816b14fddb9b44124c32f203228f8324cfa961523dfec73c8051338
+    home: https://docs.restorecommerce.io/notification-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: notification-srv
+    sources:
+    - https://github.com/restorecommerce/notification-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/notification-srv-0.1.33/notification-srv-0.1.33.tgz
+    version: 0.1.33
+  - apiVersion: v2
     appVersion: 1.4.0
     created: "2025-10-27T21:48:56.430524856Z"
     description: Restorecommerce notification-srv
@@ -7109,6 +7145,24 @@ entries:
     version: 0.1.0
   ostorage-srv:
   - apiVersion: v2
+    appVersion: 1.5.1
+    created: "2025-11-01T10:25:15.194024776Z"
+    description: Restorecommerce ostorage-srv
+    digest: 9a8599880b67ec1dd6c5661f99371e9b0e798ce23ccaf11c90935a85f166e8c4
+    home: https://docs.restorecommerce.io/ostorage-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ostorage-srv
+    sources:
+    - https://github.com/restorecommerce/ostorage-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ostorage-srv-0.1.36/ostorage-srv-0.1.36.tgz
+    version: 0.1.36
+  - apiVersion: v2
     appVersion: 1.5.0
     created: "2025-10-27T14:58:08.261227319Z"
     description: Restorecommerce ostorage-srv
@@ -8507,6 +8561,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/pdf-rendering-srv-0.1.0/pdf-rendering-srv-0.1.0.tgz
     version: 0.1.0
   rendering-srv:
+  - apiVersion: v2
+    appVersion: 1.5.1
+    created: "2025-11-01T10:25:15.324969834Z"
+    description: Restorecommerce rendering-srv
+    digest: 75a6fd734d8f469359373c6a0dbbd7ecd4a489c9ea2e5e87c4290727f3ce3dd3
+    home: https://docs.restorecommerce.io/rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: rendering-srv
+    sources:
+    - https://github.com/restorecommerce/rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/rendering-srv-0.1.40/rendering-srv-0.1.40.tgz
+    version: 0.1.40
   - apiVersion: v2
     appVersion: 1.5.0
     created: "2025-10-27T11:33:53.588033857Z"
@@ -20418,4 +20490,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-01T10:13:49.092863379Z"
+generated: "2025-11-01T10:25:15.327069237Z"
