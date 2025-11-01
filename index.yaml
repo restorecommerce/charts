@@ -1332,6 +1332,23 @@ entries:
     version: 0.1.0
   console:
   - apiVersion: v2
+    appVersion: 0.1.2
+    created: "2025-11-01T10:13:48.830159935Z"
+    description: Restorecommerce console
+    digest: e68d82577e0ba81adad342db9ec00d6f154fde2894cb011935dad9e99e2dada4
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: console
+    sources:
+    - https://github.com/restorecommerce/console
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/console-0.1.21/console-0.1.21.tgz
+    version: 0.1.21
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2025-10-30T17:16:10.441929074Z"
     description: Restorecommerce console
@@ -3277,6 +3294,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/fulfillment-srv-0.1.0/fulfillment-srv-0.1.0.tgz
     version: 0.1.0
   identity-srv:
+  - apiVersion: v2
+    appVersion: 1.11.1
+    created: "2025-11-01T10:13:49.091670441Z"
+    description: Restorecommerce identity-srv
+    digest: aefa89a3be2c4f35fb79d47008fd4313e3da6aecbf24b066c45ec551b97b9b5f
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.63/identity-srv-0.1.63.tgz
+    version: 0.1.63
   - apiVersion: v2
     appVersion: 1.11.0
     created: "2025-10-27T09:49:39.944531317Z"
@@ -20383,4 +20418,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-30T17:16:10.443394287Z"
+generated: "2025-11-01T10:13:49.092863379Z"
