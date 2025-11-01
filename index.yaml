@@ -773,6 +773,24 @@ entries:
     version: 0.1.0
   catalog-srv:
   - apiVersion: v2
+    appVersion: 1.7.0
+    created: "2025-11-01T14:39:11.632177554Z"
+    description: Restorecommerce catalog-srv
+    digest: 66db284c1858aaa19e91fdfad374237bdc71e06f1a5719b995b9d07db2f79702
+    home: https://docs.restorecommerce.io/catalog-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: catalog-srv
+    sources:
+    - https://github.com/restorecommerce/catalog-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/catalog-srv-0.1.35/catalog-srv-0.1.35.tgz
+    version: 0.1.35
+  - apiVersion: v2
     appVersion: 1.6.4
     created: "2025-07-01T16:46:23.581388203Z"
     description: Restorecommerce catalog-srv
@@ -2501,6 +2519,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/facade-srv-0.1.0/facade-srv-0.1.0.tgz
     version: 0.1.0
   fulfillment-srv:
+  - apiVersion: v2
+    appVersion: 0.7.0
+    created: "2025-11-01T14:39:11.779973383Z"
+    description: Restorecommerce fulfillment-srv
+    digest: dac8ea30fe67174a759921ac4826086a071acd4a00adb834326a02a8f925675d
+    home: https://docs.restorecommerce.io/fulfillment-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: fulfillment-srv
+    sources:
+    - https://github.com/restorecommerce/fulfillment-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/fulfillment-srv-0.1.48/fulfillment-srv-0.1.48.tgz
+    version: 0.1.48
   - apiVersion: v2
     appVersion: 0.6.0
     created: "2025-09-08T11:25:12.124782223Z"
@@ -4516,6 +4552,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/indexing-srv-0.1.0/indexing-srv-0.1.0.tgz
     version: 0.1.0
   invoicing-srv:
+  - apiVersion: v2
+    appVersion: 1.5.0
+    created: "2025-11-01T14:39:11.93896671Z"
+    description: Restorecommerce invoicing-srv
+    digest: 5d57f5b1e2861d0722ca85d36174a7caebea3ea9bff255e829679a5a891ec500
+    home: https://docs.restorecommerce.io/invoicing-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: invoicing-srv
+    sources:
+    - https://github.com/restorecommerce/invoicing-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/invoicing-srv-0.1.39/invoicing-srv-0.1.39.tgz
+    version: 0.1.39
   - apiVersion: v2
     appVersion: 1.4.15
     created: "2025-08-15T11:55:49.403128665Z"
@@ -20526,4 +20580,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-01T14:27:33.320761374Z"
+generated: "2025-11-01T14:39:11.940624953Z"
