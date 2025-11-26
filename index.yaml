@@ -1386,6 +1386,23 @@ entries:
     version: 0.1.0
   console:
   - apiVersion: v2
+    appVersion: 0.1.3
+    created: "2025-11-26T13:21:50.194587349Z"
+    description: Restorecommerce console
+    digest: 4cd7003986f18c583439bbd8e542fd1088ef7948848fd8a6c887279b60107454
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: console
+    sources:
+    - https://github.com/restorecommerce/console
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/console-0.1.22/console-0.1.22.tgz
+    version: 0.1.22
+  - apiVersion: v2
     appVersion: 0.1.2
     created: "2025-11-01T10:13:48.830159935Z"
     description: Restorecommerce console
@@ -1888,6 +1905,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/data-import-0.1.8/data-import-0.1.8.tgz
     version: 0.1.8
   facade-srv:
+  - apiVersion: v2
+    appVersion: 1.6.8
+    created: "2025-11-26T13:21:50.370967036Z"
+    description: Restorecommerce facade-srv
+    digest: 3e566fa02f46c0012f2075e9971f9f7a553c48b913708b409212e9c79c8d829f
+    home: https://docs.restorecommerce.io/facade-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: facade-srv
+    sources:
+    - https://github.com/restorecommerce/facade-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/facade-srv-0.1.44/facade-srv-0.1.44.tgz
+    version: 0.1.44
   - apiVersion: v2
     appVersion: 1.6.7
     created: "2025-08-22T09:53:43.284692341Z"
@@ -20706,4 +20741,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-11T12:03:37.262753547Z"
+generated: "2025-11-26T13:21:50.373137694Z"
