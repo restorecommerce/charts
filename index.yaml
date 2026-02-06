@@ -1906,6 +1906,24 @@ entries:
     version: 0.1.8
   facade-srv:
   - apiVersion: v2
+    appVersion: 1.7.0
+    created: "2026-02-06T14:13:20.179708622Z"
+    description: Restorecommerce facade-srv
+    digest: 2762ed823002060b08d036784f7ac4d7d9131fb004efdacf362eedaf5105d5f6
+    home: https://docs.restorecommerce.io/facade-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: facade-srv
+    sources:
+    - https://github.com/restorecommerce/facade-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/facade-srv-0.1.46/facade-srv-0.1.46.tgz
+    version: 0.1.46
+  - apiVersion: v2
     appVersion: 1.6.9
     created: "2026-02-02T10:02:33.727237486Z"
     description: Restorecommerce facade-srv
@@ -20759,4 +20777,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-02-02T10:02:33.728746618Z"
+generated: "2026-02-06T14:13:20.180851862Z"
