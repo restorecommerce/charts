@@ -35,9 +35,9 @@ jobs:
       - name: Bump chart versions
         run: mise exec -- uv run upgrade_system.py
 
-      - name: Check if changes detected
-        id: diff
-        run: echo "changes=$(git diff --exit-code > /dev/null || echo $?)" >> $GITHUB_OUTPUT
+      # - name: Check if changes detected
+      #   id: diff
+      #   run: echo "changes=$(git diff --exit-code > /dev/null || echo $?)" >> $GITHUB_OUTPUT
 
       - name: Pre-commit
         if: ${{ steps.diff.outputs.changes == '1' }}
