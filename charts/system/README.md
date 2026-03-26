@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.138](https://img.shields.io/badge/Version-0.1.138-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.139](https://img.shields.io/badge/Version-0.1.139-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -42,18 +42,18 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 |------------|------|---------|
 |  | cloudserver | 1.0.5 |
 | https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.3.1 |
-| oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.42 |
-| oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.34 |
-| oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.43 |
-| oci://ghcr.io/restorecommerce/charts | fulfillment-srv | 0.1.47 |
-| oci://ghcr.io/restorecommerce/charts | identity-srv | 0.1.61 |
-| oci://ghcr.io/restorecommerce/charts | invoicing-srv | 0.1.38 |
-| oci://ghcr.io/restorecommerce/charts | notification-srv | 0.1.31 |
-| oci://ghcr.io/restorecommerce/charts | ordering-srv | 0.1.59 |
-| oci://ghcr.io/restorecommerce/charts | ostorage-srv | 0.1.34 |
+| oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.45 |
+| oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.35 |
+| oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.46 |
+| oci://ghcr.io/restorecommerce/charts | fulfillment-srv | 0.1.48 |
+| oci://ghcr.io/restorecommerce/charts | identity-srv | 0.1.65 |
+| oci://ghcr.io/restorecommerce/charts | invoicing-srv | 0.1.39 |
+| oci://ghcr.io/restorecommerce/charts | notification-srv | 0.1.34 |
+| oci://ghcr.io/restorecommerce/charts | ordering-srv | 0.1.60 |
+| oci://ghcr.io/restorecommerce/charts | ostorage-srv | 0.1.37 |
 | oci://ghcr.io/restorecommerce/charts | payment-srv | 0.1.22 |
 | oci://ghcr.io/restorecommerce/charts | pdf-rendering-srv | 0.2.15 |
-| oci://ghcr.io/restorecommerce/charts | rendering-srv | 0.1.38 |
-| oci://ghcr.io/restorecommerce/charts | resource-srv | 0.1.34 |
-| oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.28 |
+| oci://ghcr.io/restorecommerce/charts | rendering-srv | 0.1.41 |
+| oci://ghcr.io/restorecommerce/charts | resource-srv | 0.1.36 |
+| oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.33 |
 | oci://registry-1.docker.io/cloudpirates | redis | 0.5.0 |
