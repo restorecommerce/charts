@@ -17,8 +17,8 @@ jobs:
       fail-fast: false
       matrix:
         k8s:
-          - v1.31.0
           - v1.32.0
+          - v1.34.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
