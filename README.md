@@ -78,6 +78,6 @@ Then execute the script:
 
 ## 📤 Packaging and Releasing
 
-Releases are automated via github workflows. Anything pushed to master is considered as to be released!
+Releases are automated via Github workflows. Anything pushed to master is considered as to be released!
 
 **NOTE:** Never manually package and release the charts!
