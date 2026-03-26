@@ -33,11 +33,11 @@ helm repo add restorecommerce https://restorecommerce.github.io/charts/
 helm repo update
 ```
 
-## 🚀 Example Deployment
+...and the chart via:
 
-There is an example deployment with all required dependencies specified in [example](./example) directory.
-
-It uses the [helmfile](https://github.com/roboll/helmfile) tool to specify all releases and their values.
+```bash
+helm install restorecommerce restorecommerce/system --namespace restorecommerce --create-namespace
+```
 
 ## 🔒 Security
 
