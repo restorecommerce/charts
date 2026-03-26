@@ -17,7 +17,7 @@ import semver
 # The repository to check for upgrades
 OCI_REPOSITORY = "oci://ghcr.io/restorecommerce/charts"
 
-upgraded = False
+upgraded = True
 chart_path = path.join("charts/system/", "Chart.yaml")
 
 with open(chart_path, "r") as f:
