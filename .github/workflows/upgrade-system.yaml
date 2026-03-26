@@ -24,7 +24,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           # Optional: ensure a specific Python version is available
-          python-version: '3.12' 
+          python-version: '3.13' 
 
       - name: Install mise
         uses: jdx/mise-action@v2
