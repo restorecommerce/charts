@@ -1386,6 +1386,23 @@ entries:
     version: 0.1.0
   console:
   - apiVersion: v2
+    appVersion: 0.2.4
+    created: "2026-05-11T12:38:37.065919771Z"
+    description: Restorecommerce console
+    digest: 6eb1170a248b3cce4923ca0d837eed2ab70e2576e7712a170a5fdae6e2fbedce
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: console
+    sources:
+    - https://github.com/restorecommerce/console
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/console-0.1.24/console-0.1.24.tgz
+    version: 0.1.24
+  - apiVersion: v2
     appVersion: 0.2.0
     created: "2026-04-07T12:21:30.329590666Z"
     description: Restorecommerce console
@@ -3454,6 +3471,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/fulfillment-srv-0.1.0/fulfillment-srv-0.1.0.tgz
     version: 0.1.0
   identity-srv:
+  - apiVersion: v2
+    appVersion: 1.13.0
+    created: "2026-05-11T12:38:37.266233203Z"
+    description: Restorecommerce identity-srv
+    digest: 2960362f209f83f9ece80326b7ae5591a6d2bb1f8bb055f8f8c4fd86d5ba830e
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.67/identity-srv-0.1.67.tgz
+    version: 0.1.67
   - apiVersion: v2
     appVersion: 1.12.1
     created: "2026-04-07T12:21:30.489845866Z"
@@ -21190,4 +21225,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-07T12:33:13.872789436Z"
+generated: "2026-05-11T12:38:37.268399473Z"
