@@ -41,14 +41,6 @@ dependencies:
 - name: facade-srv
   repository: oci://ghcr.io/restorecommerce/charts
   version: 0.1.47
-- name: cloudserver
-  repository: ""
-  version: 1.0.5
-- name: redis
-  repository: oci://registry-1.docker.io/cloudpirates
-  version: 0.26.8
-- name: kube-arangodb
-  repository: https://arangodb.github.io/kube-arangodb
-  version: 1.4.0
-digest: sha256:57f918b1c1a8067acfb236c4b74c4f1f6001e83c584bad7d1651f600ac1b740d
-generated: "2026-06-02T15:04:22.388670389Z"
+- name: rustfs
+  repository: https://charts.rustfs.com
+  version: 0.6.0

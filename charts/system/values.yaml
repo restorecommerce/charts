@@ -249,6 +249,28 @@ cloudserver:
     limits:
       memory: 512Mi
 
+rustfs:
+  image:
+    repository: rustfs/rustfs
+    tag: ""
+    pullPolicy: IfNotPresent
+  secret:
+    rustfs:
+      SecretKey: fO09epo9zT6tslwhh192l0UHbtpCjCYTnE3TYtec
+  service:
+    endpoint:
+      port: 9000
+  storageclass:
+    name: local-path
+    dataStorageSize: 256Mi
+    logStorageSize: 256Mi
+  replicaCount: 1
+  mode:
+    distributed:
+      enabled: false
+    standalone:
+      enabled: true
+
 redis:
   fullnameOverride: redis
   auth:
