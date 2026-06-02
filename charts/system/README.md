@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.148](https://img.shields.io/badge/Version-0.1.148-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.149](https://img.shields.io/badge/Version-0.1.149-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -44,9 +44,9 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.4.0 |
 | oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.46 |
 | oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.35 |
-| oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.46 |
+| oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.47 |
 | oci://ghcr.io/restorecommerce/charts | fulfillment-srv | 0.1.49 |
-| oci://ghcr.io/restorecommerce/charts | identity-srv | 0.1.69 |
+| oci://ghcr.io/restorecommerce/charts | identity-srv | 0.1.70 |
 | oci://ghcr.io/restorecommerce/charts | invoicing-srv | 0.1.39 |
 | oci://ghcr.io/restorecommerce/charts | notification-srv | 0.1.34 |
 | oci://ghcr.io/restorecommerce/charts | ordering-srv | 0.1.61 |
