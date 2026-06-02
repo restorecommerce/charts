@@ -1958,6 +1958,24 @@ entries:
     version: 0.1.8
   facade-srv:
   - apiVersion: v2
+    appVersion: 1.7.1
+    created: "2026-06-02T14:53:40.22408261Z"
+    description: Restorecommerce facade-srv
+    digest: e54241182a4bf27d98a73e1e75fee832aa19c49d6528ac5a7cc185a03471b176
+    home: https://docs.restorecommerce.io/facade-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: facade-srv
+    sources:
+    - https://github.com/restorecommerce/facade-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/facade-srv-0.1.47/facade-srv-0.1.47.tgz
+    version: 0.1.47
+  - apiVersion: v2
     appVersion: 1.7.0
     created: "2026-02-06T14:13:20.179708622Z"
     description: Restorecommerce facade-srv
@@ -3507,6 +3525,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/fulfillment-srv-0.1.0/fulfillment-srv-0.1.0.tgz
     version: 0.1.0
   identity-srv:
+  - apiVersion: v2
+    appVersion: 1.15.1
+    created: "2026-06-02T14:53:40.42630664Z"
+    description: Restorecommerce identity-srv
+    digest: 0f6a38ec16d9b5401cd10a0763e703e8f99c622079de7c56ec68d254c599d22f
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.70/identity-srv-0.1.70.tgz
+    version: 0.1.70
   - apiVersion: v2
     appVersion: 1.15.0
     created: "2026-05-27T10:48:20.597616559Z"
@@ -21801,4 +21837,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-02T11:57:15.102968465Z"
+generated: "2026-06-02T14:53:40.427837259Z"
