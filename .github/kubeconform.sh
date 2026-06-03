@@ -2,6 +2,9 @@
 
 set -euxo pipefail
 
+# Default KUBERNETES_VERSION if not set in environment
+: "${KUBERNETES_VERSION:=v1.27.0}"
+
 CHART_DIRS="$(git diff --find-renames --name-only "$(git rev-parse --abbrev-ref HEAD)" remotes/origin/master -- charts | cut -d '/' -f 2 | uniq)"
 
 if [[ $(git diff --stat) != '' ]]; then

@@ -40,8 +40,7 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 
 | Repository | Name | Version |
 |------------|------|---------|
-|  | rustfs | 0.1.0 |
-| https://arangodb.github.io/kube-arangodb | kube-arangodb | 1.4.0 |
+| https://charts.rustfs.com | rustfs | 0.6.0 |
 | oci://ghcr.io/restorecommerce/charts | access-control-srv | 0.1.46 |
 | oci://ghcr.io/restorecommerce/charts | catalog-srv | 0.1.35 |
 | oci://ghcr.io/restorecommerce/charts | facade-srv | 0.1.47 |
@@ -56,4 +55,3 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | oci://ghcr.io/restorecommerce/charts | rendering-srv | 0.1.41 |
 | oci://ghcr.io/restorecommerce/charts | resource-srv | 0.1.36 |
 | oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.33 |
-| oci://registry-1.docker.io/cloudpirates | redis | 0.26.8 |

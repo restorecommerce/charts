@@ -256,7 +256,10 @@ rustfs:
     pullPolicy: IfNotPresent
   secret:
     rustfs:
-      SecretKey: fO09epo9zT6tslwhh192l0UHbtpCjCYTnE3TYtec
+      access_key: "CHANGE_ME_RUSTFS_ACCESS_KEY"
+      secret_key: "CHANGE_ME_RUSTFS_SECRET_KEY"
+    existingSecret: ""
+    allowInsecureDefaults: false
   service:
     endpoint:
       port: 9000
