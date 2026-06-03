@@ -37,12 +37,12 @@ dependencies:
   version: 0.1.22
 - name: resource-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.36
+  version: 0.1.37
 - name: facade-srv
   repository: oci://ghcr.io/restorecommerce/charts
   version: 0.1.47
 - name: rustfs
   repository: https://charts.rustfs.com
   version: 0.6.0
-digest: sha256:6d06984d9bb2a93b779e3f37ed7654053588eaf72b2cf40582c24e2691e8c1e8
-generated: "2026-06-02T21:54:21.529831921+02:00"
+digest: sha256:b6d7a9ac7a6b6c171b79fd3d12a89c9a591583bd29ab06b17f335d30b61f4892
+generated: "2026-06-03T11:53:34.500744865Z"

@@ -1,6 +1,4 @@
 apiVersion: v2
-name: system
-version: 0.1.149
 dependencies:
 - condition: identity-srv.enabled
   name: identity-srv
@@ -53,7 +51,7 @@ dependencies:
 - condition: resource-srv.enabled
   name: resource-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.36
+  version: 0.1.37
 - condition: facade-srv.enabled
   name: facade-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -61,7 +59,6 @@ dependencies:
 - name: rustfs
   repository: https://charts.rustfs.com
   version: 0.6.0
-
 description: A Helm chart for the Restorecommerce system
 home: https://github.com/restorecommerce/system
 icon: https://avatars0.githubusercontent.com/u/8339525
@@ -69,4 +66,6 @@ maintainers:
 - email: info@restorecommerce.io
   name: restorecommerce
   url: https://restorecommerce.io/
+name: system
 type: application
+version: 0.1.150
