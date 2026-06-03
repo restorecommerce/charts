@@ -35,7 +35,7 @@ dependencies:
 - condition: catalog-srv.enabled
   name: catalog-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.35
+  version: 0.1.36
 - condition: invoicing-srv.enabled
   name: invoicing-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -68,4 +68,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.150
+version: 0.1.151
