@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   access-control-srv:
   - apiVersion: v2
+    appVersion: 1.8.0
+    created: "2026-06-16T14:54:23.027763982Z"
+    description: Restorecommerce access-control-srv
+    digest: df6587b253f93f21c20c123da0ace154c7efc1ba8b59074b32ea839fbc0e47c5
+    home: https://docs.restorecommerce.io/access-control-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: access-control-srv
+    sources:
+    - https://github.com/restorecommerce/access-control-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/access-control-srv-0.1.47/access-control-srv-0.1.47.tgz
+    version: 0.1.47
+  - apiVersion: v2
     appVersion: 1.7.3
     created: "2026-06-02T11:44:28.242553438Z"
     description: Restorecommerce access-control-srv
@@ -3561,6 +3579,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/fulfillment-srv-0.1.0/fulfillment-srv-0.1.0.tgz
     version: 0.1.0
   identity-srv:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-06-16T14:54:23.257003642Z"
+    description: Restorecommerce identity-srv
+    digest: cd1c21ee7ebef4a8df3246679918803b4f5028a064a5ab70244803ad4b5d24e0
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.71/identity-srv-0.1.71.tgz
+    version: 0.1.71
   - apiVersion: v2
     appVersion: 1.15.1
     created: "2026-06-02T14:53:40.42630664Z"
@@ -22140,4 +22176,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-03T16:24:53.191754427Z"
+generated: "2026-06-16T14:54:23.258325677Z"
