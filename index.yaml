@@ -6010,6 +6010,24 @@ entries:
     version: 0.1.0
   notification-srv:
   - apiVersion: v2
+    appVersion: 1.4.3
+    created: "2026-06-16T15:23:42.528286963Z"
+    description: Restorecommerce notification-srv
+    digest: 680851bff1ec1f1de90155b4597ac2f1599b0ba728e1472de793a3951c2160b5
+    home: https://docs.restorecommerce.io/notification-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: notification-srv
+    sources:
+    - https://github.com/restorecommerce/notification-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/notification-srv-0.1.35/notification-srv-0.1.35.tgz
+    version: 0.1.35
+  - apiVersion: v2
     appVersion: 1.4.2
     created: "2025-11-11T11:51:29.983892565Z"
     description: Restorecommerce notification-srv
@@ -22362,4 +22380,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-16T15:20:04.613389554Z"
+generated: "2026-06-16T15:23:42.529269234Z"
