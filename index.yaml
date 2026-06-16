@@ -11225,6 +11225,81 @@ entries:
     version: 0.1.0
   system:
   - apiVersion: v2
+    created: "2026-06-16T15:35:27.516763499Z"
+    dependencies:
+    - condition: identity-srv.enabled
+      name: identity-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.71
+    - condition: notification-srv.enabled
+      name: notification-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.35
+    - condition: access-control-srv.enabled
+      name: access-control-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.47
+    - condition: ostorage-srv.enabled
+      name: ostorage-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.38
+    - condition: scheduling-srv.enabled
+      name: scheduling-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.33
+    - condition: rendering-srv.enabled
+      name: rendering-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.42
+    - condition: pdf-rendering-srv.enabled
+      name: pdf-rendering-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.2.15
+    - condition: fulfillment-srv.enabled
+      name: fulfillment-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.50
+    - condition: catalog-srv.enabled
+      name: catalog-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.36
+    - condition: invoicing-srv.enabled
+      name: invoicing-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.40
+    - condition: ordering-srv.enabled
+      name: ordering-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.61
+    - condition: payment-srv.enabled
+      name: payment-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.22
+    - condition: resource-srv.enabled
+      name: resource-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.37
+    - condition: facade-srv.enabled
+      name: facade-srv
+      repository: oci://ghcr.io/restorecommerce/charts
+      version: 0.1.47
+    - name: rustfs
+      repository: https://charts.rustfs.com
+      version: 0.6.0
+    description: A Helm chart for the Restorecommerce system
+    digest: 6a4457329708f3d9f3d13bbf71a075f17d714a92b8f8750589023977fc4d2b7a
+    home: https://github.com/restorecommerce/system
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: system
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/system-0.1.154/system-0.1.154.tgz
+    version: 0.1.154
+  - apiVersion: v2
     created: "2026-06-16T15:20:04.612329642Z"
     dependencies:
     - condition: identity-srv.enabled
@@ -22380,4 +22455,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-06-16T15:23:42.529269234Z"
+generated: "2026-06-16T15:35:27.517869527Z"
