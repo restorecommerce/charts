@@ -3,11 +3,11 @@ dependencies:
 - condition: identity-srv.enabled
   name: identity-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.72
+  version: 0.1.73
 - condition: notification-srv.enabled
   name: notification-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.35
+  version: 0.1.36
 - condition: access-control-srv.enabled
   name: access-control-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -15,7 +15,7 @@ dependencies:
 - condition: ostorage-srv.enabled
   name: ostorage-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.38
+  version: 0.1.39
 - condition: scheduling-srv.enabled
   name: scheduling-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -23,7 +23,7 @@ dependencies:
 - condition: rendering-srv.enabled
   name: rendering-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.42
+  version: 0.1.43
 - condition: pdf-rendering-srv.enabled
   name: pdf-rendering-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -68,4 +68,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.155
+version: 0.1.156
