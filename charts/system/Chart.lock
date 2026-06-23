@@ -4,7 +4,7 @@ dependencies:
   version: 0.1.73
 - name: notification-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.37
+  version: 0.1.38
 - name: access-control-srv
   repository: oci://ghcr.io/restorecommerce/charts
   version: 0.1.48
@@ -44,5 +44,5 @@ dependencies:
 - name: rustfs
   repository: https://charts.rustfs.com
   version: 0.6.0
-digest: sha256:f2e028d842390fadec5a20e5121e33773e9457b82b3ebc2f76adc193e848b2fe
-generated: "2026-06-22T09:03:25.562564038Z"
+digest: sha256:b4b23d0113ab2fcaf275085a8c7215af37a9b331f61bed66e7840901892fbcd7
+generated: "2026-06-23T07:23:14.738959518Z"
