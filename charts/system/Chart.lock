@@ -22,7 +22,7 @@ dependencies:
   version: 0.2.15
 - name: fulfillment-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.50
+  version: 0.1.51
 - name: catalog-srv
   repository: oci://ghcr.io/restorecommerce/charts
   version: 0.1.36
@@ -44,5 +44,5 @@ dependencies:
 - name: rustfs
   repository: https://charts.rustfs.com
   version: 0.6.0
-digest: sha256:9d8d8276eb93d3612d274dd040f2624304d4c1b4148b5edfe75029b2ccb1c1d1
-generated: "2026-07-08T15:23:03.633561717Z"
+digest: sha256:efabf1cd3346dea93748f64a497110c1e963d6c2c4d8ce61a87e64edd19857c6
+generated: "2026-07-13T15:09:13.645185209Z"
