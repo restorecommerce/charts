@@ -1,6 +1,6 @@
 # system
 
-![Version: 0.1.160](https://img.shields.io/badge/Version-0.1.160-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.161](https://img.shields.io/badge/Version-0.1.161-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 A Helm chart for the Restorecommerce system
 
@@ -54,4 +54,4 @@ helm install --create-namespace -n restorecommerce elastic-operator elastic/eck-
 | oci://ghcr.io/restorecommerce/charts | pdf-rendering-srv | 0.2.15 |
 | oci://ghcr.io/restorecommerce/charts | rendering-srv | 0.1.43 |
 | oci://ghcr.io/restorecommerce/charts | resource-srv | 0.1.37 |
-| oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.33 |
+| oci://ghcr.io/restorecommerce/charts | scheduling-srv | 0.1.34 |
