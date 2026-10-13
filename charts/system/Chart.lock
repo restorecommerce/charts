@@ -7,7 +7,7 @@ dependencies:
   version: 0.1.38
 - name: access-control-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.48
+  version: 0.1.49
 - name: ostorage-srv
   repository: oci://ghcr.io/restorecommerce/charts
   version: 0.1.39
@@ -44,5 +44,5 @@ dependencies:
 - name: rustfs
   repository: https://charts.rustfs.com
   version: 0.6.0
-digest: sha256:bf300b2026389d508d04836d78daa32dece47da95f84a5d895995761f2ea2743
-generated: "2026-08-10T10:46:15.50407944Z"
+digest: sha256:0774263cfccdd991c354c435c6b96df2a01ea6bb2d36548ca528d3f45e95b855
+generated: "2026-10-13T11:17:03.773200452Z"
