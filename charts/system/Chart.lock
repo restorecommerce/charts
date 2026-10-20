@@ -28,7 +28,7 @@ dependencies:
   version: 0.1.36
 - name: invoicing-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.40
+  version: 0.1.41
 - name: ordering-srv
   repository: oci://ghcr.io/restorecommerce/charts
   version: 0.1.62
@@ -44,5 +44,5 @@ dependencies:
 - name: rustfs
   repository: https://charts.rustfs.com
   version: 0.6.0
-digest: sha256:91dc4b3efe29515b206a10f0c690988da5be232d7bf8475b98b4865bac3adf4f
-generated: "2026-10-13T12:30:49.320366514Z"
+digest: sha256:621a79c7073e5dd730f3f4e2ae8d7239216fec7bd58beeb7bbb1f3e4466afb66
+generated: "2026-10-20T11:31:01.315142181Z"
