@@ -15,11 +15,11 @@ dependencies:
 - condition: ostorage-srv.enabled
   name: ostorage-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.39
+  version: 0.1.40
 - condition: scheduling-srv.enabled
   name: scheduling-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.35
+  version: 0.1.36
 - condition: rendering-srv.enabled
   name: rendering-srv
   repository: oci://ghcr.io/restorecommerce/charts
@@ -68,4 +68,4 @@ maintainers:
   url: https://restorecommerce.io/
 name: system
 type: application
-version: 0.1.167
+version: 0.1.168

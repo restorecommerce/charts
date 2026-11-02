@@ -10,10 +10,10 @@ dependencies:
   version: 0.1.50
 - name: ostorage-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.39
+  version: 0.1.40
 - name: scheduling-srv
   repository: oci://ghcr.io/restorecommerce/charts
-  version: 0.1.35
+  version: 0.1.36
 - name: rendering-srv
   repository: oci://ghcr.io/restorecommerce/charts
   version: 0.1.44
@@ -44,5 +44,5 @@ dependencies:
 - name: rustfs
   repository: https://charts.rustfs.com
   version: 0.6.0
-digest: sha256:c74edd3087a979e4220021dad75528848c0609068e2f78ffd7ca30e5024a830d
-generated: "2026-11-02T12:30:18.938736236Z"
+digest: sha256:75d8f1629acac475367c8688cf3cc77ea1e82e81b42a238ef9967605686649e5
+generated: "2026-11-02T12:46:12.570341979Z"
