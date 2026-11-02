@@ -3652,6 +3652,24 @@ entries:
     version: 0.1.0
   identity-srv:
   - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2026-11-02T12:19:38.639914024Z"
+    description: Restorecommerce identity-srv
+    digest: f9151f4c4bec6a9e2bab0bc4492e4450e1a0acdde01a7c23a60bf4b829a482eb
+    home: https://docs.restorecommerce.io/identity-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: identity-srv
+    sources:
+    - https://github.com/restorecommerce/identity-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/identity-srv-0.1.75/identity-srv-0.1.75.tgz
+    version: 0.1.75
+  - apiVersion: v2
     appVersion: 1.17.0
     created: "2026-10-13T12:20:16.142250235Z"
     description: Restorecommerce identity-srv
@@ -9350,6 +9368,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/pdf-rendering-srv-0.1.0/pdf-rendering-srv-0.1.0.tgz
     version: 0.1.0
   rendering-srv:
+  - apiVersion: v2
+    appVersion: 1.6.0
+    created: "2026-11-02T12:19:38.857473786Z"
+    description: Restorecommerce rendering-srv
+    digest: ba7f2839ad04ef962758d7a9dd515ade9284a69d6f4a20429a75c7ee6e6acc94
+    home: https://docs.restorecommerce.io/rendering-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: rendering-srv
+    sources:
+    - https://github.com/restorecommerce/rendering-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/rendering-srv-0.1.44/rendering-srv-0.1.44.tgz
+    version: 0.1.44
   - apiVersion: v2
     appVersion: 1.5.4
     created: "2026-06-18T12:48:46.669592357Z"
@@ -23643,4 +23679,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-11-02T12:17:26.905880333Z"
+generated: "2026-11-02T12:19:38.860090021Z"
