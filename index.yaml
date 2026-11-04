@@ -6208,6 +6208,24 @@ entries:
     version: 0.1.0
   notification-srv:
   - apiVersion: v2
+    appVersion: 1.5.2
+    created: "2026-11-04T15:15:22.767020159Z"
+    description: Restorecommerce notification-srv
+    digest: a249aebc2a8d4953cc0580888ee79d4d506c5d52119e9f7cf23a3ab8a5f38cd7
+    home: https://docs.restorecommerce.io/notification-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: notification-srv
+    sources:
+    - https://github.com/restorecommerce/notification-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/notification-srv-0.1.41/notification-srv-0.1.41.tgz
+    version: 0.1.41
+  - apiVersion: v2
     appVersion: 1.5.1
     created: "2026-11-04T12:44:53.086685254Z"
     description: Restorecommerce notification-srv
@@ -10860,6 +10878,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/resource-srv-0.1.0/resource-srv-0.1.0.tgz
     version: 0.1.0
   scheduling-srv:
+  - apiVersion: v2
+    appVersion: 1.7.1
+    created: "2026-11-04T15:15:22.956595571Z"
+    description: Restorecommerce scheduling-srv
+    digest: cc49a292cac790f1eb162dcf856661c55d2ca9abf69d8553c970e1c359829d98
+    home: https://docs.restorecommerce.io/scheduling-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: scheduling-srv
+    sources:
+    - https://github.com/restorecommerce/scheduling-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/scheduling-srv-0.1.37/scheduling-srv-0.1.37.tgz
+    version: 0.1.37
   - apiVersion: v2
     appVersion: 1.7.0
     created: "2026-11-02T12:35:36.690281791Z"
@@ -24180,4 +24216,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-11-04T13:10:03.244358772Z"
+generated: "2026-11-04T15:15:22.959552116Z"
