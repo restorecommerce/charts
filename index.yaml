@@ -6190,6 +6190,24 @@ entries:
     version: 0.1.0
   notification-srv:
   - apiVersion: v2
+    appVersion: 1.5.1
+    created: "2026-11-04T12:44:53.086685254Z"
+    description: Restorecommerce notification-srv
+    digest: 0788b555448f56748cbdfeab0009d88191f7286e7b2f15c45f4e98f311507402
+    home: https://docs.restorecommerce.io/notification-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: notification-srv
+    sources:
+    - https://github.com/restorecommerce/notification-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/notification-srv-0.1.40/notification-srv-0.1.40.tgz
+    version: 0.1.40
+  - apiVersion: v2
     appVersion: 1.5.0
     created: "2026-11-02T13:07:01.757156059Z"
     description: Restorecommerce notification-srv
@@ -7933,6 +7951,24 @@ entries:
     - https://github.com/restorecommerce/helm/releases/download/ordering-srv-0.1.0/ordering-srv-0.1.0.tgz
     version: 0.1.0
   ostorage-srv:
+  - apiVersion: v2
+    appVersion: 1.7.1
+    created: "2026-11-04T12:44:53.331198678Z"
+    description: Restorecommerce ostorage-srv
+    digest: d9fd6b38cb09b6af00729a469ab5da77ce451796b5eb6835027c71a72fc54970
+    home: https://docs.restorecommerce.io/ostorage-srv/index.html
+    icon: https://avatars0.githubusercontent.com/u/8339525
+    maintainers:
+    - email: info@restorecommerce.io
+      name: restorecommerce
+      url: https://restorecommerce.io/
+    name: ostorage-srv
+    sources:
+    - https://github.com/restorecommerce/ostorage-srv
+    type: application
+    urls:
+    - https://github.com/restorecommerce/charts/releases/download/ostorage-srv-0.1.41/ostorage-srv-0.1.41.tgz
+    version: 0.1.41
   - apiVersion: v2
     appVersion: 1.7.0
     created: "2026-11-02T12:35:36.286966905Z"
@@ -23976,4 +24012,4 @@ entries:
     urls:
     - https://github.com/restorecommerce/helm/releases/download/system-0.1.0/system-0.1.0.tgz
     version: 0.1.0
-generated: "2026-11-04T12:33:18.692764434Z"
+generated: "2026-11-04T12:44:53.334409585Z"
