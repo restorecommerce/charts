@@ -274,12 +274,3 @@ rustfs:
     standalone:
       enabled: true
 
-valkey:
-  enabled: true
-  fullnameOverride: valkey
-  auth:
-    enabled: false
-  architecture: standalone
-  resources:
-    limits:
-      memory: 256Mi
