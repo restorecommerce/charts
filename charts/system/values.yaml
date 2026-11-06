@@ -43,9 +43,9 @@ identity-srv:
   env:
     extras:
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
@@ -60,9 +60,9 @@ notification-srv:
   env:
     extras:
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: events__kafka__kafka__brokers
@@ -73,9 +73,9 @@ access-control-srv:
   env:
     extras:
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
@@ -90,9 +90,9 @@ ostorage-srv:
   env:
     extras:
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: s3__client__accessKeyId
@@ -109,9 +109,9 @@ scheduling-srv:
   env:
     extras:
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: events__kafka__kafka__brokers
@@ -122,9 +122,9 @@ rendering-srv:
   env:
     extras:
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: events__kafka__kafka__brokers
@@ -138,9 +138,9 @@ fulfillment-srv:
   env:
     extras:
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
@@ -153,9 +153,9 @@ catalog-srv:
   env:
     extras:
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
@@ -168,9 +168,9 @@ invoicing-srv:
   env:
     extras:
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
@@ -183,9 +183,9 @@ ordering-srv:
   env:
     extras:
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: database__main__host
@@ -199,9 +199,9 @@ payment-srv:
   env:
     extras:
       - name: redis__host
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: events__kafka__kafka__brokers
@@ -212,9 +212,9 @@ resource-srv:
   env:
     extras:
       - name: redis__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: authorization__cache__url
-        value: redis://redis:6379
+        value: redis://valkey:6379
       - name: logger__elasticsearch__clientOpts__node
         value: http://restorecommerce-es-http:9200
       - name: authorization__enabled
@@ -274,8 +274,9 @@ rustfs:
     standalone:
       enabled: true
 
-redis:
-  fullnameOverride: redis
+valkey:
+  enabled: true
+  fullnameOverride: valkey
   auth:
     enabled: false
   architecture: standalone
